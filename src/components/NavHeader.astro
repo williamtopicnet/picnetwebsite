@@ -1,0 +1,56 @@
+---
+export interface Props {
+	title: string;
+	subtitle: string;
+	icon: string;
+	link: string;
+	colour: string;
+}
+---
+<header>
+	<div class="logo">
+		<a href="/">
+			<img src="https://mlhql4sklr3s.i.optimole.com/7oabVZE.-roA~759d/w:150/h:41/q:mauto/https://picnet.com.au/wp-content/uploads/2020/06/picnetsitelogox2.png"/>
+		</a>
+	</div>
+	<nav>
+		<a href="#services">Services</a>
+		<a href="#about">About Us</a>	
+		<a href="./blog">News</a>	
+		<a href="#contact">Contact Us</a>	
+	</nav>
+	<div class="phone">
+		<a href="tel:+61284377900">+61 2 8437 7900</a>
+	</div>
+</header>
+<style lang="scss">
+	header {
+		background-color: #0D364C;
+		display: grid;	
+		grid-template-columns: 1fr 2fr 1fr; 
+		padding: 15px;
+		font-weight: bold	;
+
+		a {
+			text-decoration: none;
+			color: silver;
+		}
+		a:hover {
+			color: white;
+		}
+		> div, > nav {
+			display: inline-block;
+		}
+		nav {			
+			margin: auto;
+		}
+		.phone > a {
+			background-color: white;
+			color: #0D364C;
+			float:right;
+			padding: 10px;
+			border-radius: 20px;
+			font-family: Roboto;
+		}
+	}
+</style>
