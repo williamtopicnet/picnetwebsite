@@ -14,21 +14,21 @@ const { title, subtitle, icon, link, colour } = Astro.props;
 			<div class="icon">
 				<img src={icon}/>
 			</div>
-			<h1>
-				{title}
-			</h1>
-			<h3>{subtitle}</h3>		
+      <div class="content">
+        <h1>{title}</h1>
+        <h3>{subtitle}</h3>	
+      </div>	
       <div class="colour-bar"></div>
 		</div>		
 	</a>
 </div>
 <style>
-	.link-card {    
-    .container {
-      display: grid;    
-      grid-template-columns: 2fr 4fr 1fr;
-    }
+	.link-card {        
 	}  
+  .container {
+    display: grid;    
+    grid-template-columns: 2fr 4fr 1fr;
+  }
 	.link-card.red div.colour-bar {
     background-color: red;
 	}
