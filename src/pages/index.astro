@@ -1,56 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ServiceCard from '../components/ServiceCard.astro';
+
+import Hero from './home-sections/Hero.astro';
+import ServicesCards from './home-sections/ServicesCards.astro';
+import ServicesCarousel from './home-sections/ServicesCarousel.astro';
+import AboutUs from './home-sections/AboutUs.astro';
+import Management from './home-sections/Management.astro';
+import CustomerLogos from './home-sections/CustomerLogos.astro';
+import CustomerTestimonialsCarousel from './home-sections/CustomerTestimonialsCarousel.astro';
+import Partners from './home-sections/Partners.astro';
+import ContactUs from './home-sections/ContactUs.astro';
 ---
 
 <Layout title="PicNet - Software Development, IT Support, Cloud Management Services">
   <main>
-    <section id="hero">
-      <h1>Increasingly complex technologies require increasingly specialised expertise</h1>
-      <h3>Since 2001 Australian organisations have benefited from PicNet's superior
-        IT Consulting, Software Development, IT Support and and Cyber Risk Management services.</h3>
-      <a href="#contact">Let's Get Started</a>
-    </section>        
-    <section id="services">
-      <ServiceCard icon="icon1" 
-        title="IT Consulting and Project Management" 
-        subtitle="IT Strategy, IT Reviews, Project Management" 
-        colour="blue" link="/project-management/"/>
-      <ServiceCard icon="icon1" 
-        title="Software Development" 
-        subtitle="Enterprise Custom Software Development, Engineering and Support" 
-        colour="yellow" link="/project-management/"/>
-      <ServiceCard icon="icon1" 
-        title="IT Support Services" 
-        subtitle="IT Support for Businesses, Help Desk, Cloud and Hardware provisioning" 
-        colour="red" link="/project-management/"/>
-
-			<ServiceCard icon="icon1" 
-        title="Application Integration Services" 
-        subtitle="Manage and integrate all your data in the cloud or on premise" 
-        colour="blue" link="/project-management/"/>
-      <ServiceCard icon="icon1" 
-        title="IT Hardware and Software Licensing" 
-        subtitle="IT hardware and software for businesses" 
-        colour="yellow" link="/project-management/"/>
-      <ServiceCard icon="icon1" 
-        title="Cloud Management Services" 
-        subtitle="Migrating email system, file storage and servers to the cloud" 
-        colour="red" link="/project-management/"/>
-
-			<ServiceCard icon="icon1" 
-        title="IT Team Augmentation" 
-        subtitle="IT skills at hand to enhance your internal resources" 
-        colour="blue" link="/project-management/"/>
-      <ServiceCard icon="icon1" 
-        title="Machine Learning, AI & Business Intelligence" 
-        subtitle="Getting maximum value from your data" 
-        colour="yellow" link="/project-management/"/>
-      <ServiceCard icon="icon1" 
-        title="Risk Shield Services" 
-        subtitle="IT Security Monitoring & Alerting, and Pentration Testing for SMEs" 
-        colour="red" link="/project-management/"/>
-    </section>
+    <Hero />
+    <ServicesCards />    
+    <ServicesCarousel />    
+    <Management />
+    <AboutUs />
+    <CustomerLogos />
+    <CustomerTestimonialsCarousel />
+    <Partners />
+    <ContactUs />
   </main>
 </Layout>
 
@@ -63,10 +35,5 @@ import ServiceCard from '../components/ServiceCard.astro';
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
-  }
-  section#services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    pad: 1rem;
   }  
 </style>
