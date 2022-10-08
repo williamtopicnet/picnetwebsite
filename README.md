@@ -3,3 +3,6 @@
 `npm run build`: Build your production site to `./dist/`            |
 `npm run preview`: Preview your build locally, before deploying       |
 `npm run astro ...`: Run CLI commands like `astro add`, `astro preview` |
+
+# TODO
+- replace services carousel with tooltips over the service cards

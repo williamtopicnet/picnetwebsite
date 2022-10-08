@@ -15,9 +15,33 @@
     </p>
   </div>
   <div class="image">
-    <img src="./img.jpg"/>
+    <img src="/images/home/about-us.png"/>
   </div>
 </section>
-<style>
+<style lang="scss">
+  @import '../../layouts/global.scss'; 
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 
+    background-color: $color-bg-lightest;    
+
+    padding: 3rem;    
+  }
+  
+  h2 {
+    color: $color-fg-alternate-light;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  h1 {
+    color: $color-fg-darker;
+    font-size: 2rem;    
+  }
+
+  p {
+    color: $color-fg-darker;
+  }
 </style>
