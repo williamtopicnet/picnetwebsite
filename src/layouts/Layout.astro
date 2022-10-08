@@ -19,32 +19,29 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+    <div class="header-polygon"></div>
 		<NavHeader />
 		<slot />
     <Footer />
 	</body>
 </html>
-<style is:global>
+<style lang="scss" is:global>
+  @import 'global';
+
 	@font-face {
-    font-family: 'Roboto';
+    font-family: $font;
     src: url('/font/Roboto-Regular.ttf');    
     font-weight: normal;
     font-style: normal;
 	}
 
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-
 	html {
-		font-family: Roboto;
-		background-color: #F6F6F6;
+		font-family: $font;    
 	}
 
 	body {
-		margin: 0;
-	}
+		margin: 0;    
+	}  
 
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,

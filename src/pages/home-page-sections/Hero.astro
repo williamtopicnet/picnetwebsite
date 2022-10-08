@@ -1,6 +1,64 @@
-<section id="hero">
-  <h1>Increasingly complex technologies require increasingly specialised expertise</h1>
-  <h3>Since 2001 Australian organisations have benefited from PicNet's superior
-    IT Consulting, Software Development, IT Support and and Cyber Risk Management services.</h3>
-  <a href="#contact">Let's Get Started</a>
-</section>        
+<section class="section" id="hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Increasingly complex technologies <br/>
+      require increasingly specialised expertise</h1>
+    <h3>Since 2001 Australian organisations have benefited from PicNet's superior<br/>
+      IT Consulting, Software Development, IT Support and and Cyber Risk Management services.</h3>
+    <a href="#contact">Let's Get Started</a>
+  </div>  
+</section>    
+<style lang="scss">
+  @import '../../layouts/global.scss';
+  section {        
+    color: $color-fg-light;    
+
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+
+    background-image: url("/images/home/header-icons.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20rem;    
+
+    z-index: 1;
+  }
+
+  .content {        
+    background-color: $color-bg-dark;
+    text-align: center;
+    min-height: 40rem;
+
+    clip-path: polygon(
+      0 0,
+      0 50%, 
+      50% 100%, 
+      100% 50%,
+      100% 0%);
+  }
+
+  h1 {
+    margin-top:0;
+    padding-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
+
+  a {    
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+  }
+</style>

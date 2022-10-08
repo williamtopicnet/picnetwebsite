@@ -10,7 +10,7 @@ export interface Props {
 <header>
 	<div class="logo">
 		<a href="/">
-			<img src="https://mlhql4sklr3s.i.optimole.com/7oabVZE.-roA~759d/w:150/h:41/q:mauto/https://picnet.com.au/wp-content/uploads/2020/06/picnetsitelogox2.png"/>
+			<img src="/images/home/logo.png"/>
 		</a>
 	</div>
 	<nav>
@@ -24,33 +24,39 @@ export interface Props {
 	</div>
 </header>
 <style lang="scss">
+  @import '../layouts/global.scss';
+
 	header {
-		background-color: #0D364C;
+		background-color: $color-bg-dark;
 		display: grid;	
 		grid-template-columns: 1fr 2fr 1fr; 
-		padding: 15px;
-		font-weight: bold	;
-
-		a {
-			text-decoration: none;
-			color: silver;
-		}
-		a:hover {
-			color: white;
-		}
-		> div, > nav {
-			display: inline-block;
-		}
-		nav {			
-			margin: auto;
-		}
-		.phone > a {
-			background-color: white;
-			color: #0D364C;
-			float:right;
-			padding: 10px;
-			border-radius: 20px;
-			font-family: Roboto;
-		}
+		padding: 1rem 5rem;    
+		font-weight: bold	;		
 	}
+
+  a {
+    text-decoration: none;
+    color: silver;
+  }
+  a:hover {
+    color: white;
+  }
+  
+  nav {			
+    margin: auto;
+    
+    a {
+      font-size: 0.85rem;
+      margin: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .phone > a {
+    background-color: white;
+    color: #0D364C;
+    float:right;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: Roboto;
+  }
 </style>
