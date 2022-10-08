@@ -18,24 +18,39 @@ const { title, subtitle, icon, link, colour } = Astro.props;
         <h1>{title}</h1>
         <h3>{subtitle}</h3>	
       </div>	
-      <div class="colour-bar"></div>
 		</div>		
 	</a>
 </div>
-<style>
-	.link-card {        
-	}  
+<style lang="scss">
+  @import '../layouts/global.scss'; 
+
   .container {
+    background-color: $color-fg-light;
+    color: $color-fg-darker;
     display: grid;    
-    grid-template-columns: 2fr 4fr 1fr;
+    grid-template-columns: 2fr 4fr 1fr;   
+    border-radius: 1rem; 
+    text-transform: uppercase;
   }
-	.link-card.red div.colour-bar {
-    background-color: red;
-	}
-  .link-card.blue div.colour-bar {
-    background-color: blue;
-	}
-  .link-card.yellow div.colour-bar {
-    background-color: yellow;
-	}
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .link-card.blue .container {
+    border-right: 1rem solid #2E77A1;
+  }
+
+  .link-card.yellow .container {
+    border-right: 1rem solid #F2CD8C;
+  }
+
+  .link-card.red .container {
+    border-right: 1rem solid #BF7374;
+  }
+  
 </style>
