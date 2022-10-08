@@ -25,20 +25,22 @@ const { title, subtitle, icon, link, colour } = Astro.props;
   @import '../layouts/global.scss'; 
 
   .container {
-    background-color: $color-fg-light;
-    color: $color-fg-darker;
+    background-color: $color-fg-light;    
     display: grid;    
     grid-template-columns: 2fr 4fr 1fr;   
     border-radius: 1rem; 
     text-transform: uppercase;
+    color: $color-fg-darker;
+    padding:1rem 0;
   }
 
   h1 {
-    font-size: 1.1rem;
+    font-size: 1.1rem;    
   }
 
   h3 {
     font-size: 0.9rem;
+    opacity: 0.6;
   }
 
   .link-card.blue .container {
