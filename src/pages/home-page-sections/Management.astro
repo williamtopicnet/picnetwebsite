@@ -1,8 +1,123 @@
 ---
 ---
 <section>
-  <h1>Management</h1>
+  <h2>OVER 70 YEARS OF COMBINED EXPERIENCE WITH AUSTRALIA'S LEADDING COMPANIES</h2>
+  <h1>Meet Our Leadership Team</h1>
+  <div class="content">
+    <div class="photo">
+      <img src="/images/home/guido.png"/>
+    </div>
+    <div class="bio">
+      <h1>
+        Guido Tapia
+        <a class="linked-in" href="https://www.linkedin.com/in/guidotapia">
+          <img src="/images/home/linkedin.png"/>
+        </a>
+      </h1>
+      <h2>Director of Software Development and Machine Learning Services</h2>      
+      <p>
+        Guido manages the Software Development and ML teams at PicNet. They 
+        specialise in delivering complex systems that are usually beyond the 
+        capabilities of regular outsourcing companies.  Such systems as; 
+        high performant distributed systems, machine learning and artificial
+        intelligence solutions, business critical applications, etc.
+      </p>
+    </div>
+
+    <div class="photo">
+      <img src="/images/home/david.png"/>
+    </div>
+    <div class="bio">
+      <h1>
+        Dabid Booth
+        <a class="linked-in" href="https://www.linkedin.com/in/david-booth-b35a0b7/">
+          <img src="/images/home/linkedin.png"/>
+        </a>
+      </h1>      
+      <h2>Director of Managed Cloud Services and IT Support</h2>      
+      <p>
+        David joined PicNet in 2004 and has held several roles straddling 
+        the breadth of IT.  David has worked on numerous projects for a number
+        of medium and large size companies and Government agencies.
+        David consults as a vCIO, Senior Project Manager, Business Analyst
+        and drives the IT Support and Managed Cloud Services at PicNet.
+      </p>
+    </div>
+
+    <div class="photo">
+      <img src="/images/home/marco.png"/>
+    </div>
+    <div class="bio">
+      <h1>        
+        Marco Tapia
+        <a class="linked-in" href="https://www.linkedin.com/in/marcotapia/">
+          <img src="/images/home/linkedin.png"/>
+        </a>
+      </h1>      
+      <h2>IT Consulting Services Senior Advisor</h2>      
+      <p>
+        Since funding PicNet in 2001, Marco has been responsible for its
+        overall strategic direction, its consulting services and its 
+        business development.  Marco's experience includes Company Directory, 
+        CIO, Business Technology Consultant and IT Project Manager.  He has
+        managed large and medium size IT functions for national and international
+        corporations.
+      </p>
+    </div>
+  </div>
 </section>
-<style>
+<style lang="scss">
+  @import '../../layouts/global.scss'; 
+  section {
+    background-color: $color-bg-dark;
+    padding: 3rem;    
+  }
+
+  h2 {
+    color: $color-fg-dark;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  h1 {
+    color: $color-fg-light;
+    font-size: 2rem;    
+    text-align: center;
+  }
+
+  a {
+    float: right;
+    img {
+      width: 3rem;
+    }
+  }  
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .bio {
+    text-align: left;
+
+    h1 {
+      text-align: inherit;
+    }
+
+    h2 {
+      text-align: inherit;
+      color: $color-fg-alternate-light;
+    }
+
+    p {
+      color: $color-fg-dark;
+    }
+  }
 
 </style>
