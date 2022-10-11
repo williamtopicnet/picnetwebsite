@@ -1,8 +1,81 @@
 ---
 ---
 <section>
-  <h1>CustomerLogos</h1>
+  <div class="head">
+    <h2>STORIES JUST LIKE YOURS</h2>
+    <h1>Case Studies from some of our work</h1>
+    <p>Numerous companies and government entities have chosen PicNet to improve their IT systems, processes and services</p>
+  </div>
+  <div class="logos">
+    <div class="logo"><img src="/images/home/customers/blackdot.png"/></div>
+    <div class="logo"><img src="/images/home/customers/mja.png"/></div>
+    <div class="logo"><img src="/images/home/customers/indivior.png"/></div>
+    <div class="logo"><img src="/images/home/customers/cyca.png"/></div>
+    <div class="logo"><img src="/images/home/customers/guidedogs.png"/></div>
+    <div class="logo"><img src="/images/home/customers/nswhealth.png"/></div>
+
+    <div class="logo"><img src="/images/home/customers/rwb.png"/></div>
+    <div class="logo"><img src="/images/home/customers/theyield.png"/></div>
+    <div class="logo"><img src="/images/home/customers/grain_trade.png"/></div>
+    <div class="logo"><img src="/images/home/customers/bng.png"/></div>
+    <div class="logo"><img src="/images/home/customers/editor_group.png"/></div>
+    <div class="logo"><img src="/images/home/customers/transport_nsw.png"/></div>
+
+    <div class="logo"><img src="/images/home/customers/coherentcloud.png"/></div>
+    <div class="logo"><img src="/images/home/customers/fxa.png"/></div>
+    <div class="logo"><img src="/images/home/customers/fma.png"/></div>
+    <div class="logo"><img src="/images/home/customers/ilink.png"/></div>
+    <div class="logo"><img src="/images/home/customers/cellarforce.png"/></div>
+    <div class="logo"><img src="/images/home/customers/cpa.png"/></div>
+
+    <div class="logo"><img src="/images/home/customers/novartis.png"/></div>
+    <div class="logo"><img src="/images/home/customers/pfizer.png"/></div>
+    <div class="logo"><img src="/images/home/customers/reckitt.png"/></div>
+    <div class="logo"><img src="/images/home/customers/xchangeit.png"/></div>
+    <div class="logo"><img src="/images/home/customers/australand.png"/></div>
+    <div class="logo"><img src="/images/home/customers/nine.png"/></div>
+  </div>
 </section>
-<style>
+<style lang="scss">
+  @import '../../layouts/global.scss'; 
+
+  h2 {
+    color: $color-fg-alternate-light;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  h1 {
+    color: $color-fg-darker;
+    font-size: 2rem;    
+    text-align: center;
+  }
+
+  p {
+    color: $color-fg-darker;
+    opacity: 0.75;
+    text-align: center;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1fr;    
+  }
+
+  .logo {
+    img {
+      filter: grayscale(100%);
+      max-width: 180px;
+      max-height: 100px;
+    }
+
+    img:hover {
+      filter: none;
+      box-shadow: 0 8px 11px #989898;
+      background-color: #FFFFFF;
+    }
+  }
 
 </style>
