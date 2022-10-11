@@ -4,6 +4,7 @@ import Dialog from "./Dialog.astro";
 const {logo, brand, title, more} = Astro.props;
 const dialogid = `dialogid_${logo.split('.')[0]}`;
 ---
+<div class="logo" onclick={`window.${dialogid}.showModal()`}><img src={`/images/home/customers/${logo}`} /></div>
 
 <Dialog dialogid={dialogid} open="Open modal">
   <main>
@@ -18,8 +19,6 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
   </main>
 </Dialog>
 
-<div class="logo" onclick={`window.${dialogid}.showModal()`}><img src={`/images/home/customers/${logo}`} /></div>
-
 <style lang="scss">
   .logo {
     img {
@@ -33,5 +32,11 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
       box-shadow: 0 8px 11px #989898;
       background-color: #FFFFFF;
     }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 </style>
