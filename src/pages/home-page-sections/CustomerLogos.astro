@@ -1,4 +1,5 @@
 ---
+import CustomerLogoAndDialog from "../../components/CustomerLogoAndDialog.astro";
 ---
 <section>
   <div class="head">
@@ -7,33 +8,37 @@
     <p>Numerous companies and government entities have chosen PicNet to improve their IT systems, processes and services</p>
   </div>
   <div class="logos">
-    <div class="logo"><img src="/images/home/customers/blackdot.png"/></div>
-    <div class="logo"><img src="/images/home/customers/mja.png"/></div>
-    <div class="logo"><img src="/images/home/customers/indivior.png"/></div>
-    <div class="logo"><img src="/images/home/customers/cyca.png"/></div>
-    <div class="logo"><img src="/images/home/customers/guidedogs.png"/></div>
-    <div class="logo"><img src="/images/home/customers/nswhealth.png"/></div>
+    <CustomerLogoAndDialog logo="blackdot.png" brand="blackdot.png" title="Blackdot exists to accelerate customer-centric growth." more="software-engineering">
+      <p>Since 2001 Blackdot has helped enterprise-level clients across a range of industries globally, solve complex customer challenges, to transform how they go-to-market and accelerate growth.</p>
+      <p>Its approach is effective because they understand that change needs to encompass strategy, people, process and technology. Possessing a wealth of experience driving transformation projects, they understand what good looks like, how to make it happen and importantly, how to maximise the benefits.</p>
+      <p>PicNet partners with Blackdot for the development and support of superior and complex operational systems that increase Blackdot customer service and productivity.</p>
+    </CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="mja.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="indivior.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="cyca.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="guidedogs.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="nswhealth.png"></CustomerLogoAndDialog>
 
-    <div class="logo"><img src="/images/home/customers/rwb.png"/></div>
-    <div class="logo"><img src="/images/home/customers/theyield.png"/></div>
-    <div class="logo"><img src="/images/home/customers/grain_trade.png"/></div>
-    <div class="logo"><img src="/images/home/customers/bng.png"/></div>
-    <div class="logo"><img src="/images/home/customers/editor_group.png"/></div>
-    <div class="logo"><img src="/images/home/customers/transport_nsw.png"/></div>
+    <CustomerLogoAndDialog logo="rwb.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="theyield.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="grain_trade.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="bng.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="editor_group.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="transport_nsw.png"></CustomerLogoAndDialog>
 
-    <div class="logo"><img src="/images/home/customers/coherentcloud.png"/></div>
-    <div class="logo"><img src="/images/home/customers/fxa.png"/></div>
-    <div class="logo"><img src="/images/home/customers/fma.png"/></div>
-    <div class="logo"><img src="/images/home/customers/ilink.png"/></div>
-    <div class="logo"><img src="/images/home/customers/cellarforce.png"/></div>
-    <div class="logo"><img src="/images/home/customers/cpa.png"/></div>
+    <CustomerLogoAndDialog logo="coherentcloud.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="fxa.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="fma.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="ilink.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="cellarforce.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="cpa.png"></CustomerLogoAndDialog>
 
-    <div class="logo"><img src="/images/home/customers/novartis.png"/></div>
-    <div class="logo"><img src="/images/home/customers/pfizer.png"/></div>
-    <div class="logo"><img src="/images/home/customers/reckitt.png"/></div>
-    <div class="logo"><img src="/images/home/customers/xchangeit.png"/></div>
-    <div class="logo"><img src="/images/home/customers/australand.png"/></div>
-    <div class="logo"><img src="/images/home/customers/nine.png"/></div>
+    <CustomerLogoAndDialog logo="novartis.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="pfizer.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="reckitt.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="xchangeit.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="australand.png"></CustomerLogoAndDialog>
+    <CustomerLogoAndDialog logo="nine.png"></CustomerLogoAndDialog>
   </div>
 </section>
 <style lang="scss">
@@ -63,19 +68,4 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1fr;    
   }
-
-  .logo {
-    img {
-      filter: grayscale(100%);
-      max-width: 180px;
-      max-height: 100px;
-    }
-
-    img:hover {
-      filter: none;
-      box-shadow: 0 8px 11px #989898;
-      background-color: #FFFFFF;
-    }
-  }
-
 </style>
