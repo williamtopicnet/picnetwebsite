@@ -1,8 +1,46 @@
 ---
 ---
 <section>
-  <h1>ContactUs</h1>
-</section>
-<style>
+  <div class="container">
+    <div class="form-container">
+      <input required placeholder="Name">
+      <input required placeholder="Phone">
+      <input required placeholder="Email">
+      <input required placeholder="Company">
+      <textarea class="span-2" placeholder="Message"></textarea>
+      <button class="offset-1">Send Message</button>
+    </div>
+    <div class="info-container">
+      <h1>HOW CAN WE HELP YOU?</h1>
 
+      <a href="https://www.google.com/maps/place/PicNet+-+IT+Services/@-33.8247437,151.1968911,17z/data=!3m2!4b1!5s0x6b12aec2aec8f117:0x3f5f1224047403d0!4m12!1m6!3m5!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!2sPicNet+-+IT+Services!8m2!3d-33.8247482!4d151.1990798!3m4!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!8m2!3d-33.8247482!4d151.1990798">
+        Contact Us Today
+        LEVEL 9 SUITE 902, 28 CLARKE STREET
+        CROWS NEST, NSW 2065
+        AUSTRALIA 
+      </a>
+      <a href="tel:+61284377900">(+61) 2 8437 7900</a>
+      <a href="mailto:picnet@picnet.com.au">picnet@picnet.com.au</a>
+    </div>
+  </div>
+</section>
+<style lang="scss">
+  .container {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .span-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .offset-1 {
+    grid-column-start: 2;
+  }
+
+  .form-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
 </style>

@@ -1,0 +1,16 @@
+---
+const {logo} = Astro.props;
+---
+
+<div class="container">
+  <div class="logo">
+    <img src=`/images/customers/${logo}`/>
+  </div>
+  <div class="content"><slot/></div>
+</div>
+<style lang="scss">
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+</style>
