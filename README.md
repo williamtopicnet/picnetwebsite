@@ -5,4 +5,5 @@
 `npm run astro ...`: Run CLI commands like `astro add`, `astro preview` |
 
 # TODO
-- replace services carousel with tooltips over the service cards
+- replace font sizes with variabnles in global.scss, just get common sizes
+  and colours
