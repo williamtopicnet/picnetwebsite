@@ -1,0 +1,15 @@
+---
+const {title, logo} = Astro.props;
+---
+
+<div class="container">
+  <div class="quote-container">
+    <div class="quote"><slot/></div>
+    <div class="title">{{title}}</div>
+  </div>
+  <div class="logo-container">
+    <img src=`/images/home/customers/${logo}`/>
+  </div>
+</div>
+
+<style lang="scss"></style>
