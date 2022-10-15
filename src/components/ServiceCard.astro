@@ -16,7 +16,7 @@ const { title, subtitle, icon, link, colour } = Astro.props;
 			</div>
       <div class="content">
         <h1>{title}</h1>
-        <h3>{subtitle}</h3>	
+        <div>{subtitle}</div>	
       </div>	
 		</div>		
 	</a>
@@ -35,13 +35,11 @@ const { title, subtitle, icon, link, colour } = Astro.props;
   }
 
   h1 {
-    font-size: 1.1rem;    
+    font-size: $fs-sub-heading; 
   }
-
-  h3 {
-    font-size: 0.9rem;
-    opacity: 0.6;
-  }
+  .content {
+    h3 { opacity: 0.6; }
+  }  
 
   .link-card.blue .container {
     border-right: 1rem solid #2E77A1;

@@ -11,13 +11,15 @@
       <button class="offset-1">Send Message</button>
     </div>
     <div class="info-container">
-      <h1>HOW CAN WE HELP YOU?</h1>
+      HOW CAN WE HELP YOU?
 
-      <a href="https://www.google.com/maps/place/PicNet+-+IT+Services/@-33.8247437,151.1968911,17z/data=!3m2!4b1!5s0x6b12aec2aec8f117:0x3f5f1224047403d0!4m12!1m6!3m5!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!2sPicNet+-+IT+Services!8m2!3d-33.8247482!4d151.1990798!3m4!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!8m2!3d-33.8247482!4d151.1990798">
-        Contact Us Today
-        LEVEL 9 SUITE 902, 28 CLARKE STREET
-        CROWS NEST, NSW 2065
-        AUSTRALIA 
+      <a class="" href="https://www.google.com/maps/place/PicNet+-+IT+Services/@-33.8247437,151.1968911,17z/data=!3m2!4b1!5s0x6b12aec2aec8f117:0x3f5f1224047403d0!4m12!1m6!3m5!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!2sPicNet+-+IT+Services!8m2!3d-33.8247482!4d151.1990798!3m4!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!8m2!3d-33.8247482!4d151.1990798">
+        <h2>
+          Contact Us Today
+          LEVEL 9 SUITE 902, 28 CLARKE STREET
+          CROWS NEST, NSW 2065
+          AUSTRALIA 
+        </h2>
       </a>
       <a href="tel:+61284377900">(+61) 2 8437 7900</a>
       <a href="mailto:picnet@picnet.com.au">picnet@picnet.com.au</a>
@@ -25,6 +27,15 @@
   </div>
 </section>
 <style lang="scss">
+  @import '../../layouts/global.scss'; 
+
+  .info-container {
+    font-size: $fs-small;
+    h2 {      
+      font-size: $fs-sub-heading;
+    }
+  }
+
   .container {
     display:grid;
     grid-template-columns: 2fr 1fr;
