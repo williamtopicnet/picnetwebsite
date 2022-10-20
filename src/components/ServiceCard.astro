@@ -12,7 +12,10 @@ const { title, subtitle, icon, link, colour } = Astro.props;
 	<a href={link}>
 		<div class="container">
 			<div class="icon">
+        <!--
 				<img src={icon}/>
+         -->
+         <i class=`scape ${icon}`></i>
 			</div>
       <div class="content">
         <h1>{title}</h1>
@@ -37,6 +40,7 @@ const { title, subtitle, icon, link, colour } = Astro.props;
   h1 {
     font-size: $fs-sub-heading; 
   }
+  
   .content {
     h3 { opacity: 0.6; }
   }  
@@ -53,4 +57,11 @@ const { title, subtitle, icon, link, colour } = Astro.props;
     border-right: 1rem solid #BF7374;
   }
   
+  i.scape.it-consulting::before {
+      content: '\e931';
+    }
+
+  i.scape.software-development::before {
+    content: '\e9de';
+  }
 </style>

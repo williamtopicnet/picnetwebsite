@@ -35,6 +35,17 @@ const { title } = Astro.props;
     font-style: normal;
 	}
 
+  @font-face {
+    font-family: 'scape-basic';
+    src: url('/font/scape-basic.ttf');    
+    font-weight: normal;
+    font-style: normal;
+	}
+
+  i.scape {
+    font-family: 'scape-basic';    
+  }  
+
 	html {
 		font-family: $font;    
     font-size: $fs-content;
