@@ -29,22 +29,29 @@ const { title } = Astro.props;
   @import 'global';
 
 	@font-face {
-    font-family: $font;
+    font-family: 'Roboto';
     src: url('/font/Roboto-Regular.ttf');    
-    font-weight: normal;
-    font-style: normal;
 	}
 
   @font-face {
     font-family: 'scape-basic';
     src: url('/font/scape-basic.ttf');    
-    font-weight: normal;
-    font-style: normal;
-	}
+	}  
 
-  i.scape {
-    font-family: 'scape-basic';    
-  }  
+  @font-face {
+    font-family: 'scape-tech';
+    src: url('/font/scape-tech.ttf');    
+	}  
+
+  @font-face {
+    font-family: 'scape-ui';
+    src: url('/font/scape-ui.ttf');    
+	}  
+
+  @font-face {
+    font-family: 'scape-people';
+    src: url('/font/scape-people.ttf');    
+	}  
 
 	html {
 		font-family: $font;    
@@ -64,4 +71,5 @@ const { title } = Astro.props;
   a {
     text-decoration: none;
   }
+
 </style>

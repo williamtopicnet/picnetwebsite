@@ -11,10 +11,7 @@ const { title, subtitle, icon, link, colour } = Astro.props;
 <div class=`link-card ${colour}`>
 	<a href={link}>
 		<div class="container">
-			<div class="icon">
-        <!--
-				<img src={icon}/>
-         -->
+			<div class="icon">        
          <i class=`scape ${icon}`></i>
 			</div>
       <div class="content">
@@ -24,7 +21,7 @@ const { title, subtitle, icon, link, colour } = Astro.props;
 		</div>		
 	</a>
 </div>
-<style lang="scss">
+<style lang="scss" define:vars={{icon}}>
   @import '../layouts/global.scss'; 
 
   .container {
@@ -34,13 +31,13 @@ const { title, subtitle, icon, link, colour } = Astro.props;
     border-radius: 1rem; 
     text-transform: uppercase;
     color: $color-fg-darker;
-    padding:1rem 0;
+    padding: 1rem 0;
   }
 
   h1 {
     font-size: $fs-sub-heading; 
   }
-  
+
   .content {
     h3 { opacity: 0.6; }
   }  
@@ -55,13 +52,11 @@ const { title, subtitle, icon, link, colour } = Astro.props;
 
   .link-card.red .container {
     border-right: 1rem solid #BF7374;
-  }
-  
-  i.scape.it-consulting::before {
-      content: '\e931';
-    }
+  }  
 
-  i.scape.software-development::before {
-    content: '\e9de';
+  i {
+    font-size: 3rem;
+    font-style: normal;
   }
+
 </style>

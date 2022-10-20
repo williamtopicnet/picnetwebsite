@@ -10,33 +10,33 @@ import ServiceCard from '../../components/ServiceCard.astro';
     title="Software Development" 
     subtitle="Enterprise Custom Software Development, Engineering and Support" 
     colour="yellow" link="/project-management/"/>
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="it-support" 
     title="IT Support Services" 
     subtitle="IT Support for Businesses, Help Desk, Cloud and Hardware provisioning" 
     colour="red" link="/project-management/"/>
 
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="integration" 
     title="Application Integration Services" 
     subtitle="Manage and integrate all your data in the cloud or on premise" 
     colour="blue" link="/project-management/"/>
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="hardware" 
     title="IT Hardware and Software Licensing" 
     subtitle="IT hardware and software for businesses" 
     colour="yellow" link="/project-management/"/>
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="cloud" 
     title="Cloud Management Services" 
     subtitle="Migrating email system, file storage and servers to the cloud" 
     colour="red" link="/project-management/"/>
 
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="augmentation" 
     title="IT Team Augmentation" 
     subtitle="IT skills at hand to enhance your internal resources" 
     colour="blue" link="/project-management/"/>
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="ai" 
     title="Machine Learning, AI & Business Intelligence" 
     subtitle="Getting maximum value from your data" 
     colour="yellow" link="/project-management/"/>
-  <ServiceCard icon="icon1" 
+  <ServiceCard icon="security" 
     title="Risk Shield Services" 
     subtitle="IT Security Monitoring & Alerting, and Pentration Testing for SMEs" 
     colour="red" link="/project-management/"/>
@@ -49,4 +49,52 @@ import ServiceCard from '../../components/ServiceCard.astro';
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   } 
+</style>
+<style is:global>
+  /* icons */
+  i.it-consulting::before { 
+    font-family: 'scape-basic'; 
+    content: '\e931';
+  }
+
+  i.software-development::before { 
+    font-family: 'scape-tech'; 
+    content: '\e9de';
+  }
+
+  i.it-support::before { 
+    font-family: 'scape-basic'; 
+    content: '\ea11';
+  }
+
+  i.integration::before { 
+    font-family: 'scape-tech'; 
+    content: '\ea66';
+  }
+
+  i.hardware::before { 
+    font-family: 'scape-tech'; 
+    content: '\e9d9';
+  }
+
+  i.cloud::before { 
+    font-family: 'scape-tech'; 
+    content: '\e909';
+  }
+
+  i.augmentation::before { 
+    font-family: 'scape-people'; 
+    content: '\e95d';
+  }
+
+  i.ai::before { 
+    font-family: 'scape-tech'; 
+    content: '\eaf6';
+  }
+
+  i.security::before { 
+    font-family: 'scape-basic'; 
+    content: '\e902';
+  }
+    
 </style>
