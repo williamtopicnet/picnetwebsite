@@ -1,5 +1,6 @@
 ---
 import NavHeader from '../components/NavHeader.astro';
+import ContactUs from '../components/ContactUs.astro';
 import Footer from '../components/Footer.astro';
 
 export interface Props {
@@ -22,6 +23,7 @@ const { title } = Astro.props;
     <div class="header-polygon"></div>
 		<NavHeader />
 		<slot />
+    <ContactUs />
     <Footer />
 	</body>
 </html>
