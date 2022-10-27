@@ -5,21 +5,19 @@ export interface Props {
 	icon: string;
   test?: string;
 }
-const { title, subtitle, icon, test } = Astro.props;
+const { title, subtitle, icon } = Astro.props;
 ---
 <div class="container">
   <div class="icon">        
-      <i class=`scape ${icon}`></i>
+      <i class=`scape`>{icon}</i>
   </div>
   <div class="content">
     <h1>{title}</h1>
     <div>{subtitle}</div>	
   </div>	
 </div>		
-<style lang="scss" define:vars={{test}}>
+<style lang="scss">
   @import '../layouts/global.scss'; 
-  $icon: var(--test);
-  @debug 'test: #{$icon}';
 
   .container {
     background-color: $color-fg-light;    
@@ -42,9 +40,8 @@ const { title, subtitle, icon, test } = Astro.props;
     font-style: normal;
   }
 
-  i::before {
+  i {
     font-family: 'scape-basic'; 
-    content: $icon;
   }
 
 </style>
