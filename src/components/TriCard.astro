@@ -3,13 +3,13 @@ export interface Props {
 	title: string;
 	subtitle: string;
 	icon: string;
-  test?: string;
+  iconfont: string;
 }
-const { title, subtitle, icon } = Astro.props;
+const { title, subtitle, icon, iconfont } = Astro.props;
 ---
 <div class="container">
   <div class="icon">        
-      <i class=`scape`>{icon}</i>
+      <i class=`scape` style=`font-family: ${iconfont}`>{icon}</i>
   </div>
   <div class="content">
     <h1>{title}</h1>
@@ -38,10 +38,5 @@ const { title, subtitle, icon } = Astro.props;
   i {
     font-size: 3rem;
     font-style: normal;
-  }
-
-  i {
-    font-family: 'scape-basic'; 
-  }
-
+  }  
 </style>
