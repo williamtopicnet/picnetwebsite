@@ -8,18 +8,24 @@ const { tabs } = Astro.props;
   function tab_open(e) {    
     const index = Array.from(e.parentNode.childNodes).
         filter(c => c.nodeName === e.nodeName).
-        indexOf(e);    
-    const contents = Array.from(document.getElementsByClassName('tab-content'));
-    contents.forEach((tab, idx) => {
-      tab.style.display = idx === index ? 'block' : 'none';
-    });    
+        indexOf(e);   
+    show(index);     
     return false;
   }  
+
+  function show(showidx) {
+    // const container = document.getElementById('contents');
+    const contents = Array.from(document.querySelectorAll('#contents > *'));
+    contents.forEach((tab, idx) => {
+      tab.style.visibility = idx === showidx ? 'inherit' : 'hidden';
+    });    
+  }
+  setTimeout(() => show(0), 1000);
 </script>
 <div class="tabs">
   {tabs.map((tab) => <button class="tab" onclick={`tab_open(this)`}>{tab}</button>)}
 </div>
-<div class="tab-content" style="display:block">
+<div id="contents" class="contents">
   <slot />
 </div>
 

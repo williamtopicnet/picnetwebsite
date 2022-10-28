@@ -4,10 +4,13 @@ const {logo} = Astro.props;
 
 <div class="container">
   <div class="logo">
-    <img src=`/images/home/partners/${logo}`/>
+    <img src=`/images/project-management/${logo}`/>
   </div>
-  <div class="content"><slot/></div>
+  <slot name="case-1"/>      
+  <slot name="summary"/>  
+  <slot name="case-2"/>
 </div>
+
 <style lang="scss">
   .container {
     display: grid;
