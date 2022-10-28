@@ -1,103 +1,83 @@
 ---
 import Partner from '../../components/Partner.astro';
+import Tabs from '../../components/Tabs.astro';
 ---
-<script is:inline>
-  
-  function tab_open(name) {    
-    const contents = Array.from(document.getElementsByClassName('tab-content'));
-    contents.forEach(c => {
-      c.style.display = c.id === name ? 'block' : 'none';
-    });
-    return false;
-  }
-  
-</script>
 <section>
   <div class="header">
     <h2>OUR KEY RELATIONSHIPS</h2>
     <h1>Some of our key Partners</h1>
   </div>
   <div class="partners">
-    <div class="tabs">
-      <button class="tab" onclick={`tab_open('Microsoft')`}>Microsoft</button>
-      <button class="tab" onclick={`tab_open('IBM')`}>IBM</button>
-      <button class="tab" onclick={`tab_open('Amazon')`}>Amazon</button>
-      <button class="tab" onclick={`tab_open('NSW Government')`}>NSW Government</button>
-    </div>      
-      <div class="tab-content" id="Microsoft" style="display:block">
-        <Partner logo="microsoft.png">
-          <p>
-            PicNet is a certified Microsoft partner and solution provider with 
-            demonstrated competencies in application development, data analytics, 
-            cloud platform and cloud productivity.
-          </p>
-          <p>
-            The PicNet team are experts in the following Microsoft Technologies:
-          </p>
-          <ul>
-            <li>.Net / HTML 5 Development</li>
-            <li>Mobile Development</li>
-            <li>SQL Server</li>
-            <li>Dynamics 365</li>
-            <li>Power Platform</li>
-            <li>Windows Networking and Security</li>
-            <li>Azure</li>
-            <li>Microsoft 365 / Office 365</li>
-          </ul>
-        </Partner>
-      </div>
-      <div class="tab-content" id="IBM" style="display:none">
-        <Partner logo="ibm.png">
-          <p>
-            PicNet is an IBM partner and our Risk Shield Services (managed IT 
-            security monitoring and alerting service) use the IBM 
-          </p>
-          <p>
-            QRadar with Watson SIEM (Security Information and Event Management). 
-            Risk Shield Services is able to provide a managed service that’s 
-            akin to a security operations centre (SOC) for your company.
-          </p>
-        </Partner>
-      </div>
-      <div class="tab-content" id="Amazon" style="display:none">
-        <Partner logo="aws.png">
-          <p>
-            PicNet is a part of the Amazon Web Services Partner Network (APN) as a 
-            Consulting Partner to help you expand and scale your business on 
-            AWS and accelerate your journey to the cloud.
-          </p>
-        </Partner>
-      </div>
-      <div class="tab-content" id="NSW Government" style="display:none">
-        <Partner logo="nsw_gov.png">
-          <p>
-            PicNet is registered as an Advanced Supplier under the NSW Government’s 
-            ICT Services Scheme (SCM0020). This scheme is a whole-of-government mandated 
-            arrangement to assist NSW Government agencies and other eligible buyers in 
-            procuring ICT related goods and services.
-          </p>
-          <p>
-            PicNet has done projects for the following NSW and Federal Government Organisations:
-          </p>
-          <ul>
-            <li>NSW Health</li>
-            <li>NSW Transport</li>
-            <li>NSW Department of Education</li>
-            <li>NSW Department of Environment</li>
-            <li>NABERS</li>
-            <li>IHPA</li>
-            <li>Attorney-General’s Department</li>
-          </ul>
-        </Partner>
-      </div>      
+    <Tabs tabs={['CYCA', 'IBM', 'Amazon', 'NSW Government']}>    
+      <Partner logo="microsoft.png">
+        <p>
+          PicNet is a certified Microsoft partner and solution provider with 
+          demonstrated competencies in application development, data analytics, 
+          cloud platform and cloud productivity.
+        </p>
+        <p>
+          The PicNet team are experts in the following Microsoft Technologies:
+        </p>
+        <ul>
+          <li>.Net / HTML 5 Development</li>
+          <li>Mobile Development</li>
+          <li>SQL Server</li>
+          <li>Dynamics 365</li>
+          <li>Power Platform</li>
+          <li>Windows Networking and Security</li>
+          <li>Azure</li>
+          <li>Microsoft 365 / Office 365</li>
+        </ul>
+      </Partner>
+    </div>
+    <div class="tab-content" id="IBM" style="display:none">
+      <Partner logo="ibm.png">
+        <p>
+          PicNet is an IBM partner and our Risk Shield Services (managed IT 
+          security monitoring and alerting service) use the IBM 
+        </p>
+        <p>
+          QRadar with Watson SIEM (Security Information and Event Management). 
+          Risk Shield Services is able to provide a managed service that’s 
+          akin to a security operations centre (SOC) for your company.
+        </p>
+      </Partner>
+    </div>
+    <div class="tab-content" id="Amazon" style="display:none">
+      <Partner logo="aws.png">
+        <p>
+          PicNet is a part of the Amazon Web Services Partner Network (APN) as a 
+          Consulting Partner to help you expand and scale your business on 
+          AWS and accelerate your journey to the cloud.
+        </p>
+      </Partner>
+    </div>
+    <div class="tab-content" id="NSW Government" style="display:none">
+      <Partner logo="nsw_gov.png">
+        <p>
+          PicNet is registered as an Advanced Supplier under the NSW Government’s 
+          ICT Services Scheme (SCM0020). This scheme is a whole-of-government mandated 
+          arrangement to assist NSW Government agencies and other eligible buyers in 
+          procuring ICT related goods and services.
+        </p>
+        <p>
+          PicNet has done projects for the following NSW and Federal Government Organisations:
+        </p>
+        <ul>
+          <li>NSW Health</li>
+          <li>NSW Transport</li>
+          <li>NSW Department of Education</li>
+          <li>NSW Department of Environment</li>
+          <li>NABERS</li>
+          <li>IHPA</li>
+          <li>Attorney-General’s Department</li>
+        </ul>
+      </Partner>
+    </Tabs>
   </div>
 </section>
 <style lang="scss">
 @import '../../layouts/global.scss'; 
-
-button {
-  font-size: $fs-med;
-}
 
 h2 {
   color: $color-fg-alternate-light;

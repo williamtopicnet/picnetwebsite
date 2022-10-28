@@ -1,5 +1,6 @@
 ---
 import CaseStudy from '../../../components/CaseStudy.astro';
+import Tabs from '../../../components/Tabs.astro';
 ---
 <script is:inline>  
   function tab_open(e) {    
@@ -19,13 +20,7 @@ import CaseStudy from '../../../components/CaseStudy.astro';
     <h1>Some of our Case Studies</h1>
   </div>
   <div class="case-studies">
-    <div class="tabs">
-      <button class="tab" onclick={`tab_open(this)`}>CYCA</button>
-      <button class="tab" onclick={`tab_open(this)`}>IBM</button>
-      <button class="tab" onclick={`tab_open(this)`}>Amazon</button>
-      <button class="tab" onclick={`tab_open(this)`}>NSW Government</button>
-    </div>      
-    <div class="tab-content" style="display:block">
+    <Tabs tabs={['CYCA', 'IBM', 'Amazon', 'NSW Government']}>    
       <CaseStudy logo="microsoft.png">
         <p>
           PicNet is a certified Microsoft case-study and solution provider with 
@@ -90,15 +85,11 @@ import CaseStudy from '../../../components/CaseStudy.astro';
           <li>Attorney-General’s Department</li>
         </ul>
       </CaseStudy>
-    </div>      
+    </Tabs>  
   </div>
 </section>
 <style lang="scss">
 @import '../../../layouts/global.scss'; 
-
-button {
-  font-size: $fs-med;
-}
 
 h2 {
   color: $color-fg-alternate-light;

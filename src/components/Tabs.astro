@@ -17,14 +17,14 @@ const { tabs } = Astro.props;
   }  
 </script>
 <div class="tabs">
-  {tabs.map((tab) => <button class="tab" onclick={`tab_open(this)`}>{{tab}}</button>)}
-  <div class="tab-content" style="display:block">
-    <slot />
-  </div>
-</div>      
+  {tabs.map((tab) => <button class="tab" onclick={`tab_open(this)`}>{tab}</button>)}
+</div>
+<div class="tab-content" style="display:block">
+  <slot />
+</div>
 
 <style lang="scss">
-  @import '../../../layouts/global.scss'; 
+  @import '../layouts/global.scss'; 
   
   button {
     font-size: $fs-med;
