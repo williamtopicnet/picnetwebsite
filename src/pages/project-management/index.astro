@@ -7,14 +7,28 @@ import InfoCards from './sections/InfoCards.astro';
 ---
 
 <Layout title="PicNet - Project Management and Business Analysis Services">
-  <main>
-    <Hero />
-    <InfoCards />
-    <Description />
-    <CaseStudies />
-  </main>
+  <Hero />
+  <InfoCards />
+  <Description />
+  <CaseStudies />
 </Layout>
-
-<style>
+<div slot="header-polygon" class="header-polygon"></div>
+<style lang="scss">
+  @import '../../layouts/global.scss';
   
+  .header-polygon {
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    bottom: 40rem;
+    width: 100%;
+    background-color: $color-bg-dark;        
+
+    clip-path: polygon(
+      0 0,
+      0 70%, 
+      15% 100%, 
+      100% 75%,
+      100% 0%);
+  }  
 </style>
