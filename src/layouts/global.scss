@@ -1,29 +1,4 @@
-$color-bg-dark: #0D364C;
-$color-bg-light: #F0F2F9;
-$color-bg-lightest: #FFFFFF;
-$color-fg-light: #FFFFFF;
-$color-fg-dark: silver;
-$color-fg-darker: #687188;
-$color-fg-alternate-light: #13B5EA;
+@import '../styles/typography.scss';
+@import '../styles/colors.scss';
 
-$font: 'Poppins';
-$fs-hero: 52.5px;
-$fs-heading: 30px;
-$fs-sub-heading: 18px;
-$fs-med: 16.5px;
-$fs-content: 14px;
-$fs-small: 11px;
-
-.fs-hero { font-size: $fs-hero; }
-.fs-heading { font-size: $fs-heading; }
-.fs-sub-heading { font-size: $fs-sub-heading; }
-.fs-med { font-size: $fs-med; }
-.fs-content { font-size: $fs-content; }
-.fs-small { font-size: $fs-small; }
-
-@font-face { font-family: 'Poppins'; src: url('/font/Poppins-Regular.ttf'); }
-@font-face { font-family: 'scape-basic'; src: url('/font/scape-basic.ttf'); }  
-@font-face { font-family: 'scape-tech'; src: url('/font/scape-tech.ttf'); }  
-@font-face { font-family: 'scape-ui'; src: url('/font/scape-ui.ttf'); }  
-@font-face { font-family: 'scape-people'; src: url('/font/scape-people.ttf'); }  
-@font-face { font-family: 'scape-business'; src: url('/font/scape-business.ttf'); }  
+$base: 0.5rem // 8px

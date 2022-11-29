@@ -1,40 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from './home-page-sections/Hero.astro';
-import ServicesCards from './home-page-sections/ServicesCards.astro';
-import AboutUs from './home-page-sections/AboutUs.astro';
-import Management from './home-page-sections/Management.astro';
-import CustomerLogos from './home-page-sections/CustomerLogos.astro';
-import CustomerTestimonialsCarousel from './home-page-sections/CustomerTestimonialsCarousel.astro';
-import Partners from './home-page-sections/Partners.astro';
-
+import Layout from "../layouts/Layout.astro";
+import Hero from "./home-page-sections/Hero.astro";
+import ServicesCards from "./home-page-sections/ServicesCards.astro";
+import AboutUs from "./home-page-sections/AboutUs.astro";
+import Management from "./home-page-sections/Management.astro";
+import CustomerLogos from "./home-page-sections/CustomerLogos.astro";
+// import CustomerTestimonialsCarousel from "./home-page-sections/CustomerTestimonialsCarousel.astro";
+import Partners from "./home-page-sections/Partners.astro";
 ---
-<Layout title="PicNet - Software Development, IT Support, Cloud Management Services">
+
+<Layout
+  title="PicNet - Software Development, IT Support, Cloud Management Services"
+>
   <Hero />
-  <ServicesCards />        
+  <ServicesCards />
   <AboutUs />
   <Management />
   <CustomerLogos />
-  <CustomerTestimonialsCarousel />
-  <Partners />    
+  <!-- <CustomerTestimonialsCarousel /> -->
+  <Partners />
 </Layout>
-<div slot="header-polygon" class="header-polygon"></div>
 <style lang="scss">
-  @import '../layouts/global.scss';
-  
+  @import "../layouts/global.scss";
+
   .header-polygon {
     z-index: 0;
     position: absolute;
     top: 0px;
     bottom: 40rem;
     width: 100%;
-    background-color: $color-bg-dark;        
+    background-color: $color-bg-dark;
 
-    clip-path: polygon(
-      0 0,
-      0 50%, 
-      50% 100%, 
-      100% 50%,
-      100% 0%);
-  }  
+    clip-path: polygon(0 0, 0 50%, 50% 100%, 100% 50%, 100% 0%);
+  }
 </style>

@@ -1,52 +1,34 @@
 ---
-import ColorTriCard from '../../components/ColorTriCard.astro';
+import ColorTriCard, { BorderColor } from "../../components/ColorTriCard.astro";
+import { services } from "../../data/home";
 ---
-<section id="services">
-  <ColorTriCard icon="\ue931" iconfont="scape-basic"
-    title="IT Consulting and Project Management" 
-    subtitle="IT Strategy, IT Reviews, Project Management" 
-    colour="blue" link="/project-management/"/>    
-  <ColorTriCard icon="\ue9de" iconfont="scape-tech"
-    title="Software Development" 
-    subtitle="Enterprise Custom Software Development, Engineering and Support" 
-    colour="yellow" link="/project-management/"/> 
-  <ColorTriCard icon="\uea11" iconfont="scape-basic"
-    title="IT Support Services" 
-    subtitle="IT Support for Businesses, Help Desk, Cloud and Hardware provisioning" 
-    colour="red" link="/project-management/"/>
 
-  <ColorTriCard icon="\uea66" iconfont="scape-tech"
-    title="Application Integration Services" 
-    subtitle="Manage and integrate all your data in the cloud or on premise" 
-    colour="blue" link="/project-management/"/>
-  <ColorTriCard icon="\ue9d9" iconfont="scape-tech"
-    title="IT Hardware and Software Licensing" 
-    subtitle="IT hardware and software for businesses" 
-    colour="yellow" link="/project-management/"/>
-  <ColorTriCard icon="\ue909" iconfont="scape-tech"
-    title="Cloud Management Services" 
-    subtitle="Migrating email system, file storage and servers to the cloud" 
-    colour="red" link="/project-management/"/>
-
-  <ColorTriCard icon="\ue95d" iconfont="scape-people"
-    title="IT Team Augmentation"
-    subtitle="IT skills at hand to enhance your internal resources" 
-    colour="blue" link="/project-management/"/>
-  <ColorTriCard icon="\ueaf6" iconfont="scape-tech"
-    title="Machine Learning, AI & Business Intelligence" 
-    subtitle="Getting maximum value from your data" 
-    colour="yellow" link="/project-management/"/>
-  <ColorTriCard icon="\ue902" iconfont="scape-basic"
-    title="Risk Shield Services" 
-    subtitle="IT Security Monitoring & Alerting, and Pentration Testing for SMEs" 
-    colour="red" link="/project-management/"/>
+<section id="services" class="services-area">
+  <div class="container">
+    {
+      services.map(({ icon, title, subtitle, colour, link }) => (
+        <ColorTriCard
+          icon={icon}
+          title={title}
+          subtitle={subtitle}
+          colour={colour as keyof typeof BorderColor}
+          link={link}
+          class="services__card"
+        />
+      ))
+    }
+  </div>
 </section>
-<style>
-  section {
-    margin: 5rem 3rem;
-    
+<style lang="scss">
+  @import "../../layouts/global.scss";
+
+  .services-area {
+    margin-top: $base * 5;
+  }
+
+  section.services-area .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-  } 
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 </style>

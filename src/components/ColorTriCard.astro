@@ -1,63 +1,91 @@
 ---
-export interface Props {
-	title: string;
-	subtitle: string;
-	icon: string;
-	link: string;
-	colour: string;
-  iconfont: string;
+export enum BorderColor {
+  "blue" = "#2e77a1",
+  "yellow" = "#f2cd8c",
+  "red" = "#bf7374",
 }
-const { title, subtitle, icon, link, colour, iconfont } = Astro.props;
+
+export interface Props {
+  title: string;
+  subtitle: string;
+  icon: string;
+  link: string;
+  colour: keyof typeof BorderColor;
+  class?: string;
+}
+
+const {
+  title,
+  subtitle,
+  icon,
+  link,
+  colour,
+  class: className = "",
+} = Astro.props;
 ---
-<div class=`link-card ${colour}`>
-	<a href={link}>
-		<div class="container">
-			<div class="icon">        
-         <i class="scape" style=`font-family: ${iconfont}`>{icon}</i>
-			</div>
-      <div class="content">
-        <h1>{title}</h1>
-        <div>{subtitle}</div>	
-      </div>	
-		</div>		
-	</a>
+
+<div class:list={`${className} card`}>
+  <a href={link} class="w-full h-full" title={title}>
+    <div class="card__content w-full h-full">
+      <div class="card__icon">
+        <i class={`${icon} fa-2xl`}></i>
+      </div>
+      <div class="card__text">
+        <h3>{title}</h3>
+        <p>{subtitle}</p>
+      </div>
+    </div>
+  </a>
 </div>
-<style lang="scss" define:vars={{icon}}>
-  @import '../layouts/global.scss'; 
+<style lang="scss" define:vars={{ icon, borderColor: BorderColor[colour] }}>
+  @import "../layouts/global.scss";
 
-  .container {
-    background-color: $color-fg-light;    
-    display: grid;    
-    grid-template-columns: 2fr 4fr 1fr;   
-    border-radius: 1rem; 
-    text-transform: uppercase;
-    color: $color-fg-darker;
-    padding: 1rem 0;
+  .card {
+    width: 100%;
+    aspect-ratio: 2.3;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 9px;
+    overflow: hidden;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__content {
+      color: $color-text-primary;
+      background-color: $color-white;
+      border-right: 1rem solid var(--borderColor);
+      transition: background-color 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+
+      padding: 2em;
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    &__icon {
+      flex-shrink: 0;
+      min-width: 40px;
+    }
+    &__text {
+      h3 {
+        font-size: $text-base;
+        font-weight: 500;
+      }
+
+      p {
+        margin-top: $base * 0.5;
+        font-size: $text-sm;
+        color: $color-text-secondary;
+      }
+    }
+
+    &:hover &__content {
+      background-color: $color-bg;
+    }
   }
-
-  h1 {
-    font-size: $fs-sub-heading; 
-  }
-
-  .content {
-    h3 { opacity: 0.6; }
-  }  
-
-  .link-card.blue .container {
-    border-right: 1rem solid #2E77A1;
-  }
-
-  .link-card.yellow .container {
-    border-right: 1rem solid #F2CD8C;
-  }
-
-  .link-card.red .container {
-    border-right: 1rem solid #BF7374;
-  }  
-
-  i {
-    font-size: 3rem;
-    font-style: normal;
-  }
-
 </style>

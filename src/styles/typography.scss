@@ -1,0 +1,19 @@
+$font: 'Poppins', sans-serif;
+$fs-hero: 52.5px;
+$fs-heading: 30px;
+$fs-sub-heading: 18px;
+$fs-med: 16.5px;
+$fs-content: 14px;
+$fs-small: 11px;
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1200,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+// Responsive font size
+$text-sm: clamp(0.73rem, calc(0.70rem + 0.12vw), 0.80rem);
+$text-base: clamp(0.88rem, calc(0.83rem + 0.22vw), 1.00rem);
+$text-md: clamp(1.05rem, calc(0.98rem + 0.35vw), 1.25rem);
+$text-lg: clamp(1.26rem, calc(1.15rem + 0.53vw), 1.56rem);
+$text-xl: clamp(1.51rem, calc(1.36rem + 0.77vw), 1.95rem);
+$text-2xl: clamp(1.81rem, calc(1.60rem + 1.09vw), 2.44rem);
+$text-3xl: clamp(2.18rem, calc(1.87rem + 1.52vw), 3.05rem);
+$text-4xl: clamp(2.61rem, calc(2.19rem + 2.09vw), 3.82rem);

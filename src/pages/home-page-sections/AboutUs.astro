@@ -1,35 +1,48 @@
 ---
 ---
-<section id="about">
-  <div class="content">
-    <h2>SINCE 2001 WE MADE IT OUR BUSINESS TO BE ALL ABOUT YOUR BUSINESS</h2>
-    <h1>Welcome to PicNet. A little About Us</h1>
-    <p>
-      Founded in 2001, PicNet is a leading IT services firm, with customers in the private and government sectors from some of Australia’s largest brands and household names. Our services from start to finish are provided and executed 100% locally by our professional, experienced and qualified team.
-    </p>
-    <p>
-      Our quality is managed by proven processes and models that allow us certification of quality and replication of results.
-    </p>
-    <p>
-      We care for our customers and provide industry leading IT services and responsiveness. Read about companies just like yours in our case studies section.
-    </p>
-  </div>
-  <div class="image">
-    <img src="/images/home/about-us.png"/>
+
+<section id="about" class="about-area">
+  <div class="container">
+    <div class="about__text">
+      <h2>SINCE 2001 WE MADE IT OUR BUSINESS TO BE ALL ABOUT YOUR BUSINESS</h2>
+      <h3>Welcome to PicNet. A little About Us</h3>
+      <p>
+        Founded in 2001, PicNet is a leading IT services firm, with customers in
+        the private and government sectors from some of Australia's largest
+        brands and household names. Our services from start to finish are
+        provided and executed 100% locally by our professional, experienced and
+        qualified team.
+      </p>
+      <p>
+        Our quality is managed by proven processes and models that allow us
+        certification of quality and replication of results.
+      </p>
+      <p>
+        We care for our customers and provide industry leading IT services and
+        responsiveness. Read about companies just like yours in our case studies
+        section.
+      </p>
+    </div>
+
+    <div class="about__image">
+      <img src="/images/home/about-us.png" />
+    </div>
   </div>
 </section>
 <style lang="scss">
-  @import '../../layouts/global.scss'; 
-  section {
+  @import "../../layouts/global.scss";
+
+  section.about-area {
+    margin-top: $base * 5;
+    background-color: $color-white;
+  }
+
+  section.about-area .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-
-    background-color: $color-bg-lightest;    
-
-    padding: 3rem;    
+    gap: $base * 4;
   }
-  
+
   h2 {
     color: $color-fg-alternate-light;
     font-size: $fs-small;
@@ -38,7 +51,7 @@
 
   h1 {
     color: $color-fg-darker;
-    font-size: $fs-heading;    
+    font-size: $fs-heading;
   }
 
   p {
