@@ -56,7 +56,6 @@ const { title } = Astro.props;
   html {
     font-family: $font;
     font-size: 16px; // Base
-    // font-size: $fs-content;
   }
 
   body {
@@ -78,5 +77,20 @@ const { title } = Astro.props;
 
   a {
     text-decoration: none;
+  }
+
+  .section__intro {
+    text-align: center;
+
+    .section__title {
+      color: $color-text-title;
+      font-size: $text-2xl;
+      font-weight: 600;
+    }
+
+    .section__subtitle {
+      color: $color-text-info;
+      font-size: $text-sm;
+    }
   }
 </style>

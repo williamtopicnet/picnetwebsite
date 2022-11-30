@@ -1,13 +1,47 @@
 ---
-const {title, logo} = Astro.props;
+const { title, logo, content } = Astro.props;
 ---
 
-<div class="container">
-  <div class="quote-container">
-    <div class="quote"><slot/></div>
-    <div class="title">{title}</div>
+<div class="testimonial-card">
+  <div class="testimonial-card__logo">
+    <img src={`/images/home/customers/${logo}`} />
   </div>
-  <div class="logo-container">
-    <img src=`/images/home/customers/${logo}`/>
-  </div>
+
+  <p class="testimonial-card__content">{content}</p>
+  <h3 class="testimonial-card__title">{title}</h3>
 </div>
+
+<style lang="scss">
+  @import "../layouts/global.scss";
+
+  $selector: testimonial-card;
+
+  .testimonial-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: $base * 4;
+    background-color: $color-white;
+    border-radius: $base * 0.5;
+    padding: $base * 6;
+
+    & > * {
+      min-width: 0;
+    }
+
+    &__logo {
+      flex-shrink: 0;
+      width: 25%;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &__title {
+      font-weight: 500;
+      font-size: $text-base;
+    }
+  }
+</style>

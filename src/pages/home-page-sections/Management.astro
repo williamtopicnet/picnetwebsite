@@ -35,24 +35,32 @@ const directors: {
 
 <section id="management" class="management-area">
   <div class="container">
-    <div class="managment__header">
-      <h2>
+    <div class="section__intro">
+      <h2 class="section__subtitle">
         OVER 70 YEARS OF COMBINED EXPERIENCE WITH AUSTRALIA'S LEADDING COMPANIES
       </h2>
-      <h1>Meet Our Leadership Team</h1>
+      <h1 class="section__title">Meet Our Leadership Team</h1>
     </div>
 
     <div class="management__body">
       {
         directors.map(({ name, description, position, photo, linkedin }) => (
           <div class="management__card">
-            <a class="linked-in" href={linkedin}>
-              <i class="fa-brands fa-linkedin-in" />
-            </a>
             <img src={photo} class="management__card__photo" />
             <div class="management__card__bio">
               <p>{description}</p>
-              <hr />
+
+              <div class="management__card__divider relative">
+                <hr />
+                <a
+                  class="management__card__linkedin"
+                  href={linkedin}
+                  target="_blank"
+                  title={`${name}'s linkedin`}
+                >
+                  <i class="fa-brands fa-linkedin fa-lg" />
+                </a>
+              </div>
 
               <strong>{name}</strong>
               <br />
@@ -80,6 +88,7 @@ const directors: {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       background-color: $color-bg-light;
       padding: $base * 4;
+      border-radius: $base * 0.5;
 
       display: flex;
       flex-direction: column;
@@ -88,6 +97,34 @@ const directors: {
 
       hr {
         margin-block: $base * 2;
+        border-color: rgba(149, 157, 165, 0.4);
+      }
+
+      &__divider {
+        position: relative;
+        margin-bottom: $base * 3;
+      }
+
+      &__linkedin {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-white;
+        padding: $base * 1.25;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        transition: transform 0.4s #{$base-animation-timing};
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        i {
+          color: $color-text-primary;
+        }
       }
 
       &__photo {
@@ -95,7 +132,7 @@ const directors: {
         border-radius: 100%;
         object-fit: cover;
         aspect-ratio: 1;
-        max-width: 160px;
+        max-width: 120px;
       }
 
       &__bio {

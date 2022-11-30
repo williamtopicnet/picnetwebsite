@@ -1,15 +1,15 @@
 ---
-const {logo} = Astro.props;
+const { logo } = Astro.props;
 ---
 
-<div class="container">
+<div class="partner-container">
   <div class="logo">
-    <img src=`/images/home/partners/${logo}`/>
+    <img src={`/images/home/partners/${logo}`} />
   </div>
-  <div class="content"><slot/></div>
+  <div class="content"><slot /></div>
 </div>
 <style lang="scss">
-  .container {
+  .partner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
