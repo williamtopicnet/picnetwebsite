@@ -1,45 +1,105 @@
 ---
-
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
 ---
+
 <footer>
-  <div class="links">
-    <h1>Links</h1> 
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#aboutus">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="/blog">News & Updates</a></li>
-    </ul>
-  </div>
-  <div class="services">
-    <h1>Services</h1> 
-    <ul>
-      <li><a href="/project-management">IT Consulting and PM</a></li>
-      <li><a href="/software-engineering">Software Development</a></li>
-      <li><a href="/business-it-support">IT Support Services</a></li>
-      <li><a href="/services-it-hardware-and-software-licensing">IT Hardware and Software Licensing</a></li>
-      <li><a href="/application-integration-services">Application Integration Services</a></li>
-      <li><a href="/services-cloud-migration">Cloud Management Services</a></li>
-      <li><a href="/team-augmentation">IT Team Augmentation</a></li>
-      <li><a href="/artificial-intelligence">Machine Learning, AI & Business Intelligence</a></li>
-      <li><a href="/risk-shield-services">Risk Shield Services</a></li>
-    </ul>
-  </div>
-  <div class="map">
-    <a href="https://www.google.com/maps/place/PicNet+-+IT+Services/@-33.8247437,151.1968911,17z/data=!3m2!4b1!5s0x6b12aec2aec8f117:0x3f5f1224047403d0!4m12!1m6!3m5!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!2sPicNet+-+IT+Services!8m2!3d-33.8247482!4d151.1990798!3m4!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!8m2!3d-33.8247482!4d151.1990798">
-      <img src="/images/home/map.png" />
-    </a>
+  <div class="container">
+    <div class="footer__links">
+      <h1>Links</h1>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="/blog">News & Updates</a></li>
+      </ul>
+    </div>
+    <div class="footer__services">
+      <h1>Services</h1>
+      <ul>
+        <li><a href="/project-management">IT Consulting and PM</a></li>
+        <li><a href="/software-engineering">Software Development</a></li>
+        <li><a href="/business-it-support">IT Support Services</a></li>
+        <li>
+          <a href="/services-it-hardware-and-software-licensing"
+            >IT Hardware and Software Licensing</a
+          >
+        </li>
+        <li>
+          <a href="/application-integration-services"
+            >Application Integration Services</a
+          >
+        </li>
+        <li>
+          <a href="/services-cloud-migration">Cloud Management Services</a>
+        </li>
+        <li><a href="/team-augmentation">IT Team Augmentation</a></li>
+        <li>
+          <a href="/artificial-intelligence"
+            >Machine Learning, AI & Business Intelligence</a
+          >
+        </li>
+        <li><a href="/risk-shield-services">Risk Shield Services</a></li>
+      </ul>
+    </div>
+    <div class="footer__map">
+      <a
+        href="https://www.google.com/maps/place/PicNet+-+IT+Services/@-33.8247437,151.1968911,17z/data=!3m2!4b1!5s0x6b12aec2aec8f117:0x3f5f1224047403d0!4m12!1m6!3m5!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!2sPicNet+-+IT+Services!8m2!3d-33.8247482!4d151.1990798!3m4!1s0x6b12aedc4fa26751:0xb660fcf84162fae8!8m2!3d-33.8247482!4d151.1990798"
+        target="_blank"
+      >
+        <img src="/images/home/map.png" />
+      </a>
+    </div>
+
+    <p class="footer__copyright">&copy; {currentYear} PicNet Pty Ltd</p>
   </div>
 </footer>
 <style lang="scss">
-  @import '../layouts/global.scss'; 
+  @import "../layouts/global.scss";
 
   footer {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-  }
+    background-color: $color-bg-2;
+    color: $color-text-disabled;
+    padding: $base * 6;
+    a {
+      color: inherit;
+      transition: color $base-transition;
 
-  h1 {
-    font-size: $fs-sub-heading;
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    h1 {
+      color: $color-white;
+      font-size: $text-md;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+
+      .footer {
+        &__map {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        &__links,
+        &__services {
+          ul {
+            li {
+              margin-top: $base;
+              font-weight: 500;
+            }
+          }
+        }
+
+        &__copyright {
+          text-align: center;
+          grid-column: 1/4;
+        }
+      }
+    }
   }
 </style>

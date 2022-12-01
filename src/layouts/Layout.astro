@@ -34,12 +34,11 @@ const { title } = Astro.props;
   </head>
 
   <body>
-    <!-- <slot name="header-polygon"/> -->
-
     <NavHeader />
     <main class="page-content">
       <slot />
     </main>
+
     <ContactUs />
     <Footer />
   </body>
@@ -92,5 +91,17 @@ const { title } = Astro.props;
       color: $color-text-info;
       font-size: $text-sm;
     }
+  }
+
+  button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+  }
+
+  ul,
+  ol {
+    list-style: none;
   }
 </style>

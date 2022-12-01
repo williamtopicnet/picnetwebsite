@@ -1,21 +1,34 @@
 ---
-const { logo } = Astro.props;
+const { logo, className } = Astro.props;
 ---
 
-<div class="partner-container">
-  <div class="logo">
+<div class={`partner-container ${className}`}>
+  <div class="partner__logo">
     <img src={`/images/home/partners/${logo}`} />
   </div>
-  <div class="content"><slot /></div>
+  <div class="partner__content"><slot /></div>
 </div>
 <style lang="scss">
+  @import "../layouts/global.scss";
+
   .partner-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
   }
 
-  .logo img {
-    max-height: 10rem;
-    max-width: 15rem;
+  .partner__logo {
+    grid-column: 1/3;
+    width: $base * 20;
+    height: min-content;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .partner__content {
+    grid-column: 4/13;
   }
 </style>

@@ -1,6 +1,33 @@
 ---
-import Partner from "../../components/Partner.astro";
-import Tabs from "../../components/Tabs.astro";
+// import Partner from "../../components/Partner.astro";
+// import Tabs from "../../components/Tabs.astro";
+
+const partners = [
+  {
+    name: "Microsoft",
+    logo: "microsoft.png",
+    description:
+      "PicNet is a certified Microsoft partner and solution provider with demonstrated competencies in application development, data analytics, cloud platform and cloud productivity.",
+  },
+  {
+    name: "IBM",
+    logo: "ibm.png",
+    description:
+      "PicNet is an IBM partner and our Risk Shield Services (managed IT security monitoring and alerting service) use the IBM",
+  },
+  {
+    name: "Amazon",
+    logo: "aws.png",
+    description:
+      "PicNet is a part of the Amazon Web Services Partner Network (APN) as a Consulting Partner to help you expand and scale your business on AWS and accelerate your journey to the cloud.",
+  },
+  {
+    name: "NSW Goverment",
+    logo: "nsw_gov.png",
+    description:
+      "PicNet is registered as an Advanced Supplier under the NSW Government's ICT Services Scheme (SCM0020). This scheme is a whole-of-government mandated arrangement to assist NSW Government agencies and other eligible buyers in procuring ICT related goods and services.",
+  },
+];
 ---
 
 <section id="partners" class="partners-area">
@@ -11,68 +38,20 @@ import Tabs from "../../components/Tabs.astro";
     </header>
 
     <main>
-      <Tabs tabs={["Microsoft", "IBM", "Amazon", "NSW Government"]}>
-        <Partner logo="microsoft.png">
-          <p>
-            PicNet is a certified Microsoft partner and solution provider with
-            demonstrated competencies in application development, data
-            analytics, cloud platform and cloud productivity.
-          </p>
-          <p>
-            The PicNet team are experts in the following Microsoft Technologies:
-          </p>
-          <ul>
-            <li>.Net / HTML 5 Development</li>
-            <li>Mobile Development</li>
-            <li>SQL Server</li>
-            <li>Dynamics 365</li>
-            <li>Power Platform</li>
-            <li>Windows Networking and Security</li>
-            <li>Azure</li>
-            <li>Microsoft 365 / Office 365</li>
-          </ul>
-        </Partner>
-        <Partner logo="ibm.png">
-          <p>
-            PicNet is an IBM partner and our Risk Shield Services (managed IT
-            security monitoring and alerting service) use the IBM
-          </p>
-          <p>
-            QRadar with Watson SIEM (Security Information and Event Management).
-            Risk Shield Services is able to provide a managed service that's
-            akin to a security operations centre (SOC) for your company.
-          </p>
-        </Partner>
-        <Partner logo="aws.png">
-          <p>
-            PicNet is a part of the Amazon Web Services Partner Network (APN) as
-            a Consulting Partner to help you expand and scale your business on
-            AWS and accelerate your journey to the cloud.
-          </p>
-        </Partner>
-        <Partner logo="nsw_gov.png">
-          <p>
-            PicNet is registered as an Advanced Supplier under the NSW
-            Government's ICT Services Scheme (SCM0020). This scheme is a
-            whole-of-government mandated arrangement to assist NSW Government
-            agencies and other eligible buyers in procuring ICT related goods
-            and services.
-          </p>
-          <p>
-            PicNet has done projects for the following NSW and Federal
-            Government Organisations:
-          </p>
-          <ul>
-            <li>NSW Health</li>
-            <li>NSW Transport</li>
-            <li>NSW Department of Education</li>
-            <li>NSW Department of Environment</li>
-            <li>NABERS</li>
-            <li>IHPA</li>
-            <li>Attorney-General's Department</li>
-          </ul>
-        </Partner>
-      </Tabs>
+      {
+        partners.map(({ logo, description, name }) => (
+          <div class="partner">
+            <div class="partner__logo">
+              <img src={`/images/home/partners/${logo}`} alt={name} />
+            </div>
+
+            <div class="partner__text">
+              <h3 class="partner__name">{name}</h3>
+              <p class="partner__description">{description}</p>
+            </div>
+          </div>
+        ))
+      }
     </main>
   </div>
 </section>
@@ -80,10 +59,46 @@ import Tabs from "../../components/Tabs.astro";
   @import "../../layouts/global.scss";
 
   section.partners-area {
-    padding-block: $base * 4;
+    padding-block: $base * 12;
+    background-color: $color-white;
   }
 
-  p {
-    margin-top: $base * 2;
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partner {
+    display: flex;
+    gap: $base * 3;
+    width: 75%;
+    margin: $base * 4 auto 0;
+
+    &__logo {
+      width: 20%;
+      height: min-content;
+      padding-top: 1rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    &__name {
+      font-weight: 500;
+      font-size: $text-xl;
+    }
+
+    &__description {
+      font-size: $text-base;
+      margin-top: $base;
+      font-weight: 300;
+      color: $color-text-title;
+    }
   }
 </style>
