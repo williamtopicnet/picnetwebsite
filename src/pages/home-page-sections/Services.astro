@@ -1,0 +1,40 @@
+---
+import ColorTriCard, { BorderColor } from "../../components/ColorTriCard.astro";
+import { services } from "../../data/home";
+---
+
+<section id="services" class="section services-area">
+  <div class="container">
+    <main>
+      {
+        services.map(({ icon, title, subtitle, colour, link }) => (
+          <ColorTriCard
+            icon={icon}
+            title={title}
+            subtitle={subtitle}
+            colour={colour as keyof typeof BorderColor}
+            link={link}
+            class="services__card"
+          />
+        ))
+      }
+    </main>
+  </div>
+</section>
+<style lang="scss">
+  @import "../../styles/scss/base-var.scss";
+
+  main {
+    padding: 0;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    main {
+      padding: $base * 4;
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

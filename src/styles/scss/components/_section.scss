@@ -1,0 +1,22 @@
+@import '../typography.scss';
+@import '../colors.scss';
+@import '../base-var.scss';
+
+.section {
+  padding-block: $base * 12;
+}
+
+.section__header {
+  text-align: center;
+
+  .section__title {
+    color: $color-black;
+    font-size: $text-2xl;
+    font-weight: 600;
+  }
+
+  .section__subtitle {
+    color: $color-text-info;
+    font-size: $text-sm;
+  }
+}

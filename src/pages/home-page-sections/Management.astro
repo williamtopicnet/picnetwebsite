@@ -1,50 +1,19 @@
 ---
-const directors: {
-  name: string;
-  linkedin: string;
-  position: string;
-  description: string;
-  photo: string;
-}[] = [
-  {
-    name: "Guido Tapia",
-    linkedin: "https://www.linkedin.com/in/guidotapia",
-    position: "Director of Software Development and Machine Learning Services",
-    description:
-      "Guido manages the Software Development and ML teams at PicNet. They specialise in delivering complex systems that are usually beyond the capabilities of regular outsourcing companies. Such systems as; high performant distributed systems, machine learning and artificial intelligence solutions, business critical applications, etc.",
-    photo: "/images/home/guido.png",
-  },
-  {
-    name: "David Booth",
-    linkedin: "https://www.linkedin.com/in/david-booth-b35a0b7/",
-    position: "Director of Managed Cloud Services and IT Support",
-    description:
-      "David joined PicNet in 2004 and has held several roles straddling the breadth of IT. David has worked on numerous projects for a number of medium and large size companies and Government agencies. David consults as a vCIO, Senior Project Manager, Business Analyst and drives the IT Support and Managed Cloud Services at PicNet.",
-    photo: "/images/home/david.png",
-  },
-  {
-    name: "Marco Tapia",
-    linkedin: "https://www.linkedin.com/in/marcotapia/",
-    position: "IT Consulting Services Senior Advisor",
-    description:
-      "Since funding PicNet in 2001, Marco has been responsible for its overall strategic direction, its consulting services and its business development. Marco's experience includes Company Directory, CIO, Business Technology Consultant and IT Project Manager. He has managed large and medium size IT functions for national and international corporations.",
-    photo: "/images/home/marco.png",
-  },
-];
+import { data } from "../../data/home/management.json";
 ---
 
-<section id="management" class="management-area">
+<section id="management" class="section management-area">
   <div class="container">
-    <div class="section__intro">
+    <header class="section__header">
       <h2 class="section__subtitle">
         OVER 70 YEARS OF COMBINED EXPERIENCE WITH AUSTRALIA'S LEADDING COMPANIES
       </h2>
       <h1 class="section__title">Meet Our Leadership Team</h1>
-    </div>
+    </header>
 
-    <div class="management__body">
+    <main class="management__body">
       {
-        directors.map(({ name, description, position, photo, linkedin }) => (
+        data.map(({ name, description, position, photo, linkedin }) => (
           <div class="management__card">
             <img src={photo} class="management__card__photo" />
             <div class="management__card__bio">
@@ -69,11 +38,18 @@ const directors: {
           </div>
         ))
       }
-    </div>
+    </main>
   </div>
 </section>
 <style lang="scss">
-  @import "../../layouts/global.scss";
+  @import "../../styles/scss/base-var.scss";
+  @import "../../styles/scss/colors.scss";
+  @import "../../styles/scss/typography.scss";
+
+  .section__header .section__title {
+    color: $color-white;
+  }
+
   .management-area {
     background-color: $color-bg-1;
     padding-block: $base * 12;
@@ -146,6 +122,13 @@ const directors: {
           font-size: $text-sm;
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .management__body {
+      flex-direction: column;
+      padding: $base * 4;
     }
   }
 </style>

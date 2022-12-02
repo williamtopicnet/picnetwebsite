@@ -1,60 +1,82 @@
 ---
 ---
 
-<section id="about" class="about-area">
+<section id="about-us" class="section about-us-area">
   <div class="container">
-    <div class="about__text">
-      <h2>SINCE 2001 WE MADE IT OUR BUSINESS TO BE ALL ABOUT YOUR BUSINESS</h2>
-      <h3>Welcome to PicNet. A little About Us</h3>
-      <p>
-        Founded in 2001, PicNet is a leading IT services firm, with customers in
-        the private and government sectors from some of Australia's largest
-        brands and household names. Our services from start to finish are
-        provided and executed 100% locally by our professional, experienced and
-        qualified team.
-      </p>
-      <p>
-        Our quality is managed by proven processes and models that allow us
-        certification of quality and replication of results.
-      </p>
-      <p>
-        We care for our customers and provide industry leading IT services and
-        responsiveness. Read about companies just like yours in our case studies
-        section.
-      </p>
-    </div>
+    <header class="section__header">
+      <h2 class="section__subtitle">
+        SINCE 2001 WE MADE IT OUR BUSINESS TO BE ALL ABOUT YOUR BUSINESS
+      </h2>
+      <h1 class="section__title">
+        Welcome to PicNet. A little <span class="text-underline">About Us</span>
+      </h1>
+    </header>
 
-    <div class="about__image">
-      <img src="/images/home/about-us.png" />
-    </div>
+    <main>
+      <div class="about-us__text">
+        <p>
+          Founded in 2001, PicNet is a leading IT services firm, with customers
+          in the private and government sectors from some of Australia's largest
+          brands and household names. Our services from start to finish are
+          provided and executed 100% locally by our professional, experienced
+          and qualified team.
+        </p>
+        <p>
+          Our quality is managed by proven processes and models that allow us
+          certification of quality and replication of results.
+        </p>
+        <p>
+          We care for our customers and provide industry leading IT services and
+          responsiveness. Read about companies just like yours in our <a
+            href="/#caseStudies">case studies</a
+          > section.
+        </p>
+      </div>
+
+      <div class="about-us__image">
+        <img src="/images/home/about-us.png" />
+      </div>
+    </main>
   </div>
 </section>
 <style lang="scss">
-  @import "../../layouts/global.scss";
+  @import "../../styles/scss/base-var.scss";
+  @import "../../styles/scss/colors.scss";
+  @import "../../styles/scss/typography.scss";
 
-  section.about-area {
-    margin-top: $base * 5;
+  section.about-us-area {
     background-color: $color-white;
   }
 
-  section.about-area .container {
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $base * 4;
-  }
-
-  h2 {
-    color: $color-fg-alternate-light;
-    font-size: $fs-small;
-    font-weight: normal;
-  }
-
-  h1 {
-    color: $color-fg-darker;
-    font-size: $fs-heading;
+    gap: $base * 6;
+    margin-top: $base * 6;
   }
 
   p {
     color: $color-fg-darker;
+    margin-top: $base;
+    font-weight: 300;
+
+    a {
+      color: $color-text-info;
+    }
+  }
+
+  .about-us__image {
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    main {
+      grid-template-columns: 1fr;
+      padding: $base * 4;
+    }
   }
 </style>

@@ -1,45 +1,17 @@
 ---
-// import Partner from "../../components/Partner.astro";
-// import Tabs from "../../components/Tabs.astro";
-
-const partners = [
-  {
-    name: "Microsoft",
-    logo: "microsoft.png",
-    description:
-      "PicNet is a certified Microsoft partner and solution provider with demonstrated competencies in application development, data analytics, cloud platform and cloud productivity.",
-  },
-  {
-    name: "IBM",
-    logo: "ibm.png",
-    description:
-      "PicNet is an IBM partner and our Risk Shield Services (managed IT security monitoring and alerting service) use the IBM",
-  },
-  {
-    name: "Amazon",
-    logo: "aws.png",
-    description:
-      "PicNet is a part of the Amazon Web Services Partner Network (APN) as a Consulting Partner to help you expand and scale your business on AWS and accelerate your journey to the cloud.",
-  },
-  {
-    name: "NSW Goverment",
-    logo: "nsw_gov.png",
-    description:
-      "PicNet is registered as an Advanced Supplier under the NSW Government's ICT Services Scheme (SCM0020). This scheme is a whole-of-government mandated arrangement to assist NSW Government agencies and other eligible buyers in procuring ICT related goods and services.",
-  },
-];
+import { data } from "../../data/home/partners.json";
 ---
 
-<section id="partners" class="partners-area">
+<section id="partners" class="section partners-area">
   <div class="container">
-    <header class="section__intro">
+    <header class="section__header">
       <h2 class="section__subtitle">OUR KEY RELATIONSHIPS</h2>
       <h1 class="section__title">Some of our key Partners</h1>
     </header>
 
     <main>
       {
-        partners.map(({ logo, description, name }) => (
+        data.map(({ logo, description, name }) => (
           <div class="partner">
             <div class="partner__logo">
               <img src={`/images/home/partners/${logo}`} alt={name} />
@@ -56,10 +28,11 @@ const partners = [
   </div>
 </section>
 <style lang="scss">
-  @import "../../layouts/global.scss";
+  @import "../../styles/scss/base-var.scss";
+  @import "../../styles/scss/colors.scss";
+  @import "../../styles/scss/typography.scss";
 
   section.partners-area {
-    padding-block: $base * 12;
     background-color: $color-white;
   }
 
@@ -99,6 +72,12 @@ const partners = [
       margin-top: $base;
       font-weight: 300;
       color: $color-text-title;
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    main {
+      grid-template-columns: 1fr;
     }
   }
 </style>

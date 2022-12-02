@@ -91,7 +91,9 @@
 </section>
 
 <style lang="scss">
-  @import "../layouts/global.scss";
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/typography.scss";
 
   .contact-area {
     padding-block: $base * 12;
@@ -105,6 +107,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: $base * 8;
+    padding: 0;
   }
 
   .contact__form {
@@ -211,6 +214,36 @@
 
       address {
         font-style: normal;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    main {
+      grid-template-columns: 1fr;
+      padding: $base * 4;
+    }
+
+    .contact__form {
+      grid-template-columns: 1fr;
+
+      &__item {
+        &:nth-last-child(2) {
+          grid-column: auto;
+        }
+      }
+
+      button {
+        grid-column: auto;
+      }
+    }
+    .contact__info {
+      text-align: left;
+
+      a {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
       }
     }
   }

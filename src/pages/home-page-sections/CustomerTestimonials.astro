@@ -3,7 +3,7 @@ import CustomerTestimonial from "../../components/CustomerTestimonial.astro";
 import { data } from "../../data/home/testimonial.json";
 ---
 
-<section id="customerTestimonial" class="customer-testimonial-area">
+<section id="customerTestimonials" class="section customer-testimonials-area">
   <div class="container">
     <main>
       {
@@ -15,10 +15,10 @@ import { data } from "../../data/home/testimonial.json";
   </div>
 </section>
 <style lang="scss">
-  @import "../../layouts/global.scss";
+  @import "../../styles/scss/base-var.scss";
 
-  section.customer-testimonial-area {
-    padding-bottom: $base * 12;
+  section.customer-testimonials-area {
+    padding-top: 0;
   }
 
   main {
@@ -31,6 +31,7 @@ import { data } from "../../data/home/testimonial.json";
     @media only screen and (max-width: 780px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
+      padding: 0 $base * 4;
     }
   }
 </style>

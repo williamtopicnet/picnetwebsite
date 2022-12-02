@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "./home-page-sections/Hero.astro";
-import ServicesCards from "./home-page-sections/ServicesCards.astro";
+import Services from "./home-page-sections/Services.astro";
 import AboutUs from "./home-page-sections/AboutUs.astro";
 import Management from "./home-page-sections/Management.astro";
-import CustomerLogos from "./home-page-sections/CustomerLogos.astro";
-import CustomerTestimonialsCarousel from "./home-page-sections/CustomerTestimonialsCarousel.astro";
+import CaseStudies from "./home-page-sections/CaseStudies.astro";
+import CustomerTestimonials from "./home-page-sections/CustomerTestimonials.astro";
 import Partners from "./home-page-sections/Partners.astro";
 ---
 
@@ -13,24 +13,10 @@ import Partners from "./home-page-sections/Partners.astro";
   title="PicNet - Software Development, IT Support, Cloud Management Services"
 >
   <Hero />
-  <ServicesCards />
+  <Services />
   <AboutUs />
   <Management />
-  <CustomerLogos />
-  <CustomerTestimonialsCarousel />
+  <CaseStudies />
+  <CustomerTestimonials />
   <Partners />
 </Layout>
-<style lang="scss">
-  @import "../layouts/global.scss";
-
-  .header-polygon {
-    z-index: 0;
-    position: absolute;
-    top: 0px;
-    bottom: 40rem;
-    width: 100%;
-    background-color: $color-bg-dark;
-
-    clip-path: polygon(0 0, 0 50%, 50% 100%, 100% 50%, 100% 0%);
-  }
-</style>

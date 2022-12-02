@@ -55,7 +55,9 @@ const currentYear = currentDate.getFullYear();
   </div>
 </footer>
 <style lang="scss">
-  @import "../layouts/global.scss";
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/typography.scss";
 
   footer {
     background-color: $color-bg-2;
@@ -78,6 +80,7 @@ const currentYear = currentDate.getFullYear();
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
+      gap: 0;
 
       .footer {
         &__map {
@@ -98,6 +101,24 @@ const currentYear = currentDate.getFullYear();
         &__copyright {
           text-align: center;
           grid-column: 1/4;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    footer {
+      .container {
+        grid-template-columns: 1fr;
+        gap: $base * 3;
+
+        .footer {
+          &__map {
+            justify-content: flex-start;
+          }
+          &__copyright {
+            grid-column: auto;
+          }
         }
       }
     }

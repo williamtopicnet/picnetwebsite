@@ -1,0 +1,55 @@
+---
+import CustomerLogoAndDialog from "../../components/CustomerLogoAndDialog.astro";
+import { data } from "../../data/home/case-studies.json";
+---
+
+<section id="caseStudies" class="case-studies-area">
+  <div class="container">
+    <header class="section__header">
+      <h3 class="section__subtitle">STORIES JUST LIKE YOURS</h3>
+      <h1 class="section__title">Case Studies from some of our work</h1>
+      <p>
+        Numerous companies and government entities have chosen PicNet to improve
+        their IT systems, processes and services
+      </p>
+    </header>
+    <main class="case-studies">
+      {
+        data.map(({ logo, brand, title, more, content }) => (
+          <CustomerLogoAndDialog
+            logo={logo}
+            brand={brand}
+            title={title}
+            more={more}
+            content={content}
+          />
+        ))
+      }
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../styles/scss/base-var.scss";
+
+  .case-studies-area {
+    padding: $base * 12 0 0;
+  }
+
+  .case-studies {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: $base * 2;
+    padding-block: $base * 4;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .case-studies-area {
+      padding: $base * 12 $base * 4 0;
+    }
+
+    .case-studies {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

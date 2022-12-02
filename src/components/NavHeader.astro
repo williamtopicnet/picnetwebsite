@@ -5,14 +5,25 @@
   <div class="container">
     <div class="logo">
       <a href="/">
-        <img src="/images/home/logo.png" />
+        <picture>
+          <source
+            media="(max-width: 780px)"
+            srcset="/images/home/logo-dark.webp"
+          />
+          <img src="/images/home/logo.png" alt="picnet logo" />
+        </picture>
       </a>
     </div>
-    <nav>
+
+    <nav class="header__nav" id="headerNav">
       <a href="/#services">Services</a>
-      <a href="/#about">About Us</a>
+      <a href="/#about-us">About Us</a>
       <a href="/blog">News</a>
       <a href="/#contact">Contact Us</a>
+
+      <button type="button" class="burger-btn" id="closeBurgerButton">
+        <i class="fa-solid fa-xmark fa-xl"></i>
+      </button>
     </nav>
 
     <div class="contact">
@@ -26,10 +37,58 @@
 
       <a href="tel:+61284377900" class="phone">+61 2 8437 7900</a>
     </div>
+
+    <button type="button" class="burger-btn" id="openBurgerButton">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </button>
   </div>
 </header>
+
+<script>
+  window.document.addEventListener("DOMContentLoaded", () => {
+    const openBurgerButton = document.getElementById("openBurgerButton");
+    const headerNav = document.getElementById("headerNav");
+    const headerNavChildren = document.querySelectorAll("#headerNav > *");
+
+    if (!openBurgerButton || !headerNav || !headerNavChildren) {
+      return;
+    }
+
+    const showMenu = () => (headerNav.style.transform = `translateX(0%)`);
+    const hideMenu = () => (headerNav.style.transform = `translateX(100%)`);
+
+    openBurgerButton.onclick = showMenu;
+
+    // Close mobile menu when click on its child
+    headerNavChildren.forEach((child) => {
+      child.addEventListener("click", hideMenu);
+    });
+
+    let timeout: ReturnType<typeof setTimeout> = false, // holder for timeout id
+      delay = 250; // delay after event is "complete" to run callback
+
+    const getDimensions = () => {
+      if (!window.matchMedia("(max-width: 780px)").matches) {
+        headerNav.style.transform = null;
+      }
+    };
+
+    // window.resize event listener
+    window.addEventListener("resize", function () {
+      // clear the timeout
+      clearTimeout(timeout);
+      // start timing for event "completion"
+      timeout = setTimeout(getDimensions, delay);
+    });
+
+    getDimensions();
+  });
+</script>
+
 <style lang="scss">
-  @import "../layouts/global.scss";
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/typography.scss";
 
   a {
     color: $color-fg-dark;
@@ -41,26 +100,29 @@
 
   header {
     background-color: $color-primary;
+    padding-top: $base;
+
     .container {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      padding: 1rem 5rem;
+      padding: $base * 2 $base * 10;
       font-weight: bold;
 
-      nav {
+      .header__nav {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: $base * 4;
 
         a {
           font-weight: 600;
           font-size: 14px;
           letter-spacing: -0.03px;
           text-transform: uppercase;
+          line-height: 42px;
         }
       }
 
@@ -80,6 +142,54 @@
           line-height: 42px;
           display: inline-block;
           font-weight: 600;
+        }
+      }
+
+      .burger-btn {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    header {
+      background: $color-white;
+      .container {
+        justify-content: space-between;
+        padding: $base * 2;
+
+        .contact {
+          display: none;
+        }
+
+        .header__nav {
+          position: fixed;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding-top: $base * 12;
+          background-color: $color-white;
+          inset: 0;
+          z-index: 3;
+          transform: translateX(100%);
+          transition: transform $base-transition;
+          box-shadow: $base-box-shadow;
+
+          a {
+            transition: color $base-transition;
+
+            &:hover {
+              color: $color-text-info;
+            }
+          }
+        }
+
+        .burger-btn {
+          display: block;
+          background: none;
+
+          &#closeBurgerButton {
+            order: -1;
+          }
         }
       }
     }

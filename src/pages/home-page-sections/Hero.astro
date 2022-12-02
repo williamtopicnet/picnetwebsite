@@ -1,19 +1,22 @@
-<section class="section" id="hero">
+<section id="hero">
   <div class="hero__bg hero__bg--left"></div>
   <div class="hero__bg hero__bg--right"></div>
 
   <div class="container">
-    <a href="/#contact">Let's Get Started</a>
-    <h1>
-      Increasingly complex technologies <br />
-      require increasingly specialised expertise
-    </h1>
-    <h3>
-      Since 2001 Australian organisations have benefited from PicNet's superior<br
-      />
-      IT Consulting, Software Development, IT Support and and Cyber Risk Management
-      services.
-    </h3>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Increasingly complex technologies <br />
+        require increasingly specialised expertise
+      </h1>
+      <h2 class="hero__subtitle">
+        Since 2001 Australian organisations have benefited from PicNet's
+        superior<br />
+        IT Consulting, Software Development, IT Support and and Cyber Risk Management
+        services.
+      </h2>
+
+      <a href="/#contact">Let's Get Started</a>
+    </div>
 
     <img
       src="/images/home/header-icons.png"
@@ -24,7 +27,10 @@
   </div>
 </section>
 <style lang="scss">
-  @import "../../layouts/global.scss";
+  @import "../../styles/scss/base-var.scss";
+  @import "../../styles/scss/colors.scss";
+  @import "../../styles/scss/typography.scss";
+
   section {
     color: $color-fg-light;
     text-align: center;
@@ -67,13 +73,39 @@
     max-width: 100%;
   }
 
-  h1 {
-    font-size: $text-3xl;
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: $base * 2;
+    align-items: center;
   }
 
-  h3 {
+  .hero__title,
+  .hero__subtitle {
+    margin: 0;
+  }
+
+  .hero__title {
+    font-size: $text-3xl;
+    margin-top: $base * 4;
+  }
+
+  .hero__subtitle {
     font-weight: 300;
     font-size: $text-md;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .hero__content {
+      padding-inline: $base * 4;
+      .hero__title {
+        font-size: $text-lg;
+      }
+
+      .hero__subtitle {
+        font-size: $text-sm;
+      }
+    }
   }
 
   a {
@@ -82,6 +114,8 @@
     padding: 0.7rem 1.5rem;
     border-radius: 2rem;
     z-index: 2;
+    display: inline-block;
+    margin-top: $base * 6;
 
     &:hover {
       background-color: $color-white;

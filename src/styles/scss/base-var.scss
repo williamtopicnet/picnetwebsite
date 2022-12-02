@@ -1,9 +1,9 @@
-@import '../styles/scss/typography.scss';
-@import '../styles/scss/colors.scss';
-
 $base: 0.5rem; // 8px
 $base-animation-timing: cubic-bezier(0.2, 0, 0.3, 1);
-
 $base-radius: $base * 0.5;
-
 $base-transition: 0.4s $base-animation-timing;
+
+$base-box-shadow: rgba(149, 157, 165, 0.2) 0 $base $base * 3;
+
+$screen-xl: 1200px;
+$screen-lg: 780px;

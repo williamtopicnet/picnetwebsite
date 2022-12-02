@@ -1,0 +1,39 @@
+@import "typography.scss";
+@import "colors.scss";
+@import "base-var.scss";
+@import "utils.scss";
+@import "components/index.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font;
+  font-size: 16px; // Base
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-bg-light;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}

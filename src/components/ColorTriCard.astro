@@ -38,7 +38,9 @@ const {
   </a>
 </div>
 <style lang="scss" define:vars={{ icon, borderColor: BorderColor[colour] }}>
-  @import "../layouts/global.scss";
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/typography.scss";
 
   .card {
     width: 100%;
@@ -86,6 +88,22 @@ const {
 
     &:hover &__content {
       background-color: $color-bg;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .card {
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &__content {
+        border: 0;
+        flex-direction: column;
+        text-align: center;
+      }
     }
   }
 </style>

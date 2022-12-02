@@ -1,0 +1,60 @@
+---
+---
+
+<script>
+  window.document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopButton = document.getElementById("scrollToTop");
+
+    if (!scrollToTopButton) {
+      return;
+    }
+
+    function scrollToTop() {
+      window.document.body.scrollTop = 0; // For Safari
+      window.document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    scrollToTopButton.onclick = scrollToTop;
+
+    function toggleScrollToTopButtonVisibility() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        scrollToTopButton.removeAttribute("hidden");
+      } else {
+        scrollToTopButton.setAttribute("hidden", "");
+      }
+    }
+
+    toggleScrollToTopButtonVisibility(); // Run the 1st time when page load
+    window.addEventListener("scroll", toggleScrollToTopButtonVisibility);
+  });
+</script>
+
+<button class="scroll-to-top-btn" id="scrollToTop" hidden>
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+<style lang="scss">
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/colors.scss";
+
+  .scroll-to-top-btn {
+    --offset: #{$base * 6};
+    --size: #{$base * 6};
+
+    position: fixed;
+    border-radius: 50%;
+    background-color: $color-white;
+    bottom: var(--offset);
+    right: var(--offset);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: $base-box-shadow;
+    transition: transform $base-transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+</style>
