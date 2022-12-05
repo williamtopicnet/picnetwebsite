@@ -19,10 +19,12 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    /><link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -31,7 +33,27 @@ const { title } = Astro.props;
     <link href="/font/fontawesome/css/brands.min.css" rel="stylesheet" />
     <link href="/font/fontawesome/css/solid.min.css" rel="stylesheet" />
 
-    <meta name="generator" content={Astro.generator} /><title>{title}</title>
+    <title>{title}</title>
+
+    <meta name="generator" content={Astro.generator} />
+    <meta name="title" content="Home - PicNet" />
+    <meta
+      name="description"
+      content="Since 2001 Australian organisations have benefited from PicNet's superiorIT Consulting, Software Development, IT Support and and Cyber Risk Management services."
+    />
+    <!-- META: OG -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" /><meta
+      property="og:title"
+      content="Home - PicNet"
+    />
+    <meta
+      property="og:description"
+      content="Since 2001 Australian organisations have benefited from PicNet's superiorIT Consulting, Software Development, IT Support and and Cyber Risk Management services."
+    />
+    <meta property="og:url" content="https://picnet.com.au/" />
+    <meta property="og:site_name" content="PicNet" />
   </head>
 
   <body>

@@ -4,7 +4,7 @@ const { title, logo, content } = Astro.props;
 
 <div class="testimonial-card">
   <div class="testimonial-card__logo">
-    <img src={`/images/home/customers/${logo}`} />
+    <img src={`/images/home/customers/${logo}`} alt="logo" loading="lazy" />
   </div>
 
   <p class="testimonial-card__content">{content}</p>

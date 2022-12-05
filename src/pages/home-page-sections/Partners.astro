@@ -14,7 +14,11 @@ import { data } from "../../data/home/partners.json";
         data.map(({ logo, description, name }) => (
           <div class="partner">
             <div class="partner__logo">
-              <img src={`/images/home/partners/${logo}`} alt={name} />
+              <img
+                src={`/images/home/partners/${logo}`}
+                alt={name}
+                loading="lazy"
+              />
             </div>
 
             <div class="partner__text">

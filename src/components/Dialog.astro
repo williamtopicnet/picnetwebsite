@@ -22,6 +22,7 @@ const { dialogid } = Astro.props;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
 
     &::backdrop {
       position: fixed;
@@ -37,5 +38,11 @@ const { dialogid } = Astro.props;
     position: absolute;
     right: var(--offset);
     top: var(--offset);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    dialog {
+      width: 100%;
+    }
   }
 </style>

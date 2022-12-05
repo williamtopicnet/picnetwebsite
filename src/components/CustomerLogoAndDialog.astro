@@ -6,13 +6,13 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
 ---
 
 <div class="case-studies__image" onclick={`window.${dialogid}.showModal()`}>
-  <img src={`/images/home/customers/${logo}`} />
+  <img src={`/images/home/customers/${logo}`} alt="logo" loading="lazy" />
 </div>
 
 <Dialog dialogid={dialogid} open="Open modal">
   <div class="modal__content">
     <div class="customer__logo">
-      <img src={`/images/home/customers/${brand}`} />
+      <img src={`/images/home/customers/${brand}`} alt="brand" loading="lazy" />
     </div>
     <div class="customer__content">
       <h3>{title}</h3>

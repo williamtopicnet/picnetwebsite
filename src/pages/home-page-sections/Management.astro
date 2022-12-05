@@ -15,7 +15,12 @@ import { data } from "../../data/home/management.json";
       {
         data.map(({ name, description, position, photo, linkedin }) => (
           <div class="management__card">
-            <img src={photo} class="management__card__photo" />
+            <img
+              src={photo}
+              class="management__card__photo"
+              alt={name}
+              loading="lazy"
+            />
             <div class="management__card__bio">
               <p>{description}</p>
 
