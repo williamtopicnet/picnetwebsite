@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-circle-nodes",
+      "title": "IT Consulting and Project Management",
+      "subtitle": "IT Strategy, IT Reviews, Project Management",
+      "colour": "blue",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-laptop-code",
+      "title": "Software Development",
+      "subtitle": "Enterprise Custom Software Development, Engineering and Support",
+      "colour": "yellow",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-headset",
+      "title": "IT Support Services",
+      "subtitle": "IT Support for Businesses, Help Desk, Cloud and Hardware provisioning",
+      "colour": "red",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-desktop",
+      "title": "Application Integration Services",
+      "subtitle": "Manage and integrate all your data in the cloud or on premise",
+      "colour": "blue",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-hard-drive",
+      "title": "IT Hardware and Software Licensing",
+      "subtitle": "IT hardware and software for businesses",
+      "colour": "yellow",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-cloud",
+      "title": "Cloud Management Services",
+      "subtitle": "Migrating email system, file storage and servers to the cloud",
+      "colour": "red",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-people-group",
+      "title": "IT Team Augmentation",
+      "subtitle": "IT skills at hand to enhance your internal resources",
+      "colour": "blue",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-robot",
+      "title": "Machine Learning, AI & Business Intelligence",
+      "subtitle": "Getting maximum value from your data",
+      "colour": "yellow",
+      "link": "/project-management/"
+    },
+    {
+      "icon": "fa-solid fa-shield",
+      "title": "Risk Shield Services",
+      "subtitle": "IT Security Monitoring & Alerting, and Pentration Testing for SMEs",
+      "colour": "red",
+      "link": "/project-management/"
+    }
+  ]
+}

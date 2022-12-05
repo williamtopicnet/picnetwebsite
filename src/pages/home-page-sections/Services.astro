@@ -1,13 +1,13 @@
 ---
 import ColorTriCard, { BorderColor } from "../../components/ColorTriCard.astro";
-import { services } from "../../data/home";
+import { data } from "../../data/home/services.json";
 ---
 
 <section id="services" class="section services-area">
   <div class="container">
     <main>
       {
-        services.map(({ icon, title, subtitle, colour, link }) => (
+        data.map(({ icon, title, subtitle, colour, link }) => (
           <ColorTriCard
             icon={icon}
             title={title}
