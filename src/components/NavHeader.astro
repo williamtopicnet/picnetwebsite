@@ -116,6 +116,7 @@
         justify-content: center;
         align-items: center;
         gap: $base * 4;
+        transition: transform $base-transition;
 
         a {
           font-weight: 600;
@@ -171,7 +172,6 @@
           inset: 0;
           z-index: 3;
           transform: translateX(100%);
-          transition: transform $base-transition;
           box-shadow: $base-box-shadow;
 
           a {
