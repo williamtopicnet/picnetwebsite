@@ -42,7 +42,7 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
       height: 100%;
       object-fit: contain;
       object-position: center;
-      transition: filter 0.4s $base-transition;
+      transition: filter 0.2s $base-transition;
     }
 
     &:hover {
@@ -73,6 +73,7 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
 
     h3 {
       font-size: $text-md;
+      font-weight: 500;
     }
 
     p {
@@ -93,6 +94,12 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
       &:hover {
         filter: saturate(0.6);
       }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .modal__content {
+      grid-template-columns: 1fr;
     }
   }
 </style>

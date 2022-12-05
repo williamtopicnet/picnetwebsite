@@ -64,10 +64,10 @@
       child.addEventListener("click", hideMenu);
     });
 
-    let timeout: ReturnType<typeof setTimeout> = false, // holder for timeout id
+    let timeout: ReturnType<typeof window.setTimeout> = -1, // holder for timeout id
       delay = 250; // delay after event is "complete" to run callback
 
-    const getDimensions = () => {
+    const onMatchMobileMedia = () => {
       if (!window.matchMedia("(max-width: 780px)").matches) {
         headerNav.style.transform = null;
       }
@@ -78,10 +78,10 @@
       // clear the timeout
       clearTimeout(timeout);
       // start timing for event "completion"
-      timeout = setTimeout(getDimensions, delay);
+      timeout = setTimeout(onMatchMobileMedia, delay);
     });
 
-    getDimensions();
+    onMatchMobileMedia();
   });
 </script>
 

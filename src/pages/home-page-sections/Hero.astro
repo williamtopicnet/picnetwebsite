@@ -95,19 +95,6 @@
     font-size: $text-md;
   }
 
-  @media only screen and (max-width: $screen-lg) {
-    .hero__content {
-      padding-inline: $base * 4;
-      .hero__title {
-        font-size: $text-lg;
-      }
-
-      .hero__subtitle {
-        font-size: $text-sm;
-      }
-    }
-  }
-
   a {
     color: inherit;
     border: solid 1px;
@@ -120,6 +107,23 @@
     &:hover {
       background-color: $color-white;
       color: $color-primary;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .hero__content {
+      padding-inline: $base * 4;
+      .hero__title {
+        font-size: $text-lg;
+      }
+
+      .hero__subtitle {
+        font-size: $text-sm;
+      }
+    }
+
+    a {
+      font-size: $text-sm;
     }
   }
 </style>
