@@ -1,0 +1,155 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  ctaText: string;
+  ctaUrl: string;
+  heroImage: string;
+}
+
+const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
+---
+
+<section id="hero" class="services-hero-area">
+  <div class="services-hero__bg">
+    <div class="container">
+      <main>
+        <div class="services-hero__text">
+          <h1>{title}</h1>
+          <p>{subtitle}</p>
+
+          <a href={ctaUrl}
+            >{ctaText}
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <div class="services-hero__image">
+          <img src={heroImage} alt="software engineering hero image" />
+        </div>
+      </main>
+    </div>
+
+    <!-- SVG to create curve -->
+    <div class="svg-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="100%"
+        height="100%"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        ><path
+          d="M0,0 15,90 C16,95 16,97 23,91 L100,36 100,100 0,100 Z"
+          fill="rgba(255,255,255,1)"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/typography.scss";
+
+  .services-hero-area {
+    background-color: #303f4f;
+  }
+
+  .services-hero__bg {
+    background-color: rgba(21, 20, 36, 0.85);
+    background: linear-gradient(
+      to top,
+      rgba(21, 20, 36, 0.85),
+      rgba(21, 20, 36, 0.3)
+    );
+  }
+
+  .services-hero-area .container main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: $base * 16 $base * 10 0; // top left-right bottom
+    gap: $base * 10;
+    max-height: 55vh;
+
+    & > * {
+      min-width: 0;
+    }
+
+    .services-hero {
+      &__text {
+        color: $color-white;
+
+        h1 {
+          font-size: $text-4xl;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: $text-base;
+          color: $color-text-1;
+        }
+
+        a {
+          color: $color-white;
+          background-color: $color-text-info;
+          font-size: $text-sm;
+          font-weight: 500;
+
+          border-radius: $base-radius;
+          padding: 1em 1.5em;
+          margin-top: $base * 4;
+
+          display: inline-flex;
+          align-items: center;
+          gap: $base;
+          transition: filter 0.2s $base-animation-timing;
+
+          i {
+            transition: transform 0.2s $base-animation-timing;
+            will-change: transform;
+          }
+
+          &:hover {
+            filter: brightness(0.95);
+
+            i {
+              transform: translateX(25%);
+            }
+          }
+        }
+      }
+
+      &__image {
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .svg-container {
+    height: $base * 37.5;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .services-hero-area .container main {
+      max-height: max-content;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      .services-hero {
+        &__text {
+          grid-row: 2/3;
+          text-align: center;
+        }
+
+        &__image {
+          grid-row: 1/2;
+        }
+      }
+    }
+  }
+</style>

@@ -1,7 +1,7 @@
 ---
 ---
 
-<header>
+<header class="nav-header">
   <div class="container">
     <div class="logo">
       <a href="/">
@@ -54,24 +54,31 @@
       return;
     }
 
-    const showMenu = () => (headerNav.style.transform = `translateX(0%)`);
-    const hideMenu = () => (headerNav.style.transform = `translateX(100%)`);
+    const showMenu = () => {
+      if (window.matchMedia("(max-width: 780px)").matches) {
+        headerNav.style.transform = `translateX(0%)`;
+      }
+    };
+
+    const hideMenu = () => {
+      if (window.matchMedia("(max-width: 780px)").matches) {
+        headerNav.style.transform = `translateX(100%)`;
+      }
+    };
 
     openBurgerButton.onclick = showMenu;
 
     // Close mobile menu when click on its child
     headerNavChildren.forEach((child) => {
-      if (window.matchMedia("(max-width: 780px)").matches) {
-        child.addEventListener("click", hideMenu);
-      }
+      child.addEventListener("click", hideMenu);
     });
 
-    let timeout: ReturnType<typeof window.setTimeout> = -1, // holder for timeout id
+    let timeout: NodeJS.Timeout = -1 as unknown as NodeJS.Timeout, // holder for timeout id
       delay = 250; // delay after event is "complete" to run callback
 
     const onMatchMobileMedia = () => {
       if (!window.matchMedia("(max-width: 780px)").matches) {
-        headerNav.style.transform = null;
+        headerNav.style.transform = "";
       }
     };
 
@@ -101,8 +108,13 @@
   }
 
   header {
-    background-color: $color-primary;
     padding-top: $base;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
 
     .container {
       display: flex;

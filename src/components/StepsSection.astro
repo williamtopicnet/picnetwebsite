@@ -1,0 +1,35 @@
+---
+import type { Step } from "./Steps.astro";
+import Steps from "./Steps.astro";
+
+interface Props {
+  title: string;
+  subtitle: string;
+  data: Step[];
+}
+
+const { title, subtitle, data } = Astro.props;
+---
+
+<section id="steps" class="steps-area section">
+  <header class="section__header">
+    <h3 class="section__subtitle">{subtitle}</h3>
+    <h1 class="section__title">{title}</h1>
+  </header>
+
+  <div class="container">
+    <main>
+      <Steps data={data} />
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/scss/base-var.scss";
+
+  @media only screen and (max-width: $screen-lg) {
+    .steps-area .container > main {
+      padding-inline: $base * 4;
+    }
+  }
+</style>

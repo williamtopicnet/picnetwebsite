@@ -1,0 +1,68 @@
+---
+interface Props {
+  type: string;
+  title: string;
+  content: string | string[];
+}
+
+const { type, title, content } = Astro.props;
+---
+
+<!-- As paragraph -->{
+  type === "paragraph" && (
+    <div class="information__item">
+      <strong class="information__item__title">{title}</strong>
+      <div class="information__item__body">
+        {Array.isArray(content) ? (
+          content.map((item) => <p set:html={item} />)
+        ) : (
+          <p>{content}</p>
+        )}
+      </div>
+    </div>
+  )
+}
+
+<!-- As List -->
+{
+  type === "list" && (
+    <div class="information__item">
+      <strong class="information__item__title">{title}</strong>
+      <div class="information__item__body">
+        <ul>
+          {(content as string[]).map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+<style lang="scss">
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/base-var.scss";
+
+  .information__item {
+    margin-top: $base * 2;
+
+    &__title {
+      color: $color-text-2;
+      font-weight: 500;
+    }
+
+    &__body {
+      color: $color-text-title;
+
+      p {
+        margin-top: $base * 0.5;
+      }
+
+      ul {
+        padding-left: $base * 3;
+        list-style: disc;
+        list-style-position: inside;
+      }
+    }
+  }
+</style>

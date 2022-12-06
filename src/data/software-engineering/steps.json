@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "title": "WEB APPLICATIONS",
+      "subtitle": "Build Once, Deploy Everywhere",
+      "description": "Many business processes are subject to erroneous data entry, manual and inefficient inputs or overwhelming Excel spreadsheets that can no longer be maintained. These inefficiencies can often lead to a lack of visibility or missed opportunities. We alleviate these hurdles by developing software and apps to support and optimise your business processes."
+    },
+    {
+      "title": "TABLET APPLICATIONS",
+      "subtitle": "Internal and External tools",
+      "description": "Develop quality long-lived systems that require thoughtful architecture and designs."
+    },
+    {
+      "title": "MOBILE APPLICATIONS",
+      "subtitle": "Your company in the palm of your hand",
+      "description": "Develop systems that need to portray quality and beauty to your customers."
+    },
+    {
+      "title": "INTEGRATION & SUPPORT",
+      "subtitle": "With you at every stage",
+      "description": "We can help you maintain existing systems to ensure they keep up with your business requirements. We can also assist in the integration of these systems to other legacy systems or modern cloud systems as required by your organisation."
+    }
+  ]
+}

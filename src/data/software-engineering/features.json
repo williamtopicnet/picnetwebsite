@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "icon": "fa-regular fa-lightbulb",
+      "title": "Innovative Software",
+      "description": "Do you need creative and advanced software solutions for your business"
+    },
+    {
+      "icon": "fa-solid fa-brain",
+      "title": "Intuitive Design",
+      "description": "Do you need the best user experience for your systems"
+    },
+    {
+      "icon": "fa-solid fa-medal",
+      "title": "Competitive Edge",
+      "description": "Are you looking to make your software stand out from the rest"
+    },
+    {
+      "icon": "fa-solid fa-rocket",
+      "title": "Higher Performance",
+      "description": "Do you need systems to make your business more effective"
+    },
+    {
+      "icon": "fa-solid fa-hand-holding-dollar",
+      "title": "A Better Value Prop",
+      "description": "Are your cumbersome processes costing you money"
+    },
+    {
+      "icon": "fa-regular fa-hand-back-fist",
+      "title": "Measurable Impact",
+      "description": "Are your existing applications lacking in impact"
+    },
+    {
+      "icon": "fa-solid fa-puzzle-piece",
+      "title": "Effective Integration",
+      "description": "Do you need to connect systems and processes to get a company wide source of truth"
+    },
+    {
+      "icon": "fa-solid fa-shield-halved",
+      "title": "High Quality Systems",
+      "description": "Do you need software that will stand the test of time with thoughtful architecture"
+    },
+    {
+      "icon": "fa-regular fa-file",
+      "title": "Meaningful Data",
+      "description": "Do you need systems that will enable you to collect valuable information which is currently being wasted in outdated manual processes or messy spreadsheets"
+    },
+    {
+      "icon": "fa-solid fa-phone",
+      "title": "Local Support",
+      "description": "Do you need support closer to home providing easy access and fast response"
+    }
+  ]
+}

@@ -1,17 +1,46 @@
 ---
+// Static Data
+import { data as informationData } from "../../data/software-engineering/information.json";
+import { data as featureData } from "../../data/software-engineering/features.json";
+import { data as stepsData } from "../../data/software-engineering/steps.json";
+
+// Components
+import FeatureSection from "../../components/FeatureSection.astro";
+import InfoSection from "../../components/InfoSection.astro";
+import ServicesHero from "../../components/ServicesHero.astro";
 import Layout from "../../layouts/Layout.astro";
+import StepsSection from "../../components/StepsSection.astro";
 ---
 
 <Layout title="PicNet - Software Development Services">
-  <main>
-    <h1>Software Development Services</h1>
-  </main>
+  <ServicesHero
+    title="Software Development Services"
+    subtitle="100% Australian Development (No offshoring). Everything developed in Sydney with absolute respect for your IP and sensitive data. With a commitment to quality, performance, and beauty."
+    ctaText="Contact Us Today"
+    ctaUrl="/software-engineering/#contact"
+    heroImage="/images/software-engineering/softwareengineering_hero.webp"
+  />
+
+  <FeatureSection
+    title="When your company needs"
+    subtitle="build a quality software stack that can scale with you"
+    data={featureData}
+  />
+
+  <InfoSection
+    title="High Performance Custom Software"
+    subtitle="local development of web, mobile and distributed systems in your industry"
+    image="/images/software-engineering/softwareengineering_maintenance.webp"
+    data={informationData}
+  />
+
+  <StepsSection
+    title="Types of Systems"
+    subtitle="DESIGN, DEVELOP, DEPLOY"
+    data={stepsData}
+  />
 </Layout>
 
 <style lang="scss" is:global>
   @import "../../styles/scss/colors.scss";
-
-  header {
-    background-color: $color-primary;
-  }
 </style>

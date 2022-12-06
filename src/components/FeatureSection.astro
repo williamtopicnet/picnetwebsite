@@ -1,0 +1,57 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  data: {
+    title: string;
+    description: string;
+    icon: string;
+  }[];
+}
+
+import FeatureItem from "./FeatureItem.astro";
+
+const { title, subtitle, data } = Astro.props;
+---
+
+<section id="features" class="section features-area">
+  <header class="section__header">
+    <h3 class="section__subtitle">{subtitle}</h3>
+    <h1 class="section__title">{title}</h1>
+  </header>
+
+  <div class="container">
+    <main>
+      {
+        data.map(({ title, description, icon }) => (
+          <FeatureItem title={title} description={description} icon={icon} />
+        ))
+      }
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/base-var.scss";
+
+  .features-area {
+    background-color: $color-white;
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: $base * 8;
+      gap: $base * 8;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .features-area {
+      padding-inline: $base * 4;
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+</style>

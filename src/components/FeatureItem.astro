@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+const { title, description, icon } = Astro.props;
+---
+
+<div class="feature__item">
+  <div class="feature__item__icon">
+    <i class={`${icon} fa-2xl`}></i>
+  </div>
+  <strong class="feature__item__title">{title}</strong>
+  <p class="feature__item__description">{description}</p>
+</div>
+
+<style lang="scss">
+  @import "../styles/scss/typography.scss";
+  @import "../styles/scss/base-var.scss";
+
+  .feature__item {
+    text-align: start;
+
+    &__title {
+      font-weight: 500;
+      font-size: $text-base;
+      margin-top: $base;
+      display: inline-block;
+    }
+
+    &__description {
+      font-size: $text-base;
+      font-weight: 300;
+      margin-top: $base;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .feature__item {
+      text-align: center;
+    }
+  }
+</style>

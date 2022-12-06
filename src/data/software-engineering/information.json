@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "type": "paragraph",
+      "title": "100% Developed in Australia",
+      "content": "Our Sydney based development team is made up of highly experienced, highly capable architects, developers, project managers and business analysts. Our excellent people is what differentiates our offering from others in the market."
+    },
+    {
+      "type": "paragraph",
+      "title": "We Work In A Range Of Industries",
+      "content": "Since 2001, PicNet has provided IT services and solutions to many of Australia's major corporations, government agencies and private organisations; these include NSW Health and a wide range of pharmaceutical and other health-related businesses. Our years of experience in this sector has given us an in-depth understanding of the constantly changing needs, opportunities and challenges of the industry."
+    },
+    {
+      "type": "list",
+      "title": "Technological Proficiency",
+      "content": ["Microsoft .Net", "Angular", "React", "Python", "IoT"]
+    }
+  ]
+}

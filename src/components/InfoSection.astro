@@ -1,0 +1,78 @@
+---
+import InfoItem from "./InfoItem.astro";
+
+interface Props {
+  title: string;
+  subtitle: string;
+  image: string;
+  data: {
+    type: string;
+    title: string;
+    content: string | string[];
+  }[];
+}
+
+const { title, subtitle, image, data } = Astro.props;
+---
+
+<section id="information" class="section information-area">
+  <header class="section__header">
+    <h3 class="section__subtitle">{subtitle}</h3>
+    <h1 class="section__title">{title}</h1>
+  </header>
+
+  <div class="container">
+    <main class="information__content">
+      <img
+        src={image}
+        alt="information section image"
+        class="information__image img"
+        loading="lazy"
+      />
+
+      <div class="information__text">
+        {
+          data.map(({ title, content, type }) => (
+            <InfoItem title={title} content={content} type={type} />
+          ))
+        }
+      </div>
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/scss/colors.scss";
+  @import "../styles/scss/base-var.scss";
+
+  .information-area {
+    background-color: $color-white;
+    padding: 0;
+
+    main.information__content {
+      margin-top: $base * 4;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $base * 8;
+    }
+
+    img.information__image {
+      max-width: 60%;
+      justify-self: center;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .information-area {
+      padding: $base * 4;
+
+      main.information__content {
+        grid-template-columns: 1fr;
+      }
+
+      img.information__image {
+      }
+    }
+  }
+</style>
