@@ -1,5 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="PicNet - Software Development Services">
@@ -8,6 +8,10 @@ import Layout from '../../layouts/Layout.astro';
   </main>
 </Layout>
 
-<style>
-  
+<style lang="scss" is:global>
+  @import "../../styles/scss/colors.scss";
+
+  header {
+    background-color: $color-primary;
+  }
 </style>
