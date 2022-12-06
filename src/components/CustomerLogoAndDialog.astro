@@ -1,6 +1,14 @@
 ---
 import Dialog from "./Dialog.astro";
 
+interface Props {
+  logo: string;
+  brand: string;
+  title: string;
+  more: string;
+  content: string | string[];
+}
+
 const { logo, brand, title, more, content } = Astro.props;
 const dialogid = `dialogid_${logo.split(".")[0]}`;
 ---
@@ -15,8 +23,14 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
       <img src={`/images/home/customers/${brand}`} alt="brand" loading="lazy" />
     </div>
     <div class="customer__content">
-      <h3>{title}</h3>
-      <p>{content}</p>
+      {title && <h3>{title}</h3>}
+      {
+        typeof content === "string" ? (
+          <p>{content}</p>
+        ) : (
+          content.map((item) => <p>{item}</p>)
+        )
+      }
       <a class="more-btn text-underline" href={more}>Read more about this</a>
     </div>
   </div>
@@ -77,10 +91,6 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
     }
 
     p {
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
       font-weight: 300;
       margin-top: $base;
     }

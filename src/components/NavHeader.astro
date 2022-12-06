@@ -61,7 +61,9 @@
 
     // Close mobile menu when click on its child
     headerNavChildren.forEach((child) => {
-      child.addEventListener("click", hideMenu);
+      if (window.matchMedia("(max-width: 780px)").matches) {
+        child.addEventListener("click", hideMenu);
+      }
     });
 
     let timeout: ReturnType<typeof window.setTimeout> = -1, // holder for timeout id
