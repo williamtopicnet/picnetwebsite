@@ -1,0 +1,142 @@
+---
+---
+
+<section id="platforms" class="section platforms-area">
+  <div class="container">
+    <header class="section__header">
+      <h3 class="section__subtitle">
+        ENABLE YOUR BUSINESS TO CRAFT SOLUTIONS WHILE EMPOWERING YOU TO UNITE
+        CUSTOMIZED TECHNOLOGY
+      </h3>
+      <h1 class="section__title">
+        Comprehensive and Robust Apps using <br /> Microsoft Dynamics 365 and Power
+        Platform
+      </h1>
+    </header>
+
+    <main class="platforms__content">
+      <div class="platforms__item">
+        <strong class="platforms__item__title"
+          >The Next Generation of CRM and ERP Applications
+        </strong>
+        <p class="platforms__item__description">
+          <a href="https://dynamics.microsoft.com/en-au/" target="_blank"
+            >Microsoft Dynamics 365</a
+          > is a collection of intelligent business applications that helps you run
+          your entire business and deliver great results. These applications work
+          seamlessly together to solve challenges in your business &ndash; including
+          sales, service, marketing, commerce, and operations. Unify your data and
+          uncover predictive insights to drive your success.
+        </p>
+        <img
+          class="platforms__item__img"
+          alt="Microsoft Dynamics 365"
+          src="/images/software-engineering/softwareengineering_ms_dynamic_insights.webp"
+          width="555"
+          height="300"
+        />
+      </div>
+      <div class="platforms__item">
+        <strong class="platforms__item__title"
+          >The Value of Low-Code in the Modern World
+        </strong>
+        <p class="platforms__item__description">
+          <a href="https://powerplatform.microsoft.com/en-au/" target="_blank"
+            >Microsoft Power Platform</a
+          > is a set of products that can empower your employees to build end-to-end
+          business solutions with its low-code capabilities. The connection of these
+          products such as Power Apps, Power BI, and Power Automate, to your Dynamics
+          365, Office 365, Azure, and hundreds of other apps, can turn great ideas
+          into powerful solutions.
+        </p>
+        <img
+          class="platforms__item__img"
+          alt="Microsoft Power Platform"
+          src="/images/software-engineering/softwareengineering_ms_powerapps_intro.webp"
+          width="555"
+          height="300"
+        />
+      </div>
+
+      <div class="platforms__item">
+        <strong class="platforms__item__title"
+          >Revolutionise your Business and Empower your Employees
+        </strong>
+        <p class="platforms__item__description">
+          Are you looking to capitalise on the productivity gains of your
+          Microsoft cloud investments such as Office 365? Would you like to stay
+          ahead of the competition, at the same time inspiring your employees to
+          engage, imagine, and create solutions? All these are possible using
+          Microsoft Dynamics 365 and Power Platform. PicNet can help you start
+          that journey towards achieving the success you&lsquo;ve always wanted
+          for your organisation. We will equip you with the necessary knowledge
+          and skills to get your bright ideas realised and transform your
+          business.
+        </p>
+      </div>
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../../styles/scss/base-var.scss";
+  @import "../../../styles/scss/colors.scss";
+  @import "../../../styles/scss/typography.scss";
+
+  .platforms-area {
+    background-color: $color-bg;
+  }
+
+  .platforms__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $base * 8;
+    margin-top: $base * 6;
+
+    .platforms__item {
+      display: flex;
+      flex-direction: column;
+      gap: $base;
+
+      a {
+        color: $color-text-info;
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: $text-md;
+        color: $color-text-2;
+      }
+
+      &__description {
+        font-size: $text-base;
+        font-weight: 300;
+        color: $color-text-title;
+      }
+
+      &__img {
+        max-width: 100%;
+        height: auto;
+        margin-top: auto;
+      }
+
+      &:last-child {
+        grid-column: 1/3;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .platforms-area {
+      padding-inline: $base * 4;
+
+      .platforms__content {
+        grid-template-columns: 1fr;
+
+        .platforms__item:last-child {
+          grid-column: auto;
+        }
+      }
+    }
+  }
+</style>

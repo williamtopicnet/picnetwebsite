@@ -10,35 +10,43 @@ const { tabs } = Astro.props;
 
   document.addEventListener("DOMContentLoaded", () => {
     if (typeof initTab === "function") {
-      initTab("partners");
+      initTab();
     }
   });
 </script>
 
-<div class="tabs__action">
-  {
-    tabs.map((tab, index) => (
-      <button class="tabs__button" data-tab-index={index}>
-        {tab}
-      </button>
-    ))
-  }
-</div>
+<div class="tabs">
+  <div class="tabs__action">
+    {
+      tabs.map((tab, index) => (
+        <button class="tabs__button" data-tab-index={index}>
+          {tab}
+        </button>
+      ))
+    }
+  </div>
 
-<div class="tabs__content">
-  <slot />
+  <div class="tabs__content">
+    <slot />
+  </div>
 </div>
 
 <style lang="scss">
-  @import "../layouts/global.scss";
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/colors.scss";
 
   .tabs__action {
     border-top-left-radius: $base-radius;
     border-top-right-radius: $base-radius;
     display: flex;
+    flex-wrap: wrap;
+    gap: $base;
 
     .tabs__button {
-      flex: 1;
+      min-width: 0;
+      border-radius: $base;
+      transition: background-color 0.2s, color 0.2s;
+      transition-timing-function: $base-animation-timing;
 
       &.active {
         background-color: $color-text-info;
@@ -60,10 +68,13 @@ const { tabs } = Astro.props;
   }
 
   .tabs__content {
+    margin-top: $base * 2;
     min-height: $base * 60;
     padding: $base * 8;
     background-color: $color-white;
-    border-bottom-left-radius: $base-radius;
-    border-bottom-right-radius: $base-radius;
+    border-radius: $base-radius;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
   }
 </style>

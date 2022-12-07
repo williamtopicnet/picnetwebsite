@@ -1,13 +1,11 @@
 const show = (elem: Element) => elem.removeAttribute("style");
 const hide = (elem: Element) => elem.setAttribute("style", "display: none");
 
-const initTab = (containerId: string) => {
+const initTab = () => {
   let activeIndex = "0";
 
-  const children = document.querySelectorAll(`#${containerId} .tabs__item`);
-  const buttons = document.querySelectorAll<HTMLButtonElement>(
-    `#${containerId} .tabs__button`
-  );
+  const children = document.querySelectorAll(".tabs__item");
+  const buttons = document.querySelectorAll<HTMLButtonElement>(".tabs__button");
 
   const changeActiveState = (activeIndex: string) => {
     buttons.forEach((btn) => {

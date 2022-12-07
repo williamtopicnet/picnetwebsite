@@ -1,0 +1,146 @@
+---
+import type { ServiceCaseStudy } from "../utils/types";
+import InfoItem from "./InfoItem.astro";
+import Tabs from "./Tabs.astro";
+
+interface Props {
+  title: string;
+  subtitle: string;
+  data: ServiceCaseStudy[];
+}
+
+const { title, subtitle, data } = Astro.props;
+
+const tabs = data.map(({ title }) => title);
+---
+
+<section id="service-case-study" class="section service-case-study-area">
+  <div class="container">
+    <header class="section__header">
+      <h3 class="section__subtitle">{subtitle}</h3>
+      <h1 class="section__title">{title}</h1>
+    </header>
+    <main>
+      <Tabs tabs={tabs}
+        >{
+          data.map(({ image, mainContent, subContent }) => (
+            <article class="tabs__item case-study">
+              <img
+                src={image}
+                loading="lazy"
+                class="case-study__img"
+                width="300"
+                height="100"
+              />
+
+              <div class="case-study__main-content">
+                <h1>{mainContent.title}</h1>
+                <p>{mainContent.content}</p>
+              </div>
+
+              <div class="case-study__sub-content">
+                {subContent.map((subContentItem) => (
+                  <>
+                    <InfoItem
+                      type={subContentItem.type}
+                      title={subContentItem.title}
+                      content={subContentItem.content}
+                      className="case-study__sub-content-item"
+                    />
+                  </>
+                ))}
+              </div>
+            </article>
+          ))
+        }</Tabs
+      >
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/scss/base-var.scss";
+  @import "../styles/scss/typography.scss";
+  @import "../styles/scss/colors.scss";
+
+  .service-case-study-area {
+    .case-study {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $base * 2;
+
+      &__img {
+        object-fit: contain;
+      }
+
+      &__main-content {
+        grid-column: 1/2;
+
+        h1 {
+          font-weight: 300;
+          font-size: $text-2xl;
+          margin-bottom: $base;
+        }
+
+        p {
+          color: $color-text-title;
+          font-weight: 300;
+          font-size: $text-md;
+        }
+      }
+
+      &__sub-content {
+        grid-column: 2/3;
+        margin-top: $base * 2;
+        padding: $base * 4;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        background-color: $color-text-info;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .service-case-study-area {
+      padding-inline: $base * 4;
+
+      .case-study {
+        grid-template-columns: 1fr;
+        gap: $base;
+
+        &__sub-content {
+          grid-column: 1/-1;
+          margin-top: $base;
+
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+</style>
+
+<style lang="scss" is:global>
+  @import "../styles/scss/typography.scss";
+  @import "../styles/scss/colors.scss";
+
+  #service-case-study {
+    .case-study {
+      &__sub-content-item {
+        strong,
+        p {
+          color: $color-white;
+        }
+
+        strong {
+          font-weight: 600;
+        }
+
+        p {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+</style>
