@@ -18,6 +18,16 @@ import Layout from "@layouts/Layout.astro";
 import Platforms from "./software-engineering-sections/Platforms.astro";
 ---
 
+<script>
+  import { initTab } from "@scripts/tab";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("case-studies");
+    }
+  });
+</script>
+
 <Layout title="PicNet - Software Development Services">
   <ServicesHero
     title="Software Development Services"
@@ -52,9 +62,6 @@ import Platforms from "./software-engineering-sections/Platforms.astro";
     title="Some of our Case Studies"
     subtitle="OUR COMMITMENT TO QUALITY"
     data={caseStudiesData}
+    id="case-studies"
   />
 </Layout>
-
-<style lang="scss" is:global>
-  @import "@styles/scss/colors.scss";
-</style>

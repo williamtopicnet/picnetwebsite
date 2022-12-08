@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "icon": "fa-brands fa-redhat",
+      "title": "Feeling Invisible?",
+      "description": "Not satisfied with your existing IT provider? Being treated like a number rather than a customer?"
+    },
+
+    {
+      "icon": "fa-solid fa-chart-line",
+      "title": "Scaling Up?",
+      "description": "Are you growing and need more robust IT services?"
+    },
+
+    {
+      "icon": "fa-solid fa-headset",
+      "title": "Want Local Support?",
+      "description": "Sick of talking with someone half a world away who are not empowered to give you the service you expect and deserve?"
+    },
+
+    {
+      "icon": "fa-solid fa-map-location",
+      "title": "International scale, local needs?",
+      "description": "Does your international business need local onsite IT support presence?"
+    },
+    {
+      "icon": "fa-solid fa-user-group",
+      "title": "No resources for Projects?",
+      "description": "Do have an IT project that needs to be done but no spare IT resources to do it"
+    },
+    {
+      "icon": "fa-solid fa-folder-closed",
+      "title": "Still Hosting In-house?",
+      "description": "Are you still hosting you own emails and files (network drives)? Are you curious about the advantage of migrating to cloud SaaS based email and file hosting using Office 365?"
+    },
+
+    {
+      "icon": "fa-solid fa-cloud",
+      "title": "Lack Public Cloud Skills?",
+
+      "description": "Do you want to host an application in AWS or Azure but don't have the internal technical skills?"
+    },
+    {
+      "icon": "fa-solid fa-cart-arrow-down",
+      "title": "Need Hardware?",
+      "description": "Do you need a responsive supplier for your enterprise hardware needs such as laptops, desktops, monitors, servers, switches, firewalls, wireless access points etc?"
+    }
+  ]
+}

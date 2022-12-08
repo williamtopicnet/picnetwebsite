@@ -5,16 +5,6 @@ export interface Props {
 const { tabs } = Astro.props;
 ---
 
-<script>
-  import { initTab } from "@scripts/tab";
-
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab();
-    }
-  });
-</script>
-
 <div class="tabs">
   <div class="tabs__action">
     {
@@ -70,7 +60,6 @@ const { tabs } = Astro.props;
 
   .tabs__content {
     margin-top: $base * 2;
-    min-height: $base * 60;
     background-color: $color-white;
     border-radius: $base-radius;
   }

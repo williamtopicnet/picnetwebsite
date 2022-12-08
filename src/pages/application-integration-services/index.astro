@@ -1,13 +1,68 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import { data as featureData } from "@data/application-integration-services/features.json";
+import { data as caseStudiesData } from "@data/application-integration-services/case-studies.json";
+import { data as servicesSolutionsData } from "@data/application-integration-services/services-solutions.json";
+
+import ServicesHero from "@components/common/ServicesHero.astro";
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import Layout from "@layouts/Layout.astro";
+import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+import ArrowButton from "@components/common/ArrowButton.astro";
 ---
 
+<script>
+  import { initTab } from "@scripts/tab";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("services-solutions");
+      initTab("case-studies");
+    }
+  });
+</script>
+
 <Layout title="PicNet - Centazio - Application Integration Services">
-  <main>
-    <h1>Centazio - Application Integration Services</h1>
-  </main>
+  <ServicesHero
+    title="Application Integration Services"
+    subtitle="Today, companies are facing complex challenges accessing data in a single place due to siloed, disparate platforms. Our application integration services seamlessly combine data from all of your sources."
+    ctaText="Contact Us Today"
+    ctaUrl="/application-integration-services/#contact"
+    heroImage="/images/application-integration-services/integrationservices-1.webp"
+  />
+
+  <FeatureSection
+    title="Manage and integrate all your data in the cloud or on premise, with modern integration services from PicNet"
+    subtitle="ALL OF YOUR DATA, FROM ALL OF YOUR SOURCES, ALL AT YOUR FINGER TIPS."
+    data={featureData}
+  />
+
+  <ServiceCaseStudySection
+    title="Integration Services. Integration Solutions."
+    subtitle="DON'T YOU WISH SOMEONE COULD MAKE ALL OF YOUR DATA, PLATFORMS, SAAS PRODUCTS, CLOUD PLATFORMS AND BI TOGETHER INTO ONE PLACE? PICNET IPAAS IS THE ANSWER."
+    id="services-solutions"
+    data={servicesSolutionsData}
+  />
+
+  <ServiceCaseStudySection
+    title="Case Studies"
+    subtitle="COMPANIES THAT WE HAVE ASSISTED WITH CENTAZIO."
+    id="case-studies"
+    data={caseStudiesData}
+  />
+
+  <div class="container see-more-on-blog text-center">
+    <ArrowButton
+      text="See more on our blog"
+      href="/blog/modern-enterprise-systems-architecture/"
+    />
+  </div>
 </Layout>
 
-<style>
-  
+<style lang="scss">
+  @use "@styles/scss/colors.scss" as colors;
+  @use "@styles/scss/base-var.scss" as bv;
+
+  .see-more-on-blog {
+    padding-bottom: bv.$base * 12;
+  }
 </style>

@@ -1,34 +1,51 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import CaseStudies from './sections/CaseStudies.astro';
-import Description from './sections/Description.astro';
-import Hero from './sections/Hero.astro';
-import InfoCards from './sections/InfoCards.astro';
+import { data as featureData } from "@data/project-management/features.json";
+import { data as informationData } from "@data/project-management/information.json";
+import { data as caseStudiesData } from "@data/project-management/case-studies.json";
+
+import ServicesHero from "@components/common/ServicesHero.astro";
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import InfoSection from "@components/info-section/InfoSection.astro";
+import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title="PicNet - Project Management and Business Analysis Services">
-  <Hero />
-  <InfoCards />
-  <Description />
-  <CaseStudies />
-</Layout>
-<div slot="header-polygon" class="header-polygon"></div>
-<style lang="scss">
-  @import '../../layouts/global.scss';
-  
-  .header-polygon {
-    z-index: 0;
-    position: absolute;
-    top: 0px;
-    bottom: 40rem;
-    width: 100%;
-    background-color: $color-bg-dark;        
+<script>
+  import { initTab } from "@scripts/tab";
 
-    clip-path: polygon(
-      0 0,
-      0 70%, 
-      15% 100%, 
-      100% 75%,
-      100% 0%);
-  }  
-</style>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("case-studies");
+    }
+  });
+</script>
+
+<Layout title="PicNet - Project Management and Business Analysis Services">
+  <ServicesHero
+    title="IT Consulting & Project Management Services"
+    subtitle="Proving you with experienced and independent Consultants to review your IT, to manage your projects, to recommend you a technology framework to maximize productivity or to design a secure and robust IT for your business."
+    heroImage="/images/project-management/header-icon.png"
+    ctaText="Contact Us Today"
+    ctaUrl="/project-management/#contact-us"
+  />
+
+  <FeatureSection
+    title="Contact us to help you with:"
+    subtitle="DESIGNING A SECURE, ROBUST AND RELIABLE IT FOR YOUR BUSINESS"
+    data={featureData}
+  />
+
+  <InfoSection
+    title="How we have helped others"
+    subtitle="WE SOLVE HARD PROBLEMS FOR GREAT COMPANIES"
+    image="/images/project-management/description.png"
+    data={informationData}
+  />
+
+  <ServiceCaseStudySection
+    title="Some of our Case Studies"
+    subtitle="WE AIM FOR IMPACT"
+    data={caseStudiesData}
+    id="case-studies"
+  />
+</Layout>

@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "title": "Access, Integrate & Connect your Data",
+      "icon": "fa-solid fa-rotate",
+      "mainContent": {
+        "title": "Access, Integrate and Connect Your Data",
+        "content": "Are you ready to  make all of your saas products, cloud and data sources work in concert?"
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Is your current solution “spaghetti”?",
+          "content": "Many businesses implement point-to-point integrations that increase complexity and costs for support and maintenance. High maintenance code also serves to increase security risks. We call this approach spaghetti-style interfacing'. 'Spaghetti-style interfacing' reduces the business's ability to adapt to change."
+        },
+        {
+          "type": "paragraph",
+          "title": "A symphony of all your SaaS",
+          "content": [
+            "For a robust digital transformation, application and data integration should be robust enough to support the large influx of data sources and systems and be flexible enough to support innovations ahead.",
+            "With the new generation of middleware solutions (iPaaS - Integration Platform as a Service) we create a robust and secure integration platform that allows real time and professional integration of multiple SaaS and legacy applications, based on the cloud, on premises or hybrid."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The iPaaS Technologies",
+      "icon": "fa-solid fa-server",
+      "mainContent": {
+        "title": "The iPaaS Technologies",
+        "content": "There are a lot of ways to orchestrate your data and products. because we are product agnostic, we can give you the right solution every time."
+      },
+      "subContent": [
+        {
+          "type": "list",
+          "title": "The Right Solution Every Time",
+          "subtitle": "Some solutions are better at API management, communication protocols, data and application connectivity, data formatting, mapping, transformation, etc. The solution of choice depends on the problem at hand, but as a general rule, PicNet Integration Platform strongly supports Azure Integration Services and after that, other platforms.",
+          "listTitle": "There are numerous iPaaS solutions in the marketplace, including:",
+          "content": [
+            "Microsoft Azure Integration Services",
+            "Informatica",
+            "Boomi",
+            "Mulesoft",
+            "Jitterbit",
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Centazio",
+      "icon": "fa-solid fa-rocket",
+      "mainContent": {
+        "title": "Access, Integrate and Connect Your Data",
+        "content": "PicNet Integration, Orchestration and Master Data Platform [Centazio]"
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Benefit from our considerable experience",
+          "content": [
+            "Over time we have identified the most common tasks that most integration projects require.",
+            "From this experience, we have built Centazio to address these items quickly and efficiently."
+          ]
+        },
+        {
+          "type": "list",
+          "title": "The key tasks included that Centazio can solve for you today:",
+          "content": [
+            "Efficient acquisition and deployment of Azure resources",
+            "Reproducible Azure deployment",
+            "Tools to start/stop Azure environments to reduce cost",
+            "Tools to assist in other miscellaneous and common maintenance tasks",
+            {
+              "title": "Code to assist:",
+              "nested": [
+                "Efficient development of Azure functions",
+                "Efficient usage of Azure Service Bus"
+              ]
+            },
+            {
+              "title": "Best practices to assist in staging entities:",
+              "nested": [
+                "Staging is the step of copying source system data in an unmodified format to the database.",
+                "Best practices to assist in promoting entities (promoting is taking staging data and converting it into a common format that can then be saved in the master data database).",
+                "Best practices to assist in long-running and complex workflows",
+                "Best practices in creating a star-schema style master database that supports reporting out of the box"
+              ]
+            },
+            {
+              "title": "Managed services",
+              "nested": [
+                "Once the initial implementation is complete, PicNet provides ongoing maintenance, enhancements, upgrades and improvements under a longer-term Managed Services agreement."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modern Enterprise Systems Architecture",
+      "icon": "fa-solid fa-globe",
+      "mainContent": {
+        "title": "Modern Enterprise Systems Architecture",
+        "content": "Your systems are probably great, for the 1990's. doesn't your business, team and customers deserve the best solutions?"
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "The world has changed. Technology has changed.",
+          "content": [
+            "Twenty-five years ago, we did not have the internet. Now, we could not live without it.",
+            "Enterprise systems used to be large, clunky, expensive, slow, fragile, difficult to maintain, upgrade and replace. However, they used to be the only viable alternative for enterprises to have business systems to improve productivity. Sophisticated vendor management especially where the global configuration was paramount."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "A symphony of all your SaaS",
+          "content": [
+            "As the internet became more prevalent, there has been a significant evolution significantly of new public cloud architectures, new development and database tools, new reporting and multi-tenant capabilities. Consequently, the new best-practice way to deploy enterprise systems is not one large system, but instead, several small, SaaS subscription-based, low-cost, best in class systems for each functionality required.",
+            "If integrated correctly, each system talks to each other via an iPaaS solution - Microsoft Azure Integration Services."
+          ]
+        }
+      ]
+    }
+  ]
+}

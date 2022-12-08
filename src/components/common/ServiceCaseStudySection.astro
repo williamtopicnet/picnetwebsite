@@ -8,14 +8,18 @@ interface Props {
   title: string;
   subtitle: string;
   data: ServiceCaseStudy[];
+  id?: string;
 }
 
-const { title, subtitle, data } = Astro.props;
+const { title, subtitle, data, id } = Astro.props;
 
 const tabs = data.map(({ title }) => title);
 ---
 
-<section id="service-case-study" class="section service-case-study-area">
+<section
+  id={id ?? "service-case-study"}
+  class="section service-case-study-area"
+>
   <div class="container">
     <header class="section__header">
       <h3 class="section__subtitle">{subtitle}</h3>
@@ -24,16 +28,30 @@ const tabs = data.map(({ title }) => title);
     <main>
       <Tabs tabs={tabs}
         >{
-          data.map(({ image, mainContent, subContent }) => (
+          data.map(({ image, mainContent, subContent, icon }) => (
             <article class="tabs__item case-study">
-              <img
-                src={image}
-                loading="lazy"
-                class="case-study__img"
-                width="300"
-                height="100"
-              />
+              {image &&
+                (Array.isArray(image) ? (
+                  image.map((img) => (
+                    <img
+                      src={img}
+                      loading="lazy"
+                      class="case-study__img"
+                      width="300"
+                      height="200"
+                    />
+                  ))
+                ) : (
+                  <img
+                    src={image}
+                    loading="lazy"
+                    class="case-study__img"
+                    width="300"
+                    height="200"
+                  />
+                ))}
 
+              {icon && <i class={`${icon} case-study__icon fa-4x`} />}
               <div class="case-study__main-content">
                 <h1>{mainContent.title}</h1>
                 <p>{mainContent.content}</p>
@@ -45,6 +63,8 @@ const tabs = data.map(({ title }) => title);
                     <InfoItem
                       type={subContentItem.type}
                       title={subContentItem.title}
+                      subtitle={subContentItem?.subtitle}
+                      listTitle={subContentItem?.listTitle}
                       content={subContentItem.content}
                       className="case-study__sub-content-item"
                     />
@@ -70,14 +90,24 @@ const tabs = data.map(({ title }) => title);
       grid-template-columns: 1fr 1fr;
       gap: $base * 2;
 
+      &__img,
+      &__icon {
+        margin-top: $base * 4;
+        margin-left: $base * 4;
+      }
+
       &__img {
         object-fit: contain;
-        margin-top: $base * 4;
+      }
+
+      &__icon {
+        color: $color-text-info;
       }
 
       &__main-content {
         grid-column: 1/2;
         padding-inline: $base * 4;
+        padding-bottom: $base * 4;
 
         h1 {
           font-weight: 300;
@@ -94,11 +124,7 @@ const tabs = data.map(({ title }) => title);
 
       &__sub-content {
         grid-column: 2/3;
-        margin-top: $base * 2;
         padding: $base * 4;
-
-        display: grid;
-        grid-template-columns: 1fr;
 
         background-color: $color-text-info;
       }
@@ -115,9 +141,6 @@ const tabs = data.map(({ title }) => title);
 
         &__sub-content {
           grid-column: 1/-1;
-          margin-top: $base;
-
-          grid-template-columns: 1fr;
         }
       }
     }
@@ -128,7 +151,7 @@ const tabs = data.map(({ title }) => title);
   @import "@styles/scss/typography.scss";
   @import "@styles/scss/colors.scss";
 
-  #service-case-study {
+  .service-case-study-area {
     .case-study {
       &__sub-content-item {
         strong,
@@ -142,6 +165,12 @@ const tabs = data.map(({ title }) => title);
 
         p {
           font-weight: 300;
+        }
+
+        ul {
+          li {
+            color: $color-white;
+          }
         }
       }
     }

@@ -1,0 +1,102 @@
+{
+  "data": [
+    {
+      "title": "Large Sailing Club",
+      "image": [
+        "/images/application-integration-services/File-2.webp",
+        "/images/application-integration-services/File-1.webp"
+      ],
+      "mainContent": {
+        "title": "INTEGRATION AND DATA MIGRATION SERVICES",
+        "content": "This premier yacht club in Australia, are currently undergoing a major digital transformation that consists of around 10 systems to be replaced and eventually integrated to each other. Part of this process will be to migrate all their existing data to this new infrastructure."
+      },
+      "subContent": [
+        {
+          "type": "list",
+          "title": "Systems to be Replaced",
+          "subtitle": "Some of the systems that are included to be replaced are:",
+          "content": [
+            "Member Management System",
+            "Marina Management System",
+            "Financial System",
+            "Payroll System",
+            "POS (Point of Sale) System"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "A 5 Year Blueprint",
+          "subtitle": "PicNet has been engaged to be involved in this digital transformation that will span 5 years and is responsible for all the integration requirements for all the 10 systems using Microsoft Azure Integration Services and Centazio.",
+          "listTitle": "Technologies (Azure Integration Services):",
+          "content": [
+            "Azure Logic Apps",
+            "Service Bus",
+            "API Management",
+            "Event Grid",
+            "Azure Functions",
+            "Azure Logic Apps",
+            "Data Factory"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Large Aged Care Facility",
+      "image": "/images/application-integration-services/Picture3.webp",
+      "mainContent": {
+        "title": "LARGE AGED CARE FACILITY",
+        "content": "This large aged care provider specializes on residential aged care and aims to enhance every resident's quality of life by maintaining personal connections with each other, their families, the staff, and the community. Several systems are currently in place for care provision and governance, staff culture, quality and compliance oversight and technology development to deliver exceptional resident experiences and improved business performance."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Proof of Concept",
+          "content": "PicNet has been awarded with the development of an integration platform for two systems initially as a Proof of Concept (PoC) to make daily operations more efficient. These two systems are an HR system to optimise the management of the work force; and a Payroll/Finance system. This PoC integration will include the transfer of employee details, leave balances, and timesheet and pay run information between the two systems."
+        },
+        {
+          "type": "list",
+          "title": "The Future Pipeline",
+          "subtitle": "This PoC was completed with outstanding results and the business is now looking to leverage the Centazio platform for other projects.",
+          "listTitle": "Technologies (Azure Integration Services):",
+          "content": [
+            "Azure Logic Apps",
+            "Service Bus",
+            "API Management",
+            "Event Grid",
+            "Azure Functions",
+            "Azure Logic Apps",
+            "Data Factory"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Large Not-For-Profit",
+      "image": "",
+      "mainContent": {
+        "title": "SYSTEM INTEGRATION AND DATA MIGRATION SERVICES",
+        "content": "This private company is the leading provider of orientation and mobility services for people with low vision or blindness. These services include training people to use mobility aids such as canes, trained assistance dogs and electronic devices to assist people to travel with more safety and confidence in their environment."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Data Migration & Integration",
+          "content": "PicNet was initially engaged to integrate their CRM with other applications and databases. Further to that, PicNet also migrated certain data from a legacy application to their CRM. This has helped the company to just have a single source of truth for all their business data. We are also in involved in continuous discussions for more integrations, data warehousing and data migrations planned for the near future."
+        },
+        {
+          "type": "list",
+          "title": "The Technologies Used",
+          "content": [
+            "Informatica",
+            "Centazio & Azure Integration Services",
+            "MS SQL",
+            "AirDocs",
+            "Scribe",
+            "Power Automate",
+            "Power Apps"
+          ]
+        }
+      ]
+    }
+  ]
+}

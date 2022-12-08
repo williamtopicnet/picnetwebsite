@@ -1,0 +1,48 @@
+---
+interface Props {
+  href: string;
+  text: string;
+}
+
+const { text, href } = Astro.props;
+---
+
+<a href={href} class="arrow-button">
+  <span>{text}</span>
+  <i class="fa-solid fa-angle-right"></i>
+</a>
+
+<style lang="scss">
+  @use "@styles/scss/colors.scss" as c;
+  @use "@styles/scss/typography.scss" as t;
+  @use "@styles/scss/base-var.scss" as bv;
+
+  .arrow-button {
+    display: inline-block;
+    font-weight: 500;
+    font-size: t.$text-sm;
+    color: c.$color-white;
+    background-color: c.$color-text-info;
+
+    padding: 1em 1.5em;
+    border-radius: bv.$base-radius;
+
+    display: inline-flex;
+    align-items: center;
+    gap: bv.$base;
+    transition: filter 0.2s bv.$base-animation-timing;
+
+    i {
+      transition: transform 0.2s bv.$base-animation-timing;
+      will-change: transform;
+    }
+
+    &:hover {
+      filter: brightness(0.95);
+
+      i {
+        transform: translateX(25%);
+      }
+    }
+  }
+</style>

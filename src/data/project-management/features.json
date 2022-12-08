@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-clock-rotate-left",
+      "title": "Outdated Technology",
+      "description": "IT systems not modern enough."
+    },
+    {
+      "icon": "fa-solid fa-circle-exclamation",
+      "title": "Expensive Maintenance",
+      "description": "IT systems expensive to maintain"
+    },
+    {
+      "icon": "fa-solid fa-map-location-dot",
+      "title": "New Vendor Discovery",
+      "description": "IT supplier controls most of the IT and want to know what is out there."
+    },
+    {
+      "icon": "fa-solid fa-chart-line",
+      "title": "Future Proofing",
+      "description": "Do not have a 5-year IT plan."
+    },
+    {
+      "icon": "fa-solid fa-right-left",
+      "title": "Digital Transformation",
+      "description": "Need advice on Digital transformation."
+    },
+    {
+      "icon": "fa-solid fa-robot",
+      "title": "Efficient Automation",
+      "description": "Inefficient systems and manual systems in place when competitors have digitised them."
+    },
+    {
+      "icon": "fa-solid fa-circle-exclamation",
+      "title": "Low Value Systems",
+      "description": "IT not delivering value expected."
+    },
+    {
+      "icon": "fa-solid fa-gavel",
+      "title": "Command & Control",
+      "description": "Concerned with Governance of IT"
+    },
+    {
+      "icon": "fa-solid fa-chart-line",
+      "title": "Data Based Decisions",
+      "description": "No visibility and proper intelligence using data."
+    },
+    {
+      "icon": "fa-solid fa-circle-nodes",
+      "title": "Scale Leaders",
+      "description": "Finding IT Project Management capabilities to manage medium or large IT projects"
+    },
+    {
+      "icon": "fa-solid fa-people-group",
+      "title": "Hiring Top Leadership",
+      "description": "Finding a part time CIO or IT manager."
+    },
+    {
+      "icon": "fa-solid fa-ruler",
+      "title": "Major System Redesigns",
+      "description": "IT architecture refresh."
+    },
+    {
+      "icon": "fa-solid fa-message",
+      "title": "Defining IT Needs",
+      "description": "Can't document the business requirements for a new system."
+    },
+    {
+      "icon": "fa-solid fa-bolt",
+      "title": "Disaster Recovery",
+      "description": "Does not have business continuity or IT disaster recovery in place."
+    },
+    {
+      "icon": "fa-solid fa-file-signature",
+      "title": "Due Diligence",
+      "description": "Struggling performing an IT due diligence prior to a merger."
+    },
+    {
+      "icon": "fa-solid fa-database",
+      "title": "Bad Actors",
+      "description": "Data breaches and security flaws."
+    }
+  ]
+}

@@ -15,12 +15,12 @@ const { title, subtitle, data } = Astro.props;
 ---
 
 <section id="features" class="section features-area">
-  <header class="section__header">
-    <h3 class="section__subtitle">{subtitle}</h3>
-    <h1 class="section__title">{title}</h1>
-  </header>
-
   <div class="container">
+    <header class="section__header">
+      <h3 class="section__subtitle">{subtitle}</h3>
+      <h1 class="section__title">{title}</h1>
+    </header>
+
     <main>
       {
         data.map(({ title, description, icon }) => (
@@ -40,7 +40,7 @@ const { title, subtitle, data } = Astro.props;
 
     main {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       margin-top: $base * 8;
       gap: $base * 8;
     }

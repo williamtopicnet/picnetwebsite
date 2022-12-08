@@ -1,4 +1,5 @@
 ---
+import ArrowButton from "@components/common/ArrowButton.astro";
 import InfoItem from "./InfoItem.astro";
 
 interface Props {
@@ -8,21 +9,32 @@ interface Props {
   data: {
     type: string;
     title: string;
-    content: string | string[];
+    subtitle?: string | undefined;
+    content: string | string[] | { title: string; nested: string[] }[];
   }[];
+  ctaButton?: {
+    text: string;
+    href: string;
+  };
+  subSection?: {
+    title: string;
+    images: string[];
+  };
 }
 
-const { title, subtitle, image, data } = Astro.props;
+const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
 ---
 
 <section id="information" class="section information-area">
   <header class="section__header">
     <h3 class="section__subtitle">{subtitle}</h3>
     <h1 class="section__title">{title}</h1>
+    {ctaButton && <ArrowButton text={ctaButton.text} href={ctaButton.href} />}
   </header>
 
   <div class="container">
     <main class="information__content">
+      <!-- Section Logo -->
       <img
         src={image}
         alt="information section image"
@@ -30,13 +42,40 @@ const { title, subtitle, image, data } = Astro.props;
         loading="lazy"
       />
 
+      <!-- Section text -->
+
       <div class="information__text">
         {
-          data.map(({ title, content, type }) => (
-            <InfoItem title={title} content={content} type={type} />
+          data.map(({ title, content, type, subtitle }) => (
+            <InfoItem
+              title={title}
+              content={content}
+              type={type}
+              subtitle={subtitle}
+            />
           ))
         }
       </div>
+
+      <!-- Sub section -->
+      {
+        subSection && (
+          <div class="information__sub-section">
+            <strong>{subSection.title}</strong>
+            <div class="information__sub-section__images">
+              {subSection.images.map((img) => (
+                <img
+                  src={img}
+                  alt="image"
+                  width="80"
+                  height="40"
+                  class="information__sub-section__image"
+                />
+              ))}
+            </div>
+          </div>
+        )
+      }
     </main>
   </div>
 </section>
@@ -54,12 +93,41 @@ const { title, subtitle, image, data } = Astro.props;
 
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       gap: $base * 8;
     }
 
     img.information__image {
       max-width: 60%;
       justify-self: center;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .information__text {
+      grid-column: 2/3;
+      grid-row: 1/-1;
+    }
+
+    .information__sub-section {
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+      // Images container
+      &__images {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 0;
+        gap: 5%;
+      }
+
+      // Image
+      &__image {
+        flex: 0 0 20%;
+        min-width: 0;
+        object-fit: contain;
+        margin-top: 2.5%;
+      }
     }
   }
 
@@ -69,9 +137,22 @@ const { title, subtitle, image, data } = Astro.props;
 
       main.information__content {
         grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
       }
 
       img.information__image {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+      }
+
+      .information__text {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+      }
+
+      .information__sub-section {
+        grid-column: 1/-1;
+        grid-row: 3/4;
       }
     }
   }

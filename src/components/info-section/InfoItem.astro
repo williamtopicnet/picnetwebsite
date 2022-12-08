@@ -2,17 +2,27 @@
 interface Props {
   type: string;
   title: string;
-  content: string | string[];
+  subtitle?: string | undefined;
+  content: string | string[] | { title: string; nested: string[] }[];
+  listTitle?: string | undefined;
   className?: string;
 }
 
-const { type, title, content, className = "" } = Astro.props;
+const {
+  type,
+  title,
+  content,
+  subtitle,
+  listTitle,
+  className = "",
+} = Astro.props;
 ---
 
 {
   type === "paragraph" && (
     <div class={`information__item ${className}`}>
       <strong class="information__item__title">{title}</strong>
+      {subtitle && <p class="information__item__subtitle">{subtitle}</p>}
       <div class="information__item__body">
         {Array.isArray(content) ? (
           content.map((item) => <p set:html={item} />)
@@ -28,11 +38,28 @@ const { type, title, content, className = "" } = Astro.props;
   type === "list" && (
     <div class={`information__item ${className}`}>
       <strong class="information__item__title">{title}</strong>
+      {subtitle && <p class="information__item__subtitle">{subtitle}</p>}
       <div class="information__item__body">
+        {listTitle && <p class="information__item__list-title">{listTitle}</p>}
         <ul>
-          {(content as string[]).map((item) => (
-            <li>{item}</li>
-          ))}
+          {(content as (string | { title: string; nested: string[] })[]).map(
+            (item) => {
+              if (typeof item === "object") {
+                return (
+                  <li>
+                    {item.title}
+                    <ul>
+                      {item.nested.map((nestedItem) => (
+                        <li>{nestedItem}</li>
+                      ))}
+                    </ul>
+                  </li>
+                );
+              }
+
+              return <li>{item}</li>;
+            }
+          )}
         </ul>
       </div>
     </div>
@@ -51,6 +78,15 @@ const { type, title, content, className = "" } = Astro.props;
       font-weight: 500;
     }
 
+    &__subtitle {
+      color: $color-text-title;
+      font-weight: 400;
+    }
+
+    p.information__item__list-title {
+      margin-top: $base * 2;
+    }
+
     &__body {
       color: $color-text-title;
 
@@ -62,6 +98,7 @@ const { type, title, content, className = "" } = Astro.props;
         padding-left: $base * 3;
         list-style: disc;
         list-style-position: inside;
+        margin-top: $base;
       }
     }
   }

@@ -1,4 +1,6 @@
 ---
+import ArrowButton from "./ArrowButton.astro";
+
 interface Props {
   title: string;
   subtitle: string;
@@ -18,10 +20,7 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
           <h1>{title}</h1>
           <p>{subtitle}</p>
 
-          <a href={ctaUrl}
-            >{ctaText}
-            <i class="fa-solid fa-angle-right"></i>
-          </a>
+          <ArrowButton text={ctaText} href={ctaUrl} />
         </div>
 
         <div class="services-hero__image">
@@ -89,35 +88,7 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
         p {
           font-size: $text-base;
           color: $color-text-1;
-        }
-
-        a {
-          color: $color-white;
-          background-color: $color-text-info;
-          font-size: $text-sm;
-          font-weight: 500;
-
-          border-radius: $base-radius;
-          padding: 1em 1.5em;
-          margin-top: $base * 4;
-
-          display: inline-flex;
-          align-items: center;
-          gap: $base;
-          transition: filter 0.2s $base-animation-timing;
-
-          i {
-            transition: transform 0.2s $base-animation-timing;
-            will-change: transform;
-          }
-
-          &:hover {
-            filter: brightness(0.95);
-
-            i {
-              transform: translateX(25%);
-            }
-          }
+          margin-bottom: $base * 4;
         }
       }
 

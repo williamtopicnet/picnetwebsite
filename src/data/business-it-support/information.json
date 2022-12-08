@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "type": "paragraph",
+      "title": "The Proactive Approach",
+      "content": "PicNet's provides IT support that is responsive, knowledgeable, personable and most importantly allowing you to do what you do best; running and operating your business, with a minimum of fuss and IT hassles. We believe that to minimise failures and downtime, a pro-active approach to IT support is required. In addition to regular technical maintenance, we feel regular onsite visits by our team to checkin on your users and to talk to them face to face is a crucial component to a smoothly operating IT."
+    },
+    {
+      "type": "list",
+      "title": "Tailored Solutions",
+      "subtitle": "We tailor our solutions to include one or more of the following components:",
+      "content": [
+        "Remote Support",
+        "Onsite Support",
+        "vCIO / part time IT Manager",
+        "System monitoring and alerting",
+        "Regular IT Management meetings",
+        "Projects to enable digital transformation",
+        "Supply of hardware and software"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "title": "Our team speaks “Human”",
+      "content": "Our team of IT engineers and support analysts whilst all technically capable, are selected first and foremast by their ability to communicate effectively with the “everyday” person. We are proud to say that our team are all locally based and PicNet is a great believer in fostering and developing locally based talent."
+    }
+  ],
+  "subData": {
+    "title": "Major Technology Partners",
+    "images": [
+      "/images/home/partners/microsoft.png",
+      "/images/home/partners/microsoft.png",
+      "/images/home/partners/microsoft.png",
+      "/images/home/partners/ibm.png",
+      "/images/home/partners/aws.png",
+      "/images/home/partners/ibm.png",
+      "/images/home/partners/ibm.png"
+    ]
+  }
+}

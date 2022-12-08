@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "CYCA",
+      "image": "/images/home/customers/cyca.png",
+      "mainContent": {
+        "title": "GOOD IT MANAGEMENT COMBINED WITH PROACTIVE SUPPORT",
+        "content": "Good management and support are central to any successful IT operation. As the needs and complexity of a business develop, so do the requirements of the “IT Manager”. IT Support must be proactive and responsive, the former to maintain and reduce the likelihood of system outage and the latter to reduce the amount of downtime in the event of an outage or issue."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "An “ad-hoc” approach to IT",
+          "content": "For years the CYCA's approach to IT support was a purely reactive “break fix” model. Over the long term this resulted in user frustration and more IT downtime as underlying problems were rarely addressed. Furthermore a lack of IT Management to advise on and drive an IT strategy resulted in an array of fragmented IT services and solutions that did not deliver value to the business as a whole."
+        },
+        {
+          "type": "paragraph",
+          "title": "Proactive engagement, and tailored solutions",
+          "content": "PicNet provided a tailored solution combining responsive remote support along with regular onsite visits to proactively engage with the business. Additionally, a senior IT consultant provided vCIO to help scope, manage and drive interaction with vendors, IT decisions and projects to a conclusion."
+        }
+      ]
+    },
+    {
+      "title": "Indivior",
+      "image": "/images/home/customers/indivior.png",
+      "mainContent": {
+        "title": "LOCAL SUPPORT GIVES A HUMAN FACE TO GLOBAL CORPORATE IT",
+        "content": "Multinational companies reduce the cost of IT by centralising their IT operations to take advantage of economies of scale. However this risk alienating some of their regional users in smaller offices who for various reason expect a more personal and localised IT support. The advantage to the business and to IT is that localised IT support gives a human face to what can be at time a faceless machinery and shows to users in these regions the business cares about their experience as well as providing the global IT team with more technical capabilities in their regional offices."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "How to balance the benefits of global scale with local user needs?",
+          "content": "Indivior are a multinational pharma with their global service desk and IT team based in the US. Their local sales, marketing and finance team having seen the benefits of having onsite local IT support, needed a partner to provide part time onsite IT support for their local users and to assist their global IT Team in the implementation of projects."
+        },
+        {
+          "type": "paragraph",
+          "title": "Crafting the user experience",
+          "content": "PicNet provided regular onsite IT support to supplement this multinational pharma's global (offshore) IT service desk. PicNet's onsite presence provided local staff with a superior user experience and also the global IT team with a knowledgeable and local resource to undertake more complex hands on IT tasks."
+        }
+      ]
+    },
+    {
+      "title": "Greens Foods",
+      "image": "/images/customers/greens.webp",
+      "mainContent": {
+        "title": "SELECTIVE OUTSOURCING TO REDUCE MANAGEMENT OVERHEADS",
+        "content": "Often it is not always better to do everything “in-house”. Activities to “keep the lights on” are essential to IT operations but do not add real value to the business. In lean companies with very little management overhead, it is easier to outsource service desk and infrastructure management to service providers such as PicNet, leaving their internal IT team to concentrate on other activities that will add value to the business."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Maintaining high level and responsive IT Support with limited resources",
+          "content": "Greens, an FMCG specialising in foods had a small but highly skilled IT team. With acquisitions of new business occurring every few months their challenge was how to deliver value to the business by delivering IT projects whilst at the same time maintaining a high level of IT support for its users."
+        },
+        {
+          "type": "paragraph",
+          "title": "Modernising IT Support",
+          "content": "Green's IT service desk function was outsourced to PicNet so that their IT team could concentrate on delivering higher value projects to the business. PicNet's team functioned as an integral part of Green's IT department."
+        }
+      ]
+    },
+    {
+      "title": "DMS Maritime",
+      "image": "/images/project-management/dms.png",
+      "mainContent": {
+        "title": "FULL IT OUTSOURCING",
+        "content": "For some companies it makes sense to fully outsource their IT function. This is especially true when the business is in a state of growth and managing an Internal IT team and growing it will be a major undertaking requiring lots of management time. Outsourcing your entire IT brings with it risks, but these can be managed if the business has an IT Manager that is both technology savvy and able to work with the business to develop an IT strategy that can then be implemented by the outsource service provider."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Keeping a lean IT",
+          "content": "DMS Maritime was a growing organisation. Their core business was providing a range of maritime related services to Defence and other Australian government agencies. Although IT was critical to the operations of their business, it was not their core business and management wanted to keep their IT department as lean as possible whilst still providing their users with responsive and modern IT services and support."
+        },
+        {
+          "type": "paragraph",
+          "title": "Your IT Department",
+          "content": "For a period of over 10 years, PicNet functioned as DMS Maritime's (DMS) IT department, providing a team of engineers and analysts and to support and manage all of DMS’ IT infrastructure and provide support to hundreds of DMS' staff in over a dozen location around Australia. This allowed DMS to only have an IT manager as their single internal IT staff, acting in a management / director role to drive the IT strategy."
+        }
+      ]
+    }
+  ]
+}
