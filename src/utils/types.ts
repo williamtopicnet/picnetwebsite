@@ -5,5 +5,5 @@ export type ServiceCaseStudy = {
     title: string;
     content: string;
   };
-  subContent: { type: string; title: string; content: string }[];
+  subContent: { type: string; title: string; content: string | string[] }[];
 };

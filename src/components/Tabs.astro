@@ -60,6 +60,7 @@ const { tabs } = Astro.props;
     background-color: $color-white;
     padding: $base * 2;
     cursor: pointer;
+    text-align: left;
 
     &:hover {
       color: $color-white;
@@ -70,11 +71,7 @@ const { tabs } = Astro.props;
   .tabs__content {
     margin-top: $base * 2;
     min-height: $base * 60;
-    padding: $base * 8;
     background-color: $color-white;
     border-radius: $base-radius;
-  }
-
-  @media only screen and (max-width: $screen-lg) {
   }
 </style>

@@ -139,6 +139,8 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
       max-height: max-content;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
+      gap: 0;
+      padding: $base * 16 $base * 4 0; // top left-right bottom
 
       .services-hero {
         &__text {
