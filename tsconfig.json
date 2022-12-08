@@ -1,4 +1,19 @@
 {
+  "target": "es5",
+  "lib": ["dom", "dom.iterable", "esnext"],
   "extends": "astro/tsconfigs/strictest",
-  "include": ["**/*.ts", "**/*.astro"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@data/*": ["src/data/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@scripts/*": ["src/scripts/*"]
+    }
+  },
+
+  "include": ["**/*.ts", "**/*.astro"],
+  "exclude": ["node_modules"]
 }

@@ -1,18 +1,19 @@
 ---
-import CaseStudy from '../../../components/CaseStudy.astro';
-import Tabs from '../../../components/Tabs.astro';
+import CaseStudy from "../@components/CaseStudy.astro";
+import Tabs from "../@components/Tabs.astro";
 ---
-<script is:inline>  
-  function tab_open(e) {    
-    const index = Array.from(e.parentNode.childNodes).
-        filter(c => c.nodeName === e.nodeName).
-        indexOf(e);    
-    const contents = Array.from(document.getElementsByClassName('tab-content'));
+
+<script is:inline>
+  function tab_open(e) {
+    const index = Array.from(e.parentNode.childNodes)
+      .filter((c) => c.nodeName === e.nodeName)
+      .indexOf(e);
+    const contents = Array.from(document.getElementsByClassName("tab-content"));
     contents.forEach((tab, idx) => {
-      tab.style.display = idx === index ? 'block' : 'none';
-    });    
+      tab.style.display = idx === index ? "block" : "none";
+    });
     return false;
-  }  
+  }
 </script>
 <section>
   <div class="header">
@@ -20,210 +21,199 @@ import Tabs from '../../../components/Tabs.astro';
     <h1>Some of our Case Studies</h1>
   </div>
   <div class="case-studies">
-    <Tabs tabs={['CYCA', 'Shellharbour Club', 'AW Edwards', 'Lipman', 'NSW Health', 'NSW Transport', 'Reckitt Benckiser', 'Pfizer Australia', 'Defence Maritime Services', 'Terry White']}>    
-      <CaseStudy logo="cyca.png">        
+    <Tabs
+      tabs={[
+        "CYCA",
+        "Shellharbour Club",
+        "AW Edwards",
+        "Lipman",
+        "NSW Health",
+        "NSW Transport",
+        "Reckitt Benckiser",
+        "Pfizer Australia",
+        "Defence Maritime Services",
+        "Terry White",
+      ]}
+    >
+      <CaseStudy logo="cyca.png">
         <div slot="summary">
           <h2>WHEN INSTITUTIONS NEED TO MODERNISE</h2>
           <p>
-            Institutions are the cornerstones of our society and shape our culture. 
-            They are often slow to adapt and adjust to the changing tide of technology however. 
-            This can lead to inefficient and costly problems in a fast paced advancing world.
+            Institutions are the cornerstones of our society and shape our
+            culture. They are often slow to adapt and adjust to the changing
+            tide of technology however. This can lead to inefficient and costly
+            problems in a fast paced advancing world.
           </p>
         </div>
         <div slot="case-1">
           <h3>A Rudderless Boat</h3>
           <p>
-            CYCA is a tradition in Australia, Home of the Sydney to Hobart, 
-            a fixture in Rushcutters, and the premiere yacht racing club of Australia. 
-            This institution was looking to modernise, and transform its IT infrastructure floor to ceiling, 
-            but it was also looking for a plan to ensure it kept modernising.
+            CYCA is a tradition in Australia, Home of the Sydney to Hobart, a
+            fixture in Rushcutters, and the premiere yacht racing club of
+            Australia. This institution was looking to modernise, and transform
+            its IT infrastructure floor to ceiling, but it was also looking for
+            a plan to ensure it kept modernising.
           </p>
         </div>
         <div slot="case-2">
           <h3>A 5 Year Blueprint</h3>
           <p>
-            PicNet (in 2020) performed a detailed IT review including Management practices, 
-            Governance, IT infrastructure, Applications, Analytics and Social Media. 
-            PicNet’s review resulted in a blueprint/digital transformation program for the next 5 years, 
-            making the CYCA operations one of the most efficient in the industry.
+            PicNet (in 2020) performed a detailed IT review including Management
+            practices, Governance, IT infrastructure, Applications, Analytics
+            and Social Media. PicNet’s review resulted in a blueprint/digital
+            transformation program for the next 5 years, making the CYCA
+            operations one of the most efficient in the industry.
           </p>
         </div>
       </CaseStudy>
-      <CaseStudy logo="shellharbour.png">        
+      <CaseStudy logo="shellharbour.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
       </CaseStudy>
-      <CaseStudy logo="awe.png">    
+      <CaseStudy logo="awe.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>    
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="lipman.png">   
+      <CaseStudy logo="lipman.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>     
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="nswhealth.png">   
+      <CaseStudy logo="nswhealth.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>     
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="transport_nsw.png">   
+      <CaseStudy logo="transport_nsw.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>     
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="rb.png">     
+      <CaseStudy logo="rb.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>   
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="pfizer.png"> 
+      <CaseStudy logo="pfizer.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>       
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="dms.png">    
+      <CaseStudy logo="dms.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>    
+          <p></p>
+        </div>
       </CaseStudy>
-      <CaseStudy logo="terrywhite.png">    
+      <CaseStudy logo="terrywhite.png">
         <div slot="summary">
           <h2></h2>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-1">
           <h3></h3>
-          <p>
-          </p>
+          <p></p>
         </div>
         <div slot="case-2">
           <h3></h3>
-          <p>
-          </p>
-        </div>    
+          <p></p>
+        </div>
       </CaseStudy>
-    </Tabs>  
+    </Tabs>
   </div>
 </section>
 <style lang="scss">
-@import '../../../layouts/global.scss'; 
+  @import "../../../layouts/global.scss";
 
-h2 {
-  color: $color-fg-alternate-light;
-  font-size: $fs-small;
-  font-weight: normal;
-  text-align: center;
-}
+  h2 {
+    color: $color-fg-alternate-light;
+    font-size: $fs-small;
+    font-weight: normal;
+    text-align: center;
+  }
 
-h1 {
-  color: $color-fg-darker;
-  font-size: $fs-heading;    
-  text-align: center;
-}
+  h1 {
+    color: $color-fg-darker;
+    font-size: $fs-heading;
+    text-align: center;
+  }
 
-p {
-  color: $color-fg-darker;
-  opacity: 0.75;
-  text-align: center;
-}
+  p {
+    color: $color-fg-darker;
+    opacity: 0.75;
+    text-align: center;
+  }
 </style>

@@ -6,7 +6,7 @@ const { tabs } = Astro.props;
 ---
 
 <script>
-  import { initTab } from "../scripts/tab";
+  import { initTab } from "@scripts/tab";
 
   document.addEventListener("DOMContentLoaded", () => {
     if (typeof initTab === "function") {
@@ -32,8 +32,8 @@ const { tabs } = Astro.props;
 </div>
 
 <style lang="scss">
-  @import "../styles/scss/base-var.scss";
-  @import "../styles/scss/colors.scss";
+  @import "@styles/scss/base-var.scss";
+  @import "@styles/scss/colors.scss";
 
   .tabs__action {
     border-top-left-radius: $base-radius;

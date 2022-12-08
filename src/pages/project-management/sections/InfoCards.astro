@@ -1,65 +1,128 @@
 ---
-import TriCard from '../../../components/TriCard.astro';
+import TriCard from "../@components/TriCard.astro";
 ---
+
 <section id="services">
   <div class="heading">
     DESIGNING A SECURE, ROBUST AND RELIABLE IT FOR YOUR BUSINESS
   </div>
-  <div class="sub-heading">
-    Contact us to help you with:
-  </div>
-  <TriCard icon="\ueae6" iconfont="scape-tech" title="Outdated Technology" 
-    subtitle="IT systems not modern enough" />
-  <TriCard icon="\ue903" iconfont="scape-business" title="Expensive Maintenance" 
-      subtitle="IT systems expensive to maintain" />
-  <TriCard icon="\ue981" iconfont="scape-tech" title="New Vendor Discovery" 
-      subtitle="IT supplier controls most of the IT and want to know what is out there" />
-  <TriCard icon="\ue911" iconfont="scape-basic" title="Future Proofing" 
-      subtitle="Do not have a 5-year IT plan" />
+  <div class="sub-heading">Contact us to help you with:</div>
+  <TriCard
+    icon="\ueae6"
+    iconfont="scape-tech"
+    title="Outdated Technology"
+    subtitle="IT systems not modern enough"
+  />
+  <TriCard
+    icon="\ue903"
+    iconfont="scape-business"
+    title="Expensive Maintenance"
+    subtitle="IT systems expensive to maintain"
+  />
+  <TriCard
+    icon="\ue981"
+    iconfont="scape-tech"
+    title="New Vendor Discovery"
+    subtitle="IT supplier controls most of the IT and want to know what is out there"
+  />
+  <TriCard
+    icon="\ue911"
+    iconfont="scape-basic"
+    title="Future Proofing"
+    subtitle="Do not have a 5-year IT plan"
+  />
 
-  <TriCard icon="\ueae0" iconfont="scape-tech" title="Digital Transformation" 
-      subtitle="Need advice on Digital transformation" />
-  <TriCard icon="\ueb1d" iconfont="scape-tech" title="Efficient Automation" 
-      subtitle="Inefficient systems and manual systems in place when competitors have digitised them" />
-  <TriCard icon="\ue903" iconfont="scape-business" title="Low Value Systems" 
-      subtitle="IT not delivering value expected" />
-  <TriCard icon="\ue909" iconfont="scape-business" title="Command & Control" 
-      subtitle="Concerned with Governance of IT" />
+  <TriCard
+    icon="\ueae0"
+    iconfont="scape-tech"
+    title="Digital Transformation"
+    subtitle="Need advice on Digital transformation"
+  />
+  <TriCard
+    icon="\ueb1d"
+    iconfont="scape-tech"
+    title="Efficient Automation"
+    subtitle="Inefficient systems and manual systems in place when competitors have digitised them"
+  />
+  <TriCard
+    icon="\ue903"
+    iconfont="scape-business"
+    title="Low Value Systems"
+    subtitle="IT not delivering value expected"
+  />
+  <TriCard
+    icon="\ue909"
+    iconfont="scape-business"
+    title="Command & Control"
+    subtitle="Concerned with Governance of IT"
+  />
 
-  <TriCard icon="\ue911" iconfont="scape-basic" title="Data Based Decisions" 
-      subtitle="No visibility and proper intelligence using data" />
-  <TriCard icon="\ue932" iconfont="scape-business" title="Scale Leaders" 
-      subtitle="Finding IT Project Management capabilities to manage medium or large IT projects" />
-  <TriCard icon="\ue931" iconfont="scape-business" title="Hiring Top Leadership" 
-      subtitle="Finding a part time CIO or IT manager" />
-  <TriCard icon="\ueaf7" iconfont="scape-business" title="Major System Redesigns" 
-      subtitle="IT architecture refresh" />
+  <TriCard
+    icon="\ue911"
+    iconfont="scape-basic"
+    title="Data Based Decisions"
+    subtitle="No visibility and proper intelligence using data"
+  />
+  <TriCard
+    icon="\ue932"
+    iconfont="scape-business"
+    title="Scale Leaders"
+    subtitle="Finding IT Project Management capabilities to manage medium or large IT projects"
+  />
+  <TriCard
+    icon="\ue931"
+    iconfont="scape-business"
+    title="Hiring Top Leadership"
+    subtitle="Finding a part time CIO or IT manager"
+  />
+  <TriCard
+    icon="\ueaf7"
+    iconfont="scape-business"
+    title="Major System Redesigns"
+    subtitle="IT architecture refresh"
+  />
 
-  <TriCard icon="\ue909" iconfont="scape-basic" title="Defining IT Needs" 
-      subtitle="Can’t document the business requirements for a new system" />
-  <TriCard icon="\ue94c" iconfont="scape-basic" title="Disaster Recovery" 
-      subtitle="Does not have business continuity or IT disaster recovery in place" />
-  <TriCard icon="\ue93e" iconfont="scape-business" title="Due Diligence" 
-      subtitle="Struggling performing an IT due diligence prior to a merger" />
-  <TriCard icon="\uea69" iconfont="scape-tech" title="Bad Actors" 
-      subtitle="Data breaches and security flaws" />
+  <TriCard
+    icon="\ue909"
+    iconfont="scape-basic"
+    title="Defining IT Needs"
+    subtitle="Can’t document the business requirements for a new system"
+  />
+  <TriCard
+    icon="\ue94c"
+    iconfont="scape-basic"
+    title="Disaster Recovery"
+    subtitle="Does not have business continuity or IT disaster recovery in place"
+  />
+  <TriCard
+    icon="\ue93e"
+    iconfont="scape-business"
+    title="Due Diligence"
+    subtitle="Struggling performing an IT due diligence prior to a merger"
+  />
+  <TriCard
+    icon="\uea69"
+    iconfont="scape-tech"
+    title="Bad Actors"
+    subtitle="Data breaches and security flaws"
+  />
 </section>
 <style lang="scss">
-  @import '../../../layouts/global.scss'; 
+  @import "../../../layouts/global.scss";
 
   section {
     margin: 5rem 3rem;
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-  } 
+  }
 
-  .heading {    
+  .heading {
     font-size: $fs-small;
   }
 
-  .sub-heading {    
+  .sub-heading {
     font-size: $fs-heading;
   }
 </style>
@@ -69,5 +132,5 @@ import TriCard from '../../../components/TriCard.astro';
   i.icon::before { 
     font-family: 'scape-basic'; 
     content: '\e931';
-  } */   
+  } */
 </style>
