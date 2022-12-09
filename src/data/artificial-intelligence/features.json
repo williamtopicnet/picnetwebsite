@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-brain",
+      "title": "The Right Decisions, Fast",
+      "description": "Do you need help making business decisions based on data"
+    },
+    {
+      "icon": "fa-solid fa-circle-check",
+      "title": "See More Clearly",
+      "description": "Do you need help making sense of your data and finding actionable insights"
+    },
+    {
+      "icon": "fa-solid fa-robot",
+      "title": "Process Automation",
+      "description": "Do you want to automate processes based or get future insights based on data"
+    },
+    {
+      "icon": "fa-solid fa-circle-info",
+      "title": "Gathering Information",
+      "description": "Do you need help in integrating multiple data sources into a single source of truth"
+    },
+    {
+      "icon": "fa-solid fa-magnifying-glass-chart",
+      "title": "Drive Impact Through Data",
+      "description": "Do you need dashboards or reports that will reveal information with impact"
+    },
+    {
+      "icon": "fa-brands fa-slideshare",
+      "title": "Share Knowledge",
+      "description": "Getting knowledge from your systems to the people that need it is a challenge"
+    }
+  ]
+}

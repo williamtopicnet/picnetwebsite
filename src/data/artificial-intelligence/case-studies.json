@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Intelligent Vision Systems",
+      "image": "/images/artificial-intelligence/vision.webp",
+      "mainContent": {
+        "title": "GIVING COMPUTERS THE POWER OF SIGHT",
+        "content": "Image identification and classification can automate many manual processes that are costly and highly error prone. From automatic quality assessment, to systems that can help your ground force to perform their duties much faster. The applications of this technology to manufacturing, autonomous vehicles, research and quality control are endless. PicNet is helping Australian companies see differently."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Fish Species Identitfication",
+          "content": "The Australian seafood and fisheries industry is a multi-billion dollar a year industry. A current inefficiency in the system is the speed at which fish species are identified and sorted. Solving this inefficiency would be worth hundreds of millions of dollars of throughput. Using AI and Intelligent Vision Systems PicNet built an automated species recognition system capable of identifying and sorting fish species instantaneously."
+        },
+        {
+          "type": "paragraph",
+          "title": "Non-native Flora Identification",
+          "content": "Australia's greatest assets are its natural resources, including its flora and fauna biomes. The conservation of these unique biomes is of absolute ecological importance and also of vital concern to the multi billion dollar a year tourist industry. One of the single greatest threats these areas face is non-native species. Working with conservation specialists, PicNet built an Intelligent Vision System capable of assessing an areas bio-diversity and how impacted it is by non-native flora and fauna."
+        }
+      ]
+    },
+    {
+      "title": "Natural Language Processing",
+      "image": "/images/artificial-intelligence/nlp.webp",
+      "mainContent": {
+        "title": "VOICE IS THE NEW UI",
+        "content": "Natural language processing (NLP) is a branch of artificial intelligence that helps computers understand, interpret and manipulate human language. NLP is the pursuit to fill the gap between human communication and computer understanding. The use of NLP is becoming ubiquitous in areas such as search, chatbots, communications classification and IoT industries."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "The problem of paper",
+          "content": "PicNet was approached by a client whose industry generates millions of handwritten forms and documents each year. The problem of digitising this information to make it readily searchable and transcribable into usable data sets for reference and analytics has been a long and frustrating one as companies seek to modernise. Many older companies and legacy style industries like law firms have storerooms full of paper documents which by necessity are growing larger each day. The same is true in education, government, and across a whole spectrum of industries that require humans to write but need computers to understand."
+        },
+        {
+          "type": "paragraph",
+          "title": "Optical Character Recognition",
+          "content": "PicNet developed a state of the art Optical Character Recognition engine capable of quickly and accurately turning these forms and pages in to usable datasets. These datasets were then automatically classified into their corresponding categories. This technology allows clients the digitise large numbers of paper, even handwritten, documents accurately without human intervention using Natural Language Processing and OCR. Other applications of NLP include understanding human speech in voice control devices, elastic search algorithms, and AI controlled bots."
+        }
+      ]
+    },
+    {
+      "title": "Predictive Systems",
+      "image": "/images/artificial-intelligence/predict.webp",
+      "mainContent": {
+        "title": "SEEING INTO THE FUTURE",
+        "content": "Predictive analytics is the branch of advanced analytics which used to make predictions about unknown future events. Predictive analytics uses many techniques from data mining, statistics, modelling, machine learning and artificial intelligence to analyse current data to make predictions about future events. This is applicable across all industries but some interesting use cases include quants in the stock market, predicting crop yields in agriculture and analysing potential ROI or efficiency versus cost."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Marketing ROIs and Hospital beds",
+          "content": "PicNet was approached by a client who was trying to solve a number of hard industry efficiency issues. One problem related to Return on Investment with regard to marketing expenditure across multiple streams. They wanted a predictive outcome to the Pirate' metrics, Acquisition, Activation, Retention, Referral and Revenue (AARRR). A second problem, was as a healthcare provider, they wanted to efficiently predict patient stay length in hospitals to be able to streamline hospital stay and bed availability efficiency."
+        },
+        {
+          "type": "paragraph",
+          "title": "Greater efficiency through data",
+          "content": "The initial problem faced by PicNet was lack of solid data to train the model. So we first had to develop a system of data capture that was reliable and consistent across both problems. Next we had to develop and train a model that not only could predict outcomes but also generate recommendations based on the data the model was seeing. The benefit of a machine learning based data model is that the longer it runs, the better it is at producing reliable outcomes. PicNet has gone on to further train this system, developing it into a robust tool for the client, helping them become more efficient in both its practice and its marketing spend."
+        }
+      ]
+    },
+    {
+      "title": "Business Intelligence",
+      "image": "/images/artificial-intelligence/bi.webp",
+      "mainContent": {
+        "title": "WITHOUT DATA, YOU ARE GUESSING",
+        "content": "Business intelligence (BI) is a technology-driven process for analyzing data and presenting actionable information which helps executives, managers and other corporate end users make informed business decisions. Overall, the role of business intelligence is to improve all parts of a company by improving access to the firm's data and then using that data to increase profitability."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Keeping people healthy",
+          "content": "The countries largest health services provider approached PicNet with a data problem. Their hospitals, research facilities and the legislative governance over them created a huge amount of complicated data and directives that made rapid insights let alone decision making increasingly difficult, nearing impossible. They needed a solution that would consolidate all of their business data into one location and distribute that data to relevant groups in real time. However, not all groups could have access to the same data or insights, nor was it relevant or timely for others to have it. Another major concern was security and confidentiality of patient data as they sought to create some measurable outcomes from the huge quantity of data available."
+        },
+        {
+          "type": "paragraph",
+          "title": "Exposing the right data, at the right time",
+          "content": "PicNet created a number of tools and resources for the client which ultimately all filtered through a single BI dashboard like interface. The result was an integrated and real-time visualisation platform that displays KPI and performance statistics at the State, Area Health District and Hospitals levels. This visually stunning platform lets state and health district managers quickly view critical statistics from their desktop, tablet, or mobile device, allowing more timely and cost effective responses to planning, addressing needs and avoiding unplanned urgent black swan events. PicNet gave them intelligence through data visibility."
+        }
+      ]
+    }
+  ]
+}

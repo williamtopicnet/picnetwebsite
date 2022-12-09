@@ -28,7 +28,7 @@ const tabs = data.map(({ title }) => title);
     <main>
       <Tabs tabs={tabs}
         >{
-          data.map(({ image, mainContent, subContent, icon }) => (
+          data.map(({ image, mainContent, subContent }) => (
             <article class="tabs__item case-study">
               {image &&
                 (Array.isArray(image) ? (
@@ -37,8 +37,8 @@ const tabs = data.map(({ title }) => title);
                       src={img}
                       loading="lazy"
                       class="case-study__img"
-                      width="300"
-                      height="200"
+                      width="200"
+                      height="100"
                     />
                   ))
                 ) : (
@@ -46,12 +46,11 @@ const tabs = data.map(({ title }) => title);
                     src={image}
                     loading="lazy"
                     class="case-study__img"
-                    width="300"
-                    height="200"
+                    width="200"
+                    height="100"
                   />
                 ))}
 
-              {icon && <i class={`${icon} case-study__icon fa-4x`} />}
               <div class="case-study__main-content">
                 <h1>{mainContent.title}</h1>
                 <p>{mainContent.content}</p>
@@ -138,6 +137,12 @@ const tabs = data.map(({ title }) => title);
       .case-study {
         grid-template-columns: 1fr;
         gap: $base;
+
+        &__img,
+        &__icon {
+          margin-left: 0;
+          padding-left: $base * 4;
+        }
 
         &__sub-content {
           grid-column: 1/-1;

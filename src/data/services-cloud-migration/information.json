@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "type": "paragraph",
+      "title": "We can educate you",
+      "content": "You have heard that the cloud can transform your business, but the myriad of technologies, vendors make it hard to know what does what. Let us cut through the jargon and explain to you in plain English what different cloud technologies are and how you may be able to take advantage of them in your business."
+    },
+    {
+      "type": "paragraph",
+      "title": "Increase the reliability, resiliency and security of your IT",
+      "content": "For most small and medium business, using cloud SaaS (software as a service) will provide you with a much more reliable, resilient and secure IT. This is because instead of setting up and managing all the IT infrastructure required to run the IT systems, you allow the experts to do that and you just need to worry about how you will use the system features to improve your business. Well known SaaS style offerings will be able to offer better reliability and security compared to what an SME can do themselves while reducing your IT management headaches."
+    },
+    {
+      "type": "paragraph",
+      "title": "Infrastructure review and recommendations",
+      "content": "Every business is different and what works for one company may not work for another. We can conduct a full review of your IT infrastructure, and systems and provide a comprehensive list of recommendations on what systems can be migrated to the cloud, why moving them to the cloud will benefit your business and estimates on capital and operating costs."
+    },
+    {
+      "type": "paragraph",
+      "title": "Cloud automation / “DevOps”",
+      "content": "You are using the cloud and you are comfortable with the technology, but you want to get higher efficiencies by taking advantage of the automation afforded by cloud IaaS or PaaS. PicNet can assist you in maturing your cloud IT practices by implementing automation whereby infrastructure and services can be provisioned, de-provisioned and changed through code"
+    },
+    {
+      "type": "list",
+      "title": "Cloud migration implementation",
+      "subtitle": "You need to migrate your IT Services to the cloud, but you or your IT service provider lack the expertise to do it. Let us do the heavy lifting and implement your IT Cloud migration project. We have a proven track record in successfully implementing cloud migration projects including:",
+      "content": [
+        "Email systems to Microsoft 365 / Exchange Online",
+        "File stores to SharePoint or Dropbox",
+        "In house server to cloud servers at Amazon Web Services (AWS) or Microsoft Azure",
+        "Windows AD to Azure AD or a hybrid environment where Windows AD is synced to Azure AD",
+        "Extending you private network info public cloud services such as AWS or Azure"
+      ]
+    }
+  ],
+  "subData": {
+    "title": "Major Technology Partners",
+    "images": [
+      "/images/home/partners/microsoft.png",
+      "/images/customers/cisco.webp",
+      "/images/customers/cisco2.webp",
+      "/images/home/partners/ibm.png",
+      "/images/home/partners/aws.png",
+      "/images/customers/tpg.webp",
+      "/images/customers/datto.webp"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-quote-left",
+      "title": "Need quotes fast?",
+      "description": "There's nothing more frustrating than waiting for a quote from your supplier so you can cost your next major IT equipment acquisition or budget a project."
+    },
+    {
+      "icon": "fa-solid fa-computer",
+      "title": "Don't know which hardware to buy?",
+      "description": "You have a need or a problem that needs to be solved, but don't know what equipment will do the job or a question regarding the feature or capabilities of a particular piece of software or hardware?"
+    },
+    {
+      "icon": "fa-solid fa-globe",
+      "title": "Delivery to multiple locations?",
+      "description": "Do you have multiple offices or staff working from home that need equipment delivered directly to them?"
+    },
+    {
+      "icon": "fa-solid fa-hand-holding-hand",
+      "title": "Need a supplier who cares (about you)?",
+      "description": "Feeling like you are being taken for granted by your IT equipment supplier or been treated like just a number?"
+    },
+    {
+      "icon": "fa-solid fa-file-signature",
+      "title": "Looking for a competitive quote?",
+      "description": "You have been buying from the same supplier for a long time and want to see a competitive quote to see if you are getting a good deal?"
+    }
+  ]
+}

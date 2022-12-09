@@ -17,16 +17,18 @@ const { title, description, icon } = Astro.props;
 </div>
 
 <style lang="scss">
-  @import "@styles/scss/typography.scss";
-  @import "@styles/scss/base-var.scss";
+  @use "@styles/scss/typography.scss" as *;
+  @use "@styles/scss/base-var.scss" as *;
+  @use "@styles/scss/colors.scss" as *;
 
   .feature__item {
     text-align: start;
+    color: $color-text-title;
 
     &__title {
       font-weight: 500;
       font-size: $text-base;
-      margin-top: $base;
+      margin-top: $base * 2;
       display: inline-block;
     }
 
@@ -34,6 +36,10 @@ const { title, description, icon } = Astro.props;
       font-size: $text-base;
       font-weight: 300;
       margin-top: $base;
+    }
+
+    &__icon {
+      color: $color-text-title;
     }
   }
 

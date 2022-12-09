@@ -1,0 +1,39 @@
+---
+import { data as featureData } from "@data/services-it-hardware-and-software-licensing/features.json";
+import {
+  data as informationData,
+  subData as subSection,
+} from "@data/services-it-hardware-and-software-licensing/information.json";
+
+import ServicesHero from "@components/common/ServicesHero.astro";
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import InfoSection from "@components/info-section/InfoSection.astro";
+
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="PicNet - IT Hardware and Software Licensing Services">
+  <ServicesHero
+    title="IT Hardware and Software Licensing for Business"
+    subtitle="IT hardware and software for businesses. Fast response, excellent customer service and competitive prices. All major brands"
+    heroImage="/images/hero/services-it-hardware-and-software-licensing.webp"
+    ctaText="Contact Us Today"
+    ctaUrl="/services-it-hardware-and-software-licensing/#contact"
+  />
+
+  <FeatureSection
+    title="Does your current hardware supplier provide good customer service and fast turnaround of quotations?"
+    subtitle="A RESPONSIVE IT EQUIPMENT SUPPLIER THAT DOESN'T TREAT YOU LIKE A NUMBER"
+    data={featureData}
+  />
+
+  <InfoSection
+    title="An IT equipment supplier that genuinely cares about their customer's experience"
+    subtitle="FAST RESPONSE, EXCELLENT CUSTOMER SERVICE AND HASSLE-FREE DOA SUPPORT"
+    image="/images/home/about-us.png"
+    data={informationData}
+    subSection={subSection}
+  />
+</Layout>
+
+<style></style>

@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-server",
+      "title": "Are your core IT Systems still on in-house servers?",
+      "description": "Are your core business IT systems still running from servers in your office or in a data centre and you need help migrating them to the cloud?"
+    },
+    {
+      "icon": "fa-solid fa-message",
+      "title": "Confused what cloud technologies are what and which way to go?",
+      "description": "You have heard about the cloud but are confused about which technology or vendor to use and need someone to explain “the cloud” to you?"
+    },
+    {
+      "icon": "fa-solid fa-cloud",
+      "title": "Don't know which of your IT System is suitable for cloud migration?",
+      "description": "You want to move your IT into the cloud but don't know which system can be moved?"
+    },
+    {
+      "icon": "fa-solid fa-users-line",
+      "title": "Need IT Systems that provide a better user experience when staff work from home?",
+      "description": "Are your IT systems reducing your team's productivity when working from home?"
+    },
+    {
+      "icon": "fa-solid fa-calculator",
+      "title": "Need to find out the cost of running your IT in the cloud?",
+      "description": "You are interested in moving to the cloud, but you don't know how much it will cost to migrate and to run compared to your current IT setup?"
+    },
+    {
+      "icon": "fa-solid fa-cloud",
+      "title": "Need to automate your cloud management?",
+      "description": "Did you know that cloud computing allows you to automate the deployment and management of the infrastructure?"
+    }
+  ]
+}

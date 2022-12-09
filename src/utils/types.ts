@@ -1,7 +1,6 @@
 export interface ServiceCaseStudy {
   title: string;
   image?: string | string[];
-  icon?: string;
   mainContent: {
     title: string;
     content: string;
@@ -11,6 +10,6 @@ export interface ServiceCaseStudy {
     title: string;
     subtitle?: string;
     listTitle?: string;
-    content: string | string[] | { title: string; nested: string[] }[];
+    content: string | (string | { title: string; nested: string[] })[];
   }[];
 }

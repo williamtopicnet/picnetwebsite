@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-user-astronaut",
+      "title": "Specialist Resources",
+      "description": "Short term specialist resources."
+    },
+    {
+      "icon": "fa-solid fa-tree",
+      "title": "Leave Cover",
+      "description": "Immediate coverage of a key staff going on holidays or absent for a while."
+    },
+    {
+      "icon": "fa-solid fa-user",
+      "title": "Technical Skills",
+      "description": "A technical skill hard to get by recruiting or takes too long"
+    },
+    {
+      "icon": "fa-solid fa-user-group",
+      "title": "Fluid Resources",
+      "description": "Prompt availability of a resource for a short or long term"
+    },
+    {
+      "icon": "fa-solid fa-handshake",
+      "title": "Insourcing",
+      "description": "A resource but has no intention of employing or contracting a body instead wants to engage a company"
+    },
+    {
+      "icon": "fa-solid fa-clock",
+      "title": "Time Sensitive Scaling",
+      "description": "A number of immediate resources , hard to get from the open market in a timely fashion"
+    },
+    {
+      "icon": "fa-solid fa-hand-holding-dollar",
+      "title": "Cost Sensitive Solutions",
+      "description": "A commercially flexible arrangement, allowing scale while controlling cost"
+    },
+    {
+      "icon": "fa-solid fa-atom",
+      "title": "Rare Talent Quickly",
+      "description": "Urgent projects with urgent needs that require complex skills and talent hard to get timely"
+    }
+  ]
+}

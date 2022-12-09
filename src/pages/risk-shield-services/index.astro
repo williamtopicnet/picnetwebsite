@@ -1,13 +1,70 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import { data as featuresData } from "@data/risk-shield-services/features.json";
+import { data as infoData } from "@data/risk-shield-services/information.json";
+
+import ServicesHero from "@components/common/ServicesHero.astro";
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import InfoSection from "@components/info-section/InfoSection.astro";
+
+import Layout from "@layouts/Layout.astro";
+import PenetrationTesting from "./risk-shield-services-sections/PenetrationTesting.astro";
 ---
 
+<script>
+  import { initTab } from "@scripts/tab";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("case-studies");
+    }
+  });
+</script>
+
 <Layout title="PicNet - Risk Shield Security Monitoring Services">
-  <main>
-    <h1>Risk Shield Security Monitoring Services</h1>
-  </main>
+  <ServicesHero
+    title="Risk Shield Services"
+    subtitle="IT Security services accessible to small and medium organisations. Security monitoring and alerting using class leading enterprise level SIEM solution, and affordable penetration testing for SMEs."
+    ctaText="Contact Us Today"
+    ctaUrl="./#contact"
+    heroImage="/images/hero/risk-shield-services.webp"
+  />
+
+  <FeatureSection
+    title="Do you know who is inside your network?"
+    subtitle="WITH THE INCREASING THREAT OF BAD ACTORS, HACKERS AND SECURITY RISKS"
+    data={featuresData}
+  />
+
+  <InfoSection
+    title="We keep your company safe, so you can focus on clients"
+    subtitle="WORLD CLASS SECURITY WITHOUT WORLD CLASS BUDGETS"
+    image="/images/risk-shield-services/risk-shield-logo.webp"
+    data={infoData}
+  />
+
+  <PenetrationTesting />
 </Layout>
 
-<style>
-  
+<style lang="scss">
+  @use "@styles/scss/typography" as *;
+  @use "@styles/scss/base-var" as *;
+
+  :global(section#features main) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    :global(section#features main) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  :global(section#information main) {
+    :global(.information__text > :first-child) {
+      :global(.information__item__title) {
+        font-size: $text-md;
+        font-weight: 600;
+      }
+    }
+  }
 </style>

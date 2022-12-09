@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "icon": "fa-solid fa-magnifying-glass",
+      "title": "Know your weaknesses",
+      "description": "Do you know how much effort it would take for a hacker to break into your company's network or your websites to steal sensitive data? Chances are your IT is vulnerable to hackers. Knowing your own weaknesses and risks is crucial to putting in place the proper controls to mitigate those risks."
+    },
+    {
+      "icon": "fa-solid fa-skull",
+      "title": "Been Hacked?",
+      "description": "How do you know if one of your staff has had their credential stolen and attackers are using these to access your data?"
+    },
+    {
+      "icon": "fa-solid fa-clock",
+      "title": "Real Time Monitoring",
+      "description": "You have point security solution like firewalls, antivirus, end point protection, user access controls, IPS/IPA, DLP etc, but do you know in real time when these systems detect abnormal events and user behaviour that may signify an attack is underway or your systems have been breached?"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "type": "list",
+      "title": "Custom Built Solutions",
+      "subtitle": "Our AI and BI services are delivered by our highly experienced, Sydney team of data scientists and business analysts. Our expertise in machine learning and artificial intelligence spans close to a decade, specialising in:",
+      "content": [
+        "Intelligent Vision Systems (Image and Video)",
+        "Natural Language Processing",
+        "Forecasting and Predictive Systems",
+        "Business Intelligence"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Technologies",
+      "content": ["Python", "PyTorch", "TensorFlow", "Power BI"]
+    },
+    {
+      "type": "list",
+      "title": "Technologies",
+      "content": [
+        "Healthcare and Pharmaceutical",
+        "Government",
+        "Manufacturing",
+        "Finance and Insurance",
+        "Sales and Marketing",
+        "Logistics"
+      ]
+    }
+  ]
+}

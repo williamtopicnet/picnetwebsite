@@ -1,0 +1,60 @@
+---
+// Static Data
+import {
+  data as informationData,
+  subData,
+} from "@data/services-cloud-migration/information.json";
+import { data as featureData } from "@data/services-cloud-migration/features.json";
+import { data as caseStudiesData } from "@data/services-cloud-migration/case-studies.json";
+
+// Components
+import ServicesHero from "@components/common/ServicesHero.astro";
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import InfoSection from "@components/info-section/InfoSection.astro";
+import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+
+import Layout from "@layouts/Layout.astro";
+---
+
+<script>
+  import { initTab } from "@scripts/tab";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("case-studies");
+    }
+  });
+</script>
+
+<Layout title="PicNet - AWS and Azure Cloud Management and Migration Services">
+  <ServicesHero
+    title="Cloud Migration, Management and Automation"
+    subtitle="Migrating email system, file storage and servers to the cloud (Office 365, Azure & AWS). Cloud infrastructure management and support. Automating cloud infrastructure deployment."
+    ctaText="Contact Us Today"
+    ctaUrl="/services-cloud-migration/#contact"
+    heroImage="/images/hero/services-cloud-migration.webp"
+  />
+
+  <FeatureSection
+    title="Are your core IT systems still hosted on premise or in a data centre?"
+    subtitle="simplify your it, increase reliability and improve user experience by migrating your it systems to the cloud"
+    data={featureData}
+  />
+
+  <InfoSection
+    title="Let us show you what cloud computing can do for your business."
+    subtitle="use the cloud to increase productivity, resilience and reduce it management headaches"
+    image="/images/consulting2-1.webp"
+    data={informationData}
+    subSection={subData}
+  />
+
+  <ServiceCaseStudySection
+    title="Some of our Case Studies"
+    subtitle="OUR COMMITMENT TO QUALITY"
+    data={caseStudiesData}
+    id="case-studies"
+  />
+</Layout>
+
+<style></style>

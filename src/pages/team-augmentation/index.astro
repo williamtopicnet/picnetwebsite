@@ -1,13 +1,62 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+// Static Data
+import { data as informationData } from "@data/team-augmentation/information.json";
+import { data as featureData } from "@data/team-augmentation/features.json";
+import { data as stepsData } from "@data/team-augmentation/steps.json";
+import { data as caseStudiesData } from "@data/team-augmentation/case-studies.json";
+
+// Components
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import InfoSection from "@components/info-section/InfoSection.astro";
+import ServicesHero from "@components/common/ServicesHero.astro";
+import StepsSection from "@components/steps-section/StepsSection.astro";
+import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+
+import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title="PicNet - Team Augmentation Services">
-  <main>
-    <h1>Team Augmentation</h1>
-  </main>
-</Layout>
+<script>
+  import { initTab } from "@scripts/tab";
 
-<style>
-  
-</style>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("case-studies");
+    }
+  });
+</script>
+
+<Layout title="PicNet - Team Augmentation Services">
+  <ServicesHero
+    title="IT Augmentation Services"
+    subtitle="Augmenting your internal IT for that last minute project or emergency."
+    ctaText="Contact Us Today"
+    ctaUrl="/team-augmentation/#contact"
+    heroImage="/images/hero/team-augmentation.webp"
+  />
+
+  <FeatureSection
+    title="On a daily basis, companies need"
+    subtitle="IN BUSINESS, EVERYTHING MOVES QUICKLY"
+    data={featureData}
+  />
+
+  <InfoSection
+    title="How we have helped others"
+    subtitle="FAST TALENT SOLUTIONS TO SCALE PROBLEMS"
+    image="/images/augment2.webp"
+    data={informationData}
+  />
+
+  <StepsSection
+    title="We differentiate by"
+    subtitle="SCALING YOUR NEEDS IS A SOLVED PROBLEM"
+    data={stepsData}
+  />
+
+  <ServiceCaseStudySection
+    title="Some of our Case Studies"
+    subtitle="HERE ARE SOME COMPANIES, JUST LIKE YOURS, THAT HAVE BENEFITED FROM OUR AUGMENTATION SERVICES"
+    data={caseStudiesData}
+    id="case-studies"
+  />
+</Layout>

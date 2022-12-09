@@ -19,6 +19,11 @@ interface Props {
   subSection?: {
     title: string;
     images: string[];
+    list?: {
+      title: string;
+      subtitle: string;
+      content: string[];
+    };
   };
 }
 
@@ -26,13 +31,13 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
 ---
 
 <section id="information" class="section information-area">
-  <header class="section__header">
-    <h3 class="section__subtitle">{subtitle}</h3>
-    <h1 class="section__title">{title}</h1>
-    {ctaButton && <ArrowButton text={ctaButton.text} href={ctaButton.href} />}
-  </header>
-
   <div class="container">
+    <header class="section__header">
+      <h3 class="section__subtitle">{subtitle}</h3>
+      <h1 class="section__title">{title}</h1>
+      {ctaButton && <ArrowButton text={ctaButton.text} href={ctaButton.href} />}
+    </header>
+
     <main class="information__content">
       <!-- Section Logo -->
       <img
@@ -73,6 +78,16 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
                 />
               ))}
             </div>
+            {subSection?.list && (
+              <div class="information__sub-section__list">
+                <InfoItem
+                  type="list"
+                  title={subSection.list.title}
+                  subtitle={subSection.list.subtitle}
+                  content={subSection.list.content}
+                />
+              </div>
+            )}
           </div>
         )
       }
@@ -81,78 +96,85 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
 </section>
 
 <style lang="scss">
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/base-var.scss";
+  @use "@styles/scss/colors.scss" as c;
+  @use "@styles/scss/base-var.scss" as bv;
 
   .information-area {
-    background-color: $color-white;
+    background-color: c.$color-white;
     padding: 0;
 
     main.information__content {
-      margin-top: $base * 4;
+      margin-top: bv.$base * 4;
 
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: $base * 8;
+      // grid-template-rows: 1fr 2fr;
+      grid-template-areas:
+        "image main-section"
+        "sub-section main-section";
+      gap: bv.$base * 8;
     }
 
     img.information__image {
       max-width: 60%;
       justify-self: center;
-      grid-column: 1/2;
-      grid-row: 1/2;
+      grid-area: image;
     }
 
     .information__text {
-      grid-column: 2/3;
-      grid-row: 1/-1;
+      grid-area: main-section;
     }
 
     .information__sub-section {
-      grid-column: 1/2;
-      grid-row: 2/3;
+      grid-area: sub-section;
+
+      strong {
+        font-weight: 500;
+      }
 
       // Images container
       &__images {
         display: flex;
         flex-wrap: wrap;
-        min-width: 0;
-        gap: 5%;
+        gap: bv.$base * 2;
       }
 
       // Image
       &__image {
-        flex: 0 0 20%;
         min-width: 0;
+        flex: 0 0 20%;
+        margin-top: bv.$base * 2;
         object-fit: contain;
-        margin-top: 2.5%;
+      }
+
+      &__list {
+        margin-top: bv.$base * 4;
       }
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     .information-area {
-      padding: $base * 4;
+      padding: bv.$base * 4;
 
       main.information__content {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
-      }
-
-      img.information__image {
-        grid-column: 1/-1;
-        grid-row: 1/2;
-      }
-
-      .information__text {
-        grid-column: 1/-1;
-        grid-row: 2/3;
+        grid-template-areas:
+          "image"
+          "main-section"
+          "sub-section";
       }
 
       .information__sub-section {
-        grid-column: 1/-1;
-        grid-row: 3/4;
+        &__images {
+          gap: 5%;
+        }
+
+        // Image
+        &__image {
+          flex: 0 0 45%;
+        }
       }
     }
   }

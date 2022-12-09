@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "type": "paragraph",
+      "title": "Security Monitoring",
+      "content": ""
+    },
+    {
+      "type": "paragraph",
+      "title": "Your Security Operations Centre",
+      "content": "PicNet's Risk Shield Managed SIEM is a managed IT security monitoring and alerting service. Using IBM's QRadar with Watson SIEM (Security Information and Event Management) we are able to provide a managed service that's akin to a security operations centre (SOC) for your company."
+    },
+    {
+      "type": "paragraph",
+      "title": "Like a security guard for your network",
+      "content": "Our managed service would the IT security equivalent of having security guards monitoring your security cameras, room motion sensors, door swipes etc, combined with a database of known criminals and how they may operate and alerting the police when something seems to be amiss."
+    },
+    {
+      "type": "list",
+      "title": "We Will:",
+      "content": [
+        "Set up and configure QRadar SIEM to capture security and network traffic logs from your critical IT infrastructure (servers, firewalls, routers and switches, security services, cloud services).",
+        "Monitor these logs and network traffic using QRadar with Watson to look for suspicious events and user behaviour that will trigger alerts to our analysts",
+        "Analyse these alerts to determine their credibility and probability (real threat or false positive), the cause, and if real threats, escalate them to your IT with recommendation for what to do next."
+      ]
+    }
+  ]
+}

@@ -1,13 +1,54 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import { data as featuresData } from "@data/artificial-intelligence/features.json";
+import { data as infoData } from "@data/artificial-intelligence/info.json";
+import { data as caseStudiesData } from "@data/artificial-intelligence/case-studies.json";
+
+import ServicesHero from "@components/common/ServicesHero.astro";
+import FeatureSection from "@components/feature-section/FeatureSection.astro";
+
+import Layout from "@layouts/Layout.astro";
+import InfoSection from "@components/info-section/InfoSection.astro";
+import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
 ---
 
+<script>
+  import { initTab } from "@scripts/tab";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof initTab === "function") {
+      initTab("case-studies");
+    }
+  });
+</script>
+
 <Layout title="PicNet - Machine Learning and Artificial Intelligence Services">
-  <main>
-    <h1>Machine Learning and Artificial Intelligence Services</h1>
-  </main>
+  <ServicesHero
+    title="Machine Learning, AI & Business Intelligence Services"
+    subtitle="We create automation and data insight experiences that give you greater visibility into your business, industry, and customer needs. From dashboards to fully automated predictive systems that work even when you are not. Leverage the power of intelligence."
+    ctaText="Contact Us Today"
+    ctaUrl="/artificial-intelligence/#contact"
+    heroImage="/images/hero/artificial-intelligence.webp"
+  />
+
+  <FeatureSection
+    title="You have amazing data but is that all you need?"
+    subtitle="NOBODY KNOWS YOUR BUSINESS LIKE YOUR DATA"
+    data={featuresData}
+  />
+
+  <InfoSection
+    title="AI and BI services built locally, for you"
+    subtitle="LEVERAGE AI AND BI TO CHANGE THE WAY YOU USE DATA, AND CHANGE YOUR BUSINESS"
+    image="/images/home/about-us.png"
+    data={infoData}
+  />
+
+  <ServiceCaseStudySection
+    title="Some of our Case Studies"
+    subtitle="WE AIM FOR IMPACT"
+    data={caseStudiesData}
+    id="case-studies"
+  />
 </Layout>
 
-<style>
-  
-</style>
+<style></style>

@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "title": "CYCA",
+      "image": "/images/home/customers/cyca.png",
+      "mainContent": {
+        "title": "FILE SYSTEM MIGRATION AND SIMPLIFICATION",
+        "content": "Every company whether big or small have a need for a system to store files and documents. Although size normally also determines complexity, due to segregation of duties, company structure or as legacy or organic growth, some small business have rather complex file storage and access requirements. Migrating files and document storage from an in-house system to the cloud, will not only increase reliability, scalability, security and useability, it can also provide an opportunity for business to review their filing structure and simplify how and where their files and documents are stored."
+      },
+      "subContent": [
+        {
+          "type": "paragraph",
+          "title": "Complex file system with no room for growth",
+          "content": "The CYCA had company file and document storage system that had organically grown over the years to be rather complex with many different access groups, dozens of different network drives and the existing in-house storage infrastructure had run out of space for growth. Users didn't like to work from home because accessing files, required the use of the company VPN which at the time was cumbersome and slow."
+        },
+        {
+          "type": "paragraph",
+          "title": "Increased productivity and user satisfaction with less complexity",
+          "content": "PicNet migrated the CYCA files system to SharePoint online and in the process drove a process of review and simplification of the filing structure. The result was that users could now securely access company files conveniently from any computer with an internet connection, allowing users to work from home (in time for COVID lockdown) and room for future data growth."
+        }
+      ]
+    }
+  ]
+}

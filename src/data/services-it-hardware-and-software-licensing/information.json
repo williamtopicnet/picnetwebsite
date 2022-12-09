@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "type": "paragraph",
+      "title": "We will get back to you fast",
+      "content": "In a fast-paced business environment, agility and responsiveness is key. PicNet will respond to your requests for quote of IT Hardware or software licenses in fast and timely manner. For most regular hardware quote requests, we will be able to provide a quote usually within 24 hours."
+    },
+    {
+      "type": "paragraph",
+      "title": "Providing sound advice and recommendations",
+      "content": "If you are unsure what hardware or software will be required to fulfill your needs, let us know what your business requirements and budgets are, and we will do our best to provide you with sound practical advice on the equipment that will do the job. Because we also support and manage IT infrastructure for business, our engineers can provide practical advice on the systems that will work best in your business setting and user demographics."
+    },
+    {
+      "type": "paragraph",
+      "title": "Flexible delivery options and timelines",
+      "content": "We understand that not every business has the same needs when it comes to the delivery of your new IT equipment. Some projects require equipment to be delivered at set dates and to specific locations. That's why we are able tailor our delivery, so you get your equipment where you need it and when you need it."
+    },
+    {
+      "type": "paragraph",
+      "title": "Customer service that really cares",
+      "content": "We pride ourselves in providing a superior level of customer service. From quotation, order processing to delivery and post-sales support, our team will assist our customers in any way they can. If you have an IT equipment need or just looking for a competitive quote, reach out to us so we can provide you with an obligation free quote and experience the PicNet customer service difference!"
+    }
+  ],
+  "subData": {
+    "title": "Some of the major technology brands we can supply:",
+    "images": [
+      "/images/customers/dell-colour.webp",
+      "/images/customers/cisco-colour.webp",
+      "/images/customers/cisco-meraki-colour.webp",
+      "/images/customers/lenovo-colour.webp",
+      "/images/customers/fortinet-colour.webp",
+      "/images/customers/logitech.webp",
+      "/images/customers/Hewlett_Packard_Enterprise-Logo.webp",
+      "/images/customers/NetApp-Logo.webp",
+      "/images/home/partners/microsoft.png",
+      "/images/customers/Juniper_Networks-Logo.webp"
+    ],
+    "list": {
+      "title": "And many more…",
+      "subtitle": "Contact us for obligation free quotes for:",
+      "content": [
+        "Lenovo ThinkPad and ThinkBook business laptops, and peripherals including docks",
+        "Dell Latitude laptops OptiPlex desktops",
+        "Dell E, P and U series business monitors",
+        "HP EliteBook / ProBook laptops and EliteDesk / ProDesk desktops",
+        "Microsoft Surface Pro, Laptop and Docks",
+        "Range of business servers including Lenovo ThinkSystem, Dell PoweEdge, HPE DL and ML",
+        "Range of network switches including Dell, HPE Aruba and Aruba Instant ON, Meraki MS and Juniper EX",
+        "Range of wireless access points including Aruba Unified, Meraki MR and Juniper AP",
+        "Range of firewalls security devices including Fortigate, Meraki MX and Juniper SRX",
+        "Hardware and software for many other major vendors and brands"
+      ]
+    }
+  }
+}

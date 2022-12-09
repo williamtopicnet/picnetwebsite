@@ -3,7 +3,7 @@ interface Props {
   type: string;
   title: string;
   subtitle?: string | undefined;
-  content: string | string[] | { title: string; nested: string[] }[];
+  content: string | (string | { title: string; nested: string[] })[];
   listTitle?: string | undefined;
   className?: string;
 }

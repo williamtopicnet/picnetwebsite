@@ -2,7 +2,6 @@
   "data": [
     {
       "title": "Access, Integrate & Connect your Data",
-      "icon": "fa-solid fa-rotate",
       "mainContent": {
         "title": "Access, Integrate and Connect Your Data",
         "content": "Are you ready to  make all of your saas products, cloud and data sources work in concert?"
@@ -25,7 +24,6 @@
     },
     {
       "title": "The iPaaS Technologies",
-      "icon": "fa-solid fa-server",
       "mainContent": {
         "title": "The iPaaS Technologies",
         "content": "There are a lot of ways to orchestrate your data and products. because we are product agnostic, we can give you the right solution every time."
@@ -49,7 +47,6 @@
     },
     {
       "title": "Centazio",
-      "icon": "fa-solid fa-rocket",
       "mainContent": {
         "title": "Access, Integrate and Connect Your Data",
         "content": "PicNet Integration, Orchestration and Master Data Platform [Centazio]"
@@ -99,7 +96,6 @@
     },
     {
       "title": "Modern Enterprise Systems Architecture",
-      "icon": "fa-solid fa-globe",
       "mainContent": {
         "title": "Modern Enterprise Systems Architecture",
         "content": "Your systems are probably great, for the 1990's. doesn't your business, team and customers deserve the best solutions?"

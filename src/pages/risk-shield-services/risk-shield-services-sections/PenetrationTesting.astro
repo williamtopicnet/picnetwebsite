@@ -1,0 +1,109 @@
+---
+import InfoItem from "@components/info-section/InfoItem.astro";
+---
+
+<section id="penetration-testing">
+  <div class="container">
+    <main>
+      <div class="penetration-testing__text">
+        <strong>Penetration Testing</strong>
+
+        <InfoItem
+          type="paragraph"
+          title="Finding the weaknesses in your IT"
+          content={[
+            "PicNet's Risk Shield Pen Testing is a security penetration testing service designed for SMEs.",
+            "Using many of the same tools as hackers, we will probe your IT networks and websites for vulnerabilities that could be exploited by hackers to breach your IT security and steal sensitive confidential data.",
+          ]}
+        />
+
+        <InfoItem
+          type="paragraph"
+          title="Recommendations that you will understand"
+          content={[
+            "Our remediation recommendations will be easy to understand and will range from simple system configuration changes through to the implementation of additional technical IT security controls such as multi-factor authentication and active real time security threat monitoring tools such as SIEM (Security Information and Event Management).",
+            "Regular penetration tests are fixture for most large organisations. Risk Shield Pen Test is a service that delivers similar outcomes at a cost that is affordable for SMEs.",
+          ]}
+        />
+
+        <InfoItem
+          type="list"
+          title="We Will:"
+          content={[
+            "Set up and configure QRadar SIEM to capture security and network traffic logs from your critical IT infrastructure (servers, firewalls, routers and switches, security services, cloud services).",
+            "Monitor these logs and network traffic using QRadar with Watson to look for suspicious events and user behaviour that will trigger alerts to our analysts",
+            "Analyse these alerts to determine their credibility and probability (real threat or false positive), the cause, and if real threats, escalate them to your IT with recommendation for what to do next.",
+          ]}
+        />
+
+        <p class="contact-us">
+          <a href="./#contact">Contact us</a> today for an obligation free consultation.
+        </p>
+      </div>
+
+      <div class="penetration-testing__img">
+        <img
+          src="/images/risk-shield-services/pen-test-clip-art.webp"
+          alt="pen-test-clip-art"
+          loading="lazy"
+        />
+      </div>
+    </main>
+  </div>
+</section>
+
+<style lang="scss">
+  @use "@styles/scss/colors.scss" as *;
+  @use "@styles/scss/base-var.scss" as *;
+  @use "@styles/scss/typography.scss" as *;
+
+  #penetration-testing {
+    background-color: $color-white;
+    padding-top: $base * 2;
+    padding-bottom: $base * 8;
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .penetration-testing {
+        &__text {
+          strong {
+            color: $color-text-2;
+            font-size: $text-md;
+            font-weight: 600;
+          }
+
+          .contact-us {
+            color: $color-text-title;
+            margin-top: $base * 2;
+
+            a {
+              color: $color-text-info;
+            }
+          }
+        }
+
+        &__img {
+          text-align: center;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    #penetration-testing {
+      padding-inline: $base * 4;
+      margin-top: $base * -12;
+
+      main {
+        grid-template-columns: 1fr;
+        gap: $base * 4;
+      }
+    }
+  }
+</style>
