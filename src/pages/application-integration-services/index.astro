@@ -53,25 +53,41 @@ import ArrowButton from "@components/common/ArrowButton.astro";
   <div class="container see-more-on-blog text-center">
     <ArrowButton
       text="See more on our blog"
-      href="/blog/modern-enterprise-systems-architecture/"
+      href="https://picnet.com.au/blog/modern-enterprise-systems-architecture/"
     />
   </div>
 </Layout>
 
 <style lang="scss">
-  @use "@styles/scss/colors.scss" as colors;
-  @use "@styles/scss/base-var.scss" as bv;
+  @use "@styles/scss/base-var.scss" as *;
 
   .see-more-on-blog {
-    padding-bottom: bv.$base * 12;
+    padding-bottom: $base * 12;
   }
 </style>
 
 <style lang="scss" is:global>
+  @use "@styles/scss/base-var.scss" as *;
+
   #case-studies {
     .case-study__img {
       width: 400px;
       height: 400px;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    #case-studies {
+      .case-study__img {
+        max-width: 100%;
+        width: 270px;
+        height: 270px;
+      }
+
+      img.case-study__img + img.case-study__img {
+        margin-top: 0;
+      }
     }
   }
 </style>
