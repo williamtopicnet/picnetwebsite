@@ -96,15 +96,14 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
 </section>
 
 <style lang="scss">
-  @use "@styles/scss/colors.scss" as c;
-  @use "@styles/scss/base-var.scss" as bv;
+  @use "@styles/scss/colors.scss" as *;
+  @use "@styles/scss/base-var.scss" as *;
 
   .information-area {
-    background-color: c.$color-white;
-    padding: 0;
+    background-color: $color-white;
 
     main.information__content {
-      margin-top: bv.$base * 4;
+      margin-top: $base * 4;
 
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -112,7 +111,7 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
       grid-template-areas:
         "image main-section"
         "sub-section main-section";
-      gap: bv.$base * 8;
+      gap: $base * 8;
     }
 
     img.information__image {
@@ -136,26 +135,26 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
       &__images {
         display: flex;
         flex-wrap: wrap;
-        gap: bv.$base * 2;
+        gap: $base * 2;
       }
 
       // Image
       &__image {
         min-width: 0;
         flex: 0 0 20%;
-        margin-top: bv.$base * 2;
+        margin-top: $base * 2;
         object-fit: contain;
       }
 
       &__list {
-        margin-top: bv.$base * 4;
+        margin-top: $base * 4;
       }
     }
   }
 
-  @media only screen and (max-width: bv.$screen-lg) {
+  @media only screen and (max-width: $screen-lg) {
     .information-area {
-      padding: bv.$base * 4;
+      padding: $base * 4;
 
       main.information__content {
         grid-template-columns: 1fr;

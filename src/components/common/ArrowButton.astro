@@ -13,27 +13,27 @@ const { text, href } = Astro.props;
 </a>
 
 <style lang="scss">
-  @use "@styles/scss/colors.scss" as c;
-  @use "@styles/scss/typography.scss" as t;
-  @use "@styles/scss/base-var.scss" as bv;
+  @use "@styles/scss/colors.scss" as *;
+  @use "@styles/scss/typography.scss" as *;
+  @use "@styles/scss/base-var.scss" as *;
 
   .arrow-button {
     display: inline-block;
     font-weight: 500;
-    font-size: t.$text-sm;
-    color: c.$color-white;
-    background-color: c.$color-text-info;
+    font-size: $text-sm;
+    color: $color-white;
+    background-color: $color-text-info;
 
     padding: 1em 1.5em;
-    border-radius: bv.$base-radius;
+    border-radius: $base-radius;
 
     display: inline-flex;
     align-items: center;
-    gap: bv.$base;
-    transition: filter 0.2s bv.$base-animation-timing;
+    gap: $base;
+    transition: filter 0.2s $base-animation-timing;
 
     i {
-      transition: transform 0.2s bv.$base-animation-timing;
+      transition: transform 0.2s $base-animation-timing;
       will-change: transform;
     }
 

@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "icon": "fa-regular fa-lightbulb",
+      "icon": "fa-solid fa-lightbulb",
       "title": "Innovative Software",
       "description": "Do you need creative and advanced software solutions for your business"
     },
@@ -26,7 +26,7 @@
       "description": "Are your cumbersome processes costing you money"
     },
     {
-      "icon": "fa-regular fa-hand-back-fist",
+      "icon": "fa-solid fa-hand-back-fist",
       "title": "Measurable Impact",
       "description": "Are your existing applications lacking in impact"
     },
@@ -41,7 +41,7 @@
       "description": "Do you need software that will stand the test of time with thoughtful architecture"
     },
     {
-      "icon": "fa-regular fa-file",
+      "icon": "fa-solid fa-file",
       "title": "Meaningful Data",
       "description": "Do you need systems that will enable you to collect valuable information which is currently being wasted in outdated manual processes or messy spreadsheets"
     },

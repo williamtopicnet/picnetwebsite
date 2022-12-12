@@ -6,7 +6,7 @@
       "description": "Data integration is the process of combining data from different sources into a single, unified view. All of your SaaS, data, analytics, cloud and local in one place."
     },
     {
-      "icon": "fa-regular fa-handshake",
+      "icon": "fa-solid fa-handshake",
       "title": "Eliminate Data Silos",
       "description": "A seamless and secured solution is essential to integrate the data from all these siloed platforms and combine them together and establish a smooth unified place to store them."
     },
