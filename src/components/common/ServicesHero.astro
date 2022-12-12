@@ -18,7 +18,7 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
       <main>
         <div class="services-hero__text">
           <h1>{title}</h1>
-          <p>{subtitle}</p>
+          <p set:html={subtitle} />
 
           <ArrowButton text={ctaText} href={ctaUrl} />
         </div>

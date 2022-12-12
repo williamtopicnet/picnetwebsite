@@ -27,7 +27,7 @@ const {
         {Array.isArray(content) ? (
           content.map((item) => <p set:html={item} />)
         ) : (
-          <p>{content}</p>
+          <p set:html={content} />
         )}
       </div>
     </div>
@@ -97,7 +97,6 @@ const {
       ul {
         padding-left: $base * 3;
         list-style: disc;
-        list-style-position: inside;
         margin-top: $base;
       }
     }

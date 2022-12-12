@@ -18,9 +18,9 @@ const { title, logo, content } = Astro.props;
 </div>
 
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/typography.scss";
+  @use "@styles/scss/base-var.scss" as *;
+  @use "@styles/scss/colors.scss" as *;
+  @use "@styles/scss/typography.scss" as *;
 
   .testimonial-card {
     display: flex;
@@ -48,6 +48,18 @@ const { title, logo, content } = Astro.props;
     &__title {
       font-weight: 500;
       font-size: $text-base;
+    }
+
+    &__content {
+      &::before {
+        content: "\201C";
+      }
+
+      &::after {
+        content: "\201D";
+      }
+
+      font-style: italic;
     }
   }
 </style>

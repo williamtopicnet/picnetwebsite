@@ -3,20 +3,39 @@ interface Props {
   dialogId: string;
 }
 
-const { dialogid } = Astro.props;
+const { dialogId } = Astro.props;
 ---
 
-<dialog id={dialogid}>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const dialogs = document.querySelectorAll("dialog");
+
+    function onClick(this: HTMLDialogElement, event: MouseEvent) {
+      if (this === event.target) {
+        this.close();
+      }
+    }
+
+    if (dialogs) {
+      dialogs.forEach((dialog) => {
+        dialog.addEventListener("click", onClick);
+      });
+    }
+  });
+</script>
+
+<dialog id={dialogId}>
   <form method="dialog" class="close">
     <button value="cancel">
-      <i class="fa-solid fa-xmark fa-xl"></i>
+      <i class="fa-solid fa-circle-xmark fa-lg"></i>
     </button>
   </form>
   <slot />
 </dialog>
 
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
+  @use "@styles/scss/base-var.scss" as *;
+  @use "@styles/scss/colors.scss" as *;
 
   dialog {
     border: 0;
@@ -42,6 +61,7 @@ const { dialogid } = Astro.props;
     position: absolute;
     right: var(--offset);
     top: var(--offset);
+    color: $color-text-primary;
   }
 
   @media only screen and (max-width: $screen-lg) {

@@ -1,5 +1,5 @@
 ---
-import { data } from "../../data/home/partners.json";
+import { data } from "@data/home/partners.json";
 ---
 
 <section id="partners" class="section partners-area">
@@ -11,7 +11,7 @@ import { data } from "../../data/home/partners.json";
 
     <main>
       {
-        data.map(({ logo, description, name }) => (
+        data.map(({ logo, description, name, list }) => (
           <div class="partner">
             <div class="partner__logo">
               <img
@@ -24,6 +24,17 @@ import { data } from "../../data/home/partners.json";
             <div class="partner__text">
               <h3 class="partner__name">{name}</h3>
               <p class="partner__description">{description}</p>
+
+              {list && (
+                <>
+                  <p class="partner__list__title">{list.title}</p>
+                  <ul class="partner__list">
+                    {list.content.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </div>
           </div>
         ))
@@ -64,18 +75,29 @@ import { data } from "../../data/home/partners.json";
     &__text {
       flex: 1;
       min-width: 0;
+      font-weight: 300;
+      color: $color-text-primary;
     }
 
     &__name {
       font-weight: 500;
       font-size: $text-xl;
+      color: $color-black;
     }
 
     &__description {
       font-size: $text-base;
       margin-top: $base;
-      font-weight: 300;
-      color: $color-text-primary;
+    }
+
+    &__list {
+      padding-left: $base * 3;
+      list-style: disc;
+      margin-top: $base;
+    }
+
+    &__list__title {
+      margin-top: $base * 2;
     }
   }
 

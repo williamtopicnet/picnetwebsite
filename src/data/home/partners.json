@@ -1,11 +1,6 @@
 {
   "data": [
     {
-      "name": "Microsoft",
-      "logo": "microsoft.png",
-      "description": "PicNet is a certified Microsoft partner and solution provider with demonstrated competencies in application development, data analytics, cloud platform and cloud productivity."
-    },
-    {
       "name": "IBM",
       "logo": "ibm.png",
       "description": "PicNet is an IBM partner and our Risk Shield Services (managed IT security monitoring and alerting service) use the IBM"
@@ -16,9 +11,39 @@
       "description": "PicNet is a part of the Amazon Web Services Partner Network (APN) as a Consulting Partner to help you expand and scale your business on AWS and accelerate your journey to the cloud."
     },
     {
+      "name": "Microsoft",
+      "logo": "microsoft.png",
+      "description": "PicNet is a certified Microsoft partner and solution provider with demonstrated competencies in application development, data analytics, cloud platform and cloud productivity.",
+      "list": {
+        "title": "The PicNet team are experts in the following Microsoft Technologies:",
+        "content": [
+          ".Net / HTML 5 Development",
+          "Mobile Development",
+          "SQL Server",
+          "Dynamics 365",
+          "Power Platform",
+          "Windows Networking and Security",
+          "Azure",
+          "Microsoft 365 / Office 365"
+        ]
+      }
+    },
+    {
       "name": "NSW Goverment",
       "logo": "nsw_gov.png",
-      "description": "PicNet is registered as an Advanced Supplier under the NSW Government's ICT Services Scheme (SCM0020). This scheme is a whole-of-government mandated arrangement to assist NSW Government agencies and other eligible buyers in procuring ICT related goods and services."
+      "description": "PicNet is registered as an Advanced Supplier under the NSW Government's ICT Services Scheme (SCM0020). This scheme is a whole-of-government mandated arrangement to assist NSW Government agencies and other eligible buyers in procuring ICT related goods and services.",
+      "list": {
+        "title": "PicNet has done projects for the following NSW and Federal Government Organisations:",
+        "content": [
+          "NSW Health",
+          "NSW Transport",
+          "NSW Department of Education",
+          "NSW Department of Environment",
+          "NABERS",
+          "IHPA",
+          "Attorney-General's Department"
+        ]
+      }
     }
   ]
 }
