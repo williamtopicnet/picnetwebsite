@@ -30,6 +30,11 @@
       },
       "subContent": [
         {
+          "type": "paragraph",
+          "title": "The Right Solution Every Time",
+          "content": "Some solutions are better at API management, communication protocols, data and application connectivity, data formatting, mapping, transformation, etc. The solution of choice depends on the problem at hand, but as a general rule, PicNet Integration Platform strongly supports Azure Integration Services and after that, other platforms."
+        },
+        {
           "type": "list",
           "listTitle": "There are numerous iPaaS solutions in the marketplace, including:",
           "content": [
@@ -40,11 +45,6 @@
             "Jitterbit",
             "Others"
           ]
-        },
-        {
-          "type": "paragraph",
-          "title": "The Right Solution Every Time",
-          "content": "Some solutions are better at API management, communication protocols, data and application connectivity, data formatting, mapping, transformation, etc. The solution of choice depends on the problem at hand, but as a general rule, PicNet Integration Platform strongly supports Azure Integration Services and after that, other platforms."
         }
       ]
     },

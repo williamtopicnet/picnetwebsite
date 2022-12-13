@@ -3,7 +3,7 @@
     {
       "name": "IBM",
       "logo": "ibm.png",
-      "description": "PicNet is an IBM partner and our Risk Shield Services (managed IT security monitoring and alerting service) use the IBM"
+      "description": "PicNet is an IBM partner and our Risk Shield Services (managed IT security monitoring and alerting service) use the IBM QRadar with Watson SIEM (Security Information and Event Management). Risk Shield Services is able to provide a managed service that's akin to a security operations centre (SOC) for your company."
     },
     {
       "name": "Amazon",
