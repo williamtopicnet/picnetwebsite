@@ -36,11 +36,11 @@
   "subData": {
     "title": "Major Technology Partners",
     "images": [
-      "/images/home/partners/microsoft.png",
+      "/images/customers/microsoft.png",
       "/images/customers/cisco.webp",
       "/images/customers/cisco2.webp",
-      "/images/home/partners/ibm.png",
-      "/images/home/partners/aws.png",
+      "/images/customers/ibm.png",
+      "/images/customers/aws.png",
       "/images/customers/tpg.webp",
       "/images/customers/datto.webp"
     ]

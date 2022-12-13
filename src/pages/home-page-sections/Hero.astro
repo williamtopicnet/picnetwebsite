@@ -1,4 +1,4 @@
-<section id="hero">
+<section id="hero" class="section">
   <div class="hero__bg hero__bg--left"></div>
   <div class="hero__bg hero__bg--right"></div>
 
@@ -16,20 +16,19 @@
       <a href="/#contact">Let's Get Started</a>
     </div>
 
-    <img src="/images/home/header-icons.png" alt="hero" class="hero__image" />
+    <img src="/images/hero/home.png" alt="hero" class="hero__image" />
   </div>
 </section>
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/typography.scss';
+  @use '@styles/scss/base-var.scss' as *;
+  @use '@styles/scss/colors.scss' as *;
+  @use '@styles/scss/typography.scss' as *;
 
   section {
     color: $color-white;
     text-align: center;
     position: relative;
     overflow-x: hidden;
-    padding-top: $base * 10;
   }
 
   .hero__bg {
@@ -39,7 +38,7 @@
     top: -80px;
     z-index: -2;
 
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: $screen-lg) {
       width: calc(280% + 2px);
     }
 
@@ -57,6 +56,7 @@
   .hero__image {
     width: 100%;
     max-width: 100%;
+    aspect-ratio: calc(1038 / 341);
   }
 
   .hero__content {
@@ -83,12 +83,13 @@
 
   a {
     color: inherit;
+
     border: solid 1px;
-    padding: 0.7rem 1.5rem;
-    border-radius: 2rem;
-    z-index: 2;
     display: inline-block;
+    padding: $base * 1.5 $base * 3;
     margin-top: $base * 6;
+    border-radius: $base * 4;
+    z-index: 2;
 
     &:hover {
       background-color: $color-white;

@@ -2,7 +2,7 @@
   "data": [
     {
       "title": "NSW Health",
-      "image": "/images/home/customers/nswhealth.png",
+      "image": "/images/customers/nswhealth.png",
       "mainContent": {
         "title": "WHEN I.T. HEALTH NEEDS TO IMPROVE",
         "content": "I.T. Health is the use of information systems for the healthcare industry. The importance of I.T. Health stems from the combination of evolving technologies and changing government policies that influence the quality of patient care. Improving I.T. Health means increasing productivity, lowering medical costs, boosting patient satisfaction, and creating a better working environment for healthcare providers."
@@ -22,7 +22,7 @@
     },
     {
       "title": "Blackdot",
-      "image": "/images/home/customers/blackdot.png",
+      "image": "/images/customers/blackdot.png",
       "mainContent": {
         "title": "WHEN BUSINESSES NEED TO GROW",
         "content": "For businesses to reach their full potential and be considered successful, they will have to focus on growing their customer base and forming business relationships. At the same time, they will have to alleviate any internal shortcomings and bottlenecks that will cause business performance issues. This has proven to be challenging for most."
@@ -42,7 +42,7 @@
     },
     {
       "title": "Fuji Xerox",
-      "image": "/images/home/customers/fxa.png",
+      "image": "/images/customers/fxa.png",
       "mainContent": {
         "title": "WHEN CUSTOMER SUPPORT IS CRUCIAL",
         "content": "The retention of loyal customers is less expensive than acquiring new ones. It is likely to cost five times more to attract new customers than keep the existing ones. This is the reason why customer support and satisfaction are crucial and important in any business. It is the same reason why there is a need to invest in the correct tools and people to build a proper platform to ensure consistent and quality customer support."
@@ -62,7 +62,7 @@
     },
     {
       "title": "BNG Contactor Services",
-      "image": "/images/home/customers/bng.png",
+      "image": "/images/customers/bng.png",
       "mainContent": {
         "title": "WHEN A PARADIGM SHIFT IS REQUIRED",
         "content": "A paradigm shift is a major or fundamental change in the approach, concepts, and practices of how something works or is accomplished. In the business world, this would mean a change or disruption of current processes or models that aims to create potential business opportunities or to solve complicated issues or problems."
@@ -82,7 +82,7 @@
     },
     {
       "title": "XchangeIT",
-      "image": "/images/home/customers/xit.png",
+      "image": "/images/customers/xit.png",
       "mainContent": {
         "title": "WHEN COSTS AND RESOURCES MATTER",
         "content": "The importance of cost control in a project is something that businesses are familiar with. However, to maintain the quality of work and meet the project's timeline, and at the same time being aware of accruing and forecasted costs, is not an easy task. Hence, getting the right resources is similarly paramount for a successful project."
@@ -102,7 +102,7 @@
     },
     {
       "title": "Reckitt Benckiser",
-      "image": "/images/home/customers/reckitt.png",
+      "image": "/images/customers/reckitt.png",
       "mainContent": {
         "title": "WHEN TIME IS MONEY",
         "content": "Real-time information is crucial in today's businesses. The faster the data is acquired, the faster decisions can be made. Reckitt Benckiser must rely on real-time data for their research and development to make products that their customers have loved and trusted for years."
@@ -125,7 +125,7 @@
     },
     {
       "title": "Guide Dogs NSW/ACT",
-      "image": "/images/home/customers/gd.png",
+      "image": "/images/customers/gd.png",
       "mainContent": {
         "title": "DISABILITY SHOULD NEVER BE A BARRIER",
         "content": "Disability should not hinder a person to actively participate in their communities. Access to a range of support activities must be made available at all times to people with disabilities. This in turn will benefit the community as a whole and will have a great impact on people's social relationships for a long time."
@@ -165,7 +165,7 @@
     },
     {
       "title": "Novartis Australia",
-      "image": "/images/home/customers/novartis.png ",
+      "image": "/images/customers/novartis.png ",
       "mainContent": {
         "title": "WHEN SCIENCE DELIVERS",
         "content": "To pursue medical paragons and explore the many ways of curing diseases and chronic illnesses, Science and technology along with research is key to dramatically improving the quality of life for patients. Embracing the digital age will help companies to drive innovation and productivity."
@@ -205,7 +205,7 @@
     },
     {
       "title": "Grain Trade Australia",
-      "image": "/images/home/customers/gta.png",
+      "image": "/images/customers/gta.png",
       "mainContent": {
         "title": "WHEN TRADING THRIVES",
         "content": "The commercial grains industry mainly consists of farms engaged in growing coarse grains or other cereal crops that are broken to product groups such as rice, wheat, and different kinds of seeds. There is need to ensure there is an efficient, equitable and open trading environment for farmers."
@@ -225,7 +225,7 @@
     },
     {
       "title": "Cruising Yacht Club of Australia",
-      "image": "/images/home/customers/cyca.png",
+      "image": "/images/customers/cyca.png",
       "mainContent": {
         "title": "WHEN TRADITION MEETS MODERNITY",
         "content": "There is a long historical tradition behind yacht clubs. These are mainly focused and are run by the membership, promoting social recreation and the sport of sailboat racing. Others are run commercially to make profit such as the use of a marina. In both ways, the management of members and operations has proved difficult to do with its increasing popularity."

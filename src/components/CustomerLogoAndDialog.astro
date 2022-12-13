@@ -14,13 +14,13 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
 ---
 
 <div class="case-studies__image" onclick={`window.${dialogid}.showModal()`}>
-  <img src={`/images/home/customers/${logo}`} alt="logo" loading="lazy" />
+  <img src={`/images/customers/${logo}`} alt="logo" loading="lazy" />
 </div>
 
 <Dialog dialogId={dialogid}>
   <div class="modal__content">
     <div class="customer__logo">
-      <img src={`/images/home/customers/${brand}`} alt="brand" loading="lazy" />
+      <img src={`/images/customers/${brand}`} alt="brand" loading="lazy" />
     </div>
     <div class="customer__content">
       {title && <h3>{title}</h3>}

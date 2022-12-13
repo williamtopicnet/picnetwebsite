@@ -14,7 +14,7 @@ import { data } from '@data/home/partners.json';
         data.map(({ logo, description, name, list }) => (
           <div class="partner">
             <div class="partner__logo">
-              <img src={`/images/home/partners/${logo}`} alt={name} loading="lazy" />
+              <img src={`/images/customers/${logo}`} alt={name} loading="lazy" class="img" />
             </div>
 
             <div class="partner__text">
@@ -61,11 +61,7 @@ import { data } from '@data/home/partners.json';
     &__logo {
       width: 20%;
       height: min-content;
-      padding-top: 1rem;
-
-      img {
-        width: 100%;
-      }
+      padding-top: $base * 2;
     }
 
     &__text {

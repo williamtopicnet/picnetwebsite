@@ -5,21 +5,21 @@
       "linkedin": "https://www.linkedin.com/in/guidotapia",
       "position": "Director of Software Development and Machine Learning Services",
       "description": "Guido manages the Software Development and ML teams at PicNet. They specialise in delivering complex systems that are usually beyond the capabilities of regular outsourcing companies. Such systems as; high distributed systems, machine learning and artificial intelligence solutions, business critical applications, etc.",
-      "photo": "/images/home/guido.png"
+      "photo": "/images/home/leadership-team/guido.png"
     },
     {
       "name": "David Booth",
       "linkedin": "https://www.linkedin.com/in/david-booth-b35a0b7/",
       "position": "Director of Managed Cloud Services and IT Support",
       "description": "David joined PicNet in 2004 and has held several roles straddling the breadth of IT. David has worked on numerous projects for a number of medium and large size companies and Government agencies. David consults as a vCIO, Senior Project Manager, Business Analyst and drives the IT Support and Managed Cloud Services at PicNet.",
-      "photo": "/images/home/david.png"
+      "photo": "/images/home/leadership-team/david.png"
     },
     {
       "name": "Marco Tapia",
       "linkedin": "https://www.linkedin.com/in/marcotapia/",
       "position": "IT Consulting Services Senior Advisor",
       "description": "Since funding PicNet in 2001, Marco has been responsible for its overall strategic direction, its consulting services and its business development. Marco's experience includes Company Directory, CIO, Business Technology Consultant and IT Project Manager. He has managed large and medium size IT functions for national and international corporations.",
-      "photo": "/images/home/marco.png"
+      "photo": "/images/home/leadership-team/marco.png"
     }
   ]
 }

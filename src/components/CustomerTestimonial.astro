@@ -10,7 +10,7 @@ const { title, logo, content } = Astro.props;
 
 <div class="testimonial-card">
   <div class="testimonial-card__logo">
-    <img src={`/images/home/customers/${logo}`} alt="logo" loading="lazy" />
+    <img src={`/images/customers/${logo}`} alt="logo" loading="lazy" width="300" height="100" class="img" />
   </div>
 
   <p class="testimonial-card__content">{content}</p>
@@ -41,8 +41,7 @@ const { title, logo, content } = Astro.props;
       width: 25%;
 
       img {
-        width: 100%;
-        max-width: 100%;
+        object-fit: contain;
       }
     }
     &__title {

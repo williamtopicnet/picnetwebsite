@@ -16,6 +16,10 @@
     scrollToTopButton.onclick = scrollToTop;
 
     function toggleScrollToTopButtonVisibility() {
+      if (!scrollToTopButton) {
+        return;
+      }
+
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopButton.removeAttribute('hidden');
       } else {
