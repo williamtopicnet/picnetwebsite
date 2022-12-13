@@ -1,6 +1,6 @@
 ---
-import ArrowButton from "@components/common/ArrowButton.astro";
-import InfoItem from "./InfoItem.astro";
+import ArrowButton from '@components/common/ArrowButton.astro';
+import InfoItem from './InfoItem.astro';
 
 interface Props {
   title: string;
@@ -40,24 +40,14 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
 
     <main class="information__content">
       <!-- Section Logo -->
-      <img
-        src={image}
-        alt="information section image"
-        class="information__image img"
-        loading="lazy"
-      />
+      <img src={image} alt="information section image" class="information__image img" loading="lazy" />
 
       <!-- Section text -->
 
       <div class="information__text">
         {
           data.map(({ title, content, type, subtitle }) => (
-            <InfoItem
-              title={title}
-              content={content}
-              type={type}
-              subtitle={subtitle}
-            />
+            <InfoItem title={title} content={content} type={type} subtitle={subtitle} />
           ))
         }
       </div>
@@ -69,13 +59,7 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
             <strong>{subSection.title}</strong>
             <div class="information__sub-section__images">
               {subSection.images.map((img) => (
-                <img
-                  src={img}
-                  alt="image"
-                  width="80"
-                  height="40"
-                  class="information__sub-section__image"
-                />
+                <img src={img} alt="image" width="80" height="40" class="information__sub-section__image" />
               ))}
             </div>
             {subSection?.list && (
@@ -96,8 +80,8 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
 </section>
 
 <style lang="scss">
-  @use "@styles/scss/colors.scss" as *;
-  @use "@styles/scss/base-var.scss" as *;
+  @use '@styles/scss/colors.scss' as *;
+  @use '@styles/scss/base-var.scss' as *;
 
   .information-area {
     background-color: $color-white;
@@ -109,8 +93,8 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
       grid-template-columns: 1fr 1fr;
       // grid-template-rows: 1fr 2fr;
       grid-template-areas:
-        "image main-section"
-        "sub-section main-section";
+        'image main-section'
+        'sub-section main-section';
       gap: $base * 8;
     }
 
@@ -160,9 +144,9 @@ const { title, subtitle, image, data, ctaButton, subSection } = Astro.props;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
         grid-template-areas:
-          "image"
-          "main-section"
-          "sub-section";
+          'image'
+          'main-section'
+          'sub-section';
       }
 
       .information__sub-section {

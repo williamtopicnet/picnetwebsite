@@ -1,5 +1,5 @@
 ---
-import Dialog from "./Dialog.astro";
+import Dialog from './Dialog.astro';
 
 interface Props {
   logo: string;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { logo, brand, title, more, content } = Astro.props;
-const dialogid = `dialogid_${logo.split(".")[0]}`;
+const dialogid = `dialogid_${logo.split('.')[0]}`;
 ---
 
 <div class="case-studies__image" onclick={`window.${dialogid}.showModal()`}>
@@ -24,22 +24,16 @@ const dialogid = `dialogid_${logo.split(".")[0]}`;
     </div>
     <div class="customer__content">
       {title && <h3>{title}</h3>}
-      {
-        typeof content === "string" ? (
-          <p>{content}</p>
-        ) : (
-          content.map((item) => <p>{item}</p>)
-        )
-      }
+      {typeof content === 'string' ? <p>{content}</p> : content.map((item) => <p>{item}</p>)}
       <a class="more-btn text-underline" href={more}>Read more about this</a>
     </div>
   </div>
 </Dialog>
 
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/typography.scss";
-  @import "@styles/scss/colors.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/typography.scss';
+  @import '@styles/scss/colors.scss';
 
   .case-studies__image {
     max-width: 180px;

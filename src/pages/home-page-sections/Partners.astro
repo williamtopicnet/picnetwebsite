@@ -1,5 +1,5 @@
 ---
-import { data } from "@data/home/partners.json";
+import { data } from '@data/home/partners.json';
 ---
 
 <section id="partners" class="section partners-area">
@@ -14,11 +14,7 @@ import { data } from "@data/home/partners.json";
         data.map(({ logo, description, name, list }) => (
           <div class="partner">
             <div class="partner__logo">
-              <img
-                src={`/images/home/partners/${logo}`}
-                alt={name}
-                loading="lazy"
-              />
+              <img src={`/images/home/partners/${logo}`} alt={name} loading="lazy" />
             </div>
 
             <div class="partner__text">
@@ -43,9 +39,9 @@ import { data } from "@data/home/partners.json";
   </div>
 </section>
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/typography.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/typography.scss';
 
   section.partners-area {
     background-color: $color-white;

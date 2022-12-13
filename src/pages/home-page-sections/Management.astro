@@ -1,13 +1,11 @@
 ---
-import { data } from "../../data/home/management.json";
+import { data } from '../../data/home/management.json';
 ---
 
 <section id="management" class="section management-area">
   <div class="container">
     <header class="section__header">
-      <h2 class="section__subtitle">
-        OVER 70 YEARS OF COMBINED EXPERIENCE WITH AUSTRALIA'S LEADING COMPANIES
-      </h2>
+      <h2 class="section__subtitle">OVER 70 YEARS OF COMBINED EXPERIENCE WITH AUSTRALIA'S LEADING COMPANIES</h2>
       <h1 class="section__title">Meet Our Leadership Team</h1>
     </header>
 
@@ -15,23 +13,13 @@ import { data } from "../../data/home/management.json";
       {
         data.map(({ name, description, position, photo, linkedin }) => (
           <div class="management__card">
-            <img
-              src={photo}
-              class="management__card__photo"
-              alt={name}
-              loading="lazy"
-            />
+            <img src={photo} class="management__card__photo" alt={name} loading="lazy" />
             <div class="management__card__bio">
               <p>{description}</p>
 
               <div class="management__card__divider relative">
                 <hr />
-                <a
-                  class="management__card__linkedin"
-                  href={linkedin}
-                  target="_blank"
-                  title={`${name}'s linkedin`}
-                >
+                <a class="management__card__linkedin" href={linkedin} target="_blank" title={`${name}'s linkedin`}>
                   <i class="fa-brands fa-linkedin fa-lg" />
                 </a>
               </div>
@@ -47,9 +35,9 @@ import { data } from "../../data/home/management.json";
   </div>
 </section>
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/typography.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/typography.scss';
 
   .section__header .section__title {
     color: $color-white;

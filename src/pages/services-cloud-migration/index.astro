@@ -1,27 +1,24 @@
 ---
 // Static Data
-import {
-  data as informationData,
-  subData,
-} from "@data/services-cloud-migration/information.json";
-import { data as featureData } from "@data/services-cloud-migration/features.json";
-import { data as caseStudiesData } from "@data/services-cloud-migration/case-studies.json";
+import { data as informationData, subData } from '@data/services-cloud-migration/information.json';
+import { data as featureData } from '@data/services-cloud-migration/features.json';
+import { data as caseStudiesData } from '@data/services-cloud-migration/case-studies.json';
 
 // Components
-import ServicesHero from "@components/common/ServicesHero.astro";
-import FeatureSection from "@components/feature-section/FeatureSection.astro";
-import InfoSection from "@components/info-section/InfoSection.astro";
-import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+import ServicesHero from '@components/common/ServicesHero.astro';
+import FeatureSection from '@components/feature-section/FeatureSection.astro';
+import InfoSection from '@components/info-section/InfoSection.astro';
+import ServiceCaseStudySection from '@components/common/ServiceCaseStudySection.astro';
 
-import Layout from "@layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro';
 ---
 
 <script>
-  import { initTab } from "@scripts/tab";
+  import { initTab } from '@scripts/tab';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab("case-studies");
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initTab === 'function') {
+      initTab('case-studies');
     }
   });
 </script>

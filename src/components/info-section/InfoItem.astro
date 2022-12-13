@@ -8,58 +8,45 @@ interface Props {
   className?: string;
 }
 
-const {
-  type,
-  title,
-  content,
-  subtitle,
-  listTitle,
-  className = "",
-} = Astro.props;
+const { type, title, content, subtitle, listTitle, className = '' } = Astro.props;
 ---
 
 {
-  type === "paragraph" && (
+  type === 'paragraph' && (
     <div class={`information__item ${className}`}>
       <strong class="information__item__title">{title}</strong>
       {subtitle && <p class="information__item__subtitle">{subtitle}</p>}
       <div class="information__item__body">
-        {Array.isArray(content) ? (
-          content.map((item) => <p set:html={item} />)
-        ) : (
-          <p set:html={content} />
-        )}
+        {Array.isArray(content) ? content.map((item) => <p set:html={item} />) : <p set:html={content} />}
       </div>
     </div>
   )
 }
 
 {
-  type === "list" && (
+  type === 'list' && (
     <div class={`information__item ${className}`}>
       <strong class="information__item__title">{title}</strong>
       {subtitle && <p class="information__item__subtitle">{subtitle}</p>}
       <div class="information__item__body">
         {listTitle && <p class="information__item__list-title">{listTitle}</p>}
         <ul>
-          {(content as (string | { title: string; nested: string[] })[]).map(
-            (item) => {
-              if (typeof item === "object") {
-                return (
-                  <li>
-                    {item.title}
-                    <ul>
-                      {item.nested.map((nestedItem) => (
-                        <li>{nestedItem}</li>
-                      ))}
-                    </ul>
-                  </li>
-                );
-              }
-
-              return <li>{item}</li>;
+          {(content as (string | { title: string; nested: string[] })[]).map((item) => {
+            if (typeof item === 'object') {
+              return (
+                <li>
+                  {item.title}
+                  <ul>
+                    {item.nested.map((nestedItem) => (
+                      <li>{nestedItem}</li>
+                    ))}
+                  </ul>
+                </li>
+              );
             }
-          )}
+
+            return <li>{item}</li>;
+          })}
         </ul>
       </div>
     </div>
@@ -67,8 +54,8 @@ const {
 }
 
 <style lang="scss">
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/base-var.scss";
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/base-var.scss';
 
   .information__item {
     margin-top: $base * 2;

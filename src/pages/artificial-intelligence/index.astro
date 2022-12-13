@@ -1,22 +1,22 @@
 ---
-import { data as featuresData } from "@data/artificial-intelligence/features.json";
-import { data as infoData } from "@data/artificial-intelligence/info.json";
-import { data as caseStudiesData } from "@data/artificial-intelligence/case-studies.json";
+import { data as featuresData } from '@data/artificial-intelligence/features.json';
+import { data as infoData } from '@data/artificial-intelligence/info.json';
+import { data as caseStudiesData } from '@data/artificial-intelligence/case-studies.json';
 
-import ServicesHero from "@components/common/ServicesHero.astro";
-import FeatureSection from "@components/feature-section/FeatureSection.astro";
+import ServicesHero from '@components/common/ServicesHero.astro';
+import FeatureSection from '@components/feature-section/FeatureSection.astro';
 
-import Layout from "@layouts/Layout.astro";
-import InfoSection from "@components/info-section/InfoSection.astro";
-import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+import Layout from '@layouts/Layout.astro';
+import InfoSection from '@components/info-section/InfoSection.astro';
+import ServiceCaseStudySection from '@components/common/ServiceCaseStudySection.astro';
 ---
 
 <script>
-  import { initTab } from "@scripts/tab";
+  import { initTab } from '@scripts/tab';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab("case-studies");
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initTab === 'function') {
+      initTab('case-studies');
     }
   });
 </script>

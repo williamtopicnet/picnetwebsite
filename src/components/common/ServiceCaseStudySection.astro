@@ -1,8 +1,8 @@
 ---
-import InfoItem from "../info-section/InfoItem.astro";
-import Tabs from "./Tabs.astro";
+import InfoItem from '../info-section/InfoItem.astro';
+import Tabs from './Tabs.astro';
 
-import type { ServiceCaseStudy } from "@utils/types";
+import type { ServiceCaseStudy } from '@utils/types';
 
 interface Props {
   title: string;
@@ -16,10 +16,7 @@ const { title, subtitle, data, id } = Astro.props;
 const tabs = data.map(({ title }) => title);
 ---
 
-<section
-  id={id ?? "service-case-study"}
-  class="section service-case-study-area"
->
+<section id={id ?? 'service-case-study'} class="section service-case-study-area">
   <div class="container">
     <header class="section__header">
       <h3 class="section__subtitle">{subtitle}</h3>
@@ -32,23 +29,9 @@ const tabs = data.map(({ title }) => title);
             <article class="tabs__item case-study">
               {image &&
                 (Array.isArray(image) ? (
-                  image.map((img) => (
-                    <img
-                      src={img}
-                      loading="lazy"
-                      class="case-study__img"
-                      width="200"
-                      height="100"
-                    />
-                  ))
+                  image.map((img) => <img src={img} loading="lazy" class="case-study__img" width="200" height="100" />)
                 ) : (
-                  <img
-                    src={image}
-                    loading="lazy"
-                    class="case-study__img"
-                    width="200"
-                    height="100"
-                  />
+                  <img src={image} loading="lazy" class="case-study__img" width="200" height="100" />
                 ))}
 
               <div class="case-study__main-content">
@@ -79,9 +62,9 @@ const tabs = data.map(({ title }) => title);
 </section>
 
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/typography.scss";
-  @import "@styles/scss/colors.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/typography.scss';
+  @import '@styles/scss/colors.scss';
 
   .service-case-study-area {
     .case-study {
@@ -153,8 +136,8 @@ const tabs = data.map(({ title }) => title);
 </style>
 
 <style lang="scss" is:global>
-  @import "@styles/scss/typography.scss";
-  @import "@styles/scss/colors.scss";
+  @import '@styles/scss/typography.scss';
+  @import '@styles/scss/colors.scss';
 
   .service-case-study-area {
     .case-study {

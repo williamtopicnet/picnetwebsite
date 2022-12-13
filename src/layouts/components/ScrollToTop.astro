@@ -2,8 +2,8 @@
 ---
 
 <script>
-  window.document.addEventListener("DOMContentLoaded", () => {
-    const scrollToTopButton = document.getElementById("scrollToTop");
+  window.document.addEventListener('DOMContentLoaded', () => {
+    const scrollToTopButton = document.getElementById('scrollToTop');
 
     if (!scrollToTopButton) {
       return;
@@ -16,18 +16,15 @@
     scrollToTopButton.onclick = scrollToTop;
 
     function toggleScrollToTopButtonVisibility() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        scrollToTopButton.removeAttribute("hidden");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.removeAttribute('hidden');
       } else {
-        scrollToTopButton.setAttribute("hidden", "");
+        scrollToTopButton.setAttribute('hidden', '');
       }
     }
 
     toggleScrollToTopButtonVisibility(); // Run the 1st time when page load
-    window.addEventListener("scroll", toggleScrollToTopButtonVisibility);
+    window.addEventListener('scroll', toggleScrollToTopButtonVisibility);
   });
 </script>
 
@@ -36,8 +33,8 @@
 </button>
 
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/colors.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/colors.scss';
 
   .scroll-to-top-btn {
     --offset: #{$base * 6};

@@ -7,8 +7,8 @@ const { dialogId } = Astro.props;
 ---
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const dialogs = document.querySelectorAll("dialog");
+  document.addEventListener('DOMContentLoaded', () => {
+    const dialogs = document.querySelectorAll('dialog');
 
     function onClick(this: HTMLDialogElement, event: MouseEvent) {
       if (this === event.target) {
@@ -18,7 +18,7 @@ const { dialogId } = Astro.props;
 
     if (dialogs) {
       dialogs.forEach((dialog) => {
-        dialog.addEventListener("click", onClick);
+        dialog.addEventListener('click', onClick);
       });
     }
   });
@@ -34,8 +34,8 @@ const { dialogId } = Astro.props;
 </dialog>
 
 <style lang="scss">
-  @use "@styles/scss/base-var.scss" as *;
-  @use "@styles/scss/colors.scss" as *;
+  @use '@styles/scss/base-var.scss' as *;
+  @use '@styles/scss/colors.scss' as *;
 
   dialog {
     border: 0;

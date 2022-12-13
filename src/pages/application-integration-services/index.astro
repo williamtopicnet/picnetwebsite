@@ -1,22 +1,22 @@
 ---
-import { data as featureData } from "@data/application-integration-services/features.json";
-import { data as caseStudiesData } from "@data/application-integration-services/case-studies.json";
-import { data as servicesSolutionsData } from "@data/application-integration-services/services-solutions.json";
+import { data as featureData } from '@data/application-integration-services/features.json';
+import { data as caseStudiesData } from '@data/application-integration-services/case-studies.json';
+import { data as servicesSolutionsData } from '@data/application-integration-services/services-solutions.json';
 
-import ServicesHero from "@components/common/ServicesHero.astro";
-import FeatureSection from "@components/feature-section/FeatureSection.astro";
-import Layout from "@layouts/Layout.astro";
-import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
-import ArrowButton from "@components/common/ArrowButton.astro";
+import ServicesHero from '@components/common/ServicesHero.astro';
+import FeatureSection from '@components/feature-section/FeatureSection.astro';
+import Layout from '@layouts/Layout.astro';
+import ServiceCaseStudySection from '@components/common/ServiceCaseStudySection.astro';
+import ArrowButton from '@components/common/ArrowButton.astro';
 ---
 
 <script>
-  import { initTab } from "@scripts/tab";
+  import { initTab } from '@scripts/tab';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab("services-solutions");
-      initTab("case-studies");
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initTab === 'function') {
+      initTab('services-solutions');
+      initTab('case-studies');
     }
   });
 </script>
@@ -59,7 +59,7 @@ import ArrowButton from "@components/common/ArrowButton.astro";
 </Layout>
 
 <style lang="scss">
-  @use "@styles/scss/base-var.scss" as *;
+  @use '@styles/scss/base-var.scss' as *;
 
   .see-more-on-blog {
     padding-bottom: $base * 12;
@@ -67,7 +67,7 @@ import ArrowButton from "@components/common/ArrowButton.astro";
 </style>
 
 <style lang="scss" is:global>
-  @use "@styles/scss/base-var.scss" as *;
+  @use '@styles/scss/base-var.scss' as *;
 
   #case-studies {
     .case-study__img {

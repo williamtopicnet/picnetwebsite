@@ -9,7 +9,7 @@ interface Props {
   }[];
 }
 
-import FeatureItem from "./FeatureItem.astro";
+import FeatureItem from './FeatureItem.astro';
 
 const { title, subtitle, data } = Astro.props;
 ---
@@ -22,18 +22,14 @@ const { title, subtitle, data } = Astro.props;
     </header>
 
     <main>
-      {
-        data.map(({ title, description, icon }) => (
-          <FeatureItem title={title} description={description} icon={icon} />
-        ))
-      }
+      {data.map(({ title, description, icon }) => <FeatureItem title={title} description={description} icon={icon} />)}
     </main>
   </div>
 </section>
 
 <style lang="scss">
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/base-var.scss";
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/base-var.scss';
 
   .features-area {
     background-color: $color-white;

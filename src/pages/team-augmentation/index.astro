@@ -1,26 +1,26 @@
 ---
 // Static Data
-import { data as informationData } from "@data/team-augmentation/information.json";
-import { data as featureData } from "@data/team-augmentation/features.json";
-import { data as stepsData } from "@data/team-augmentation/steps.json";
-import { data as caseStudiesData } from "@data/team-augmentation/case-studies.json";
+import { data as informationData } from '@data/team-augmentation/information.json';
+import { data as featureData } from '@data/team-augmentation/features.json';
+import { data as stepsData } from '@data/team-augmentation/steps.json';
+import { data as caseStudiesData } from '@data/team-augmentation/case-studies.json';
 
 // Components
-import FeatureSection from "@components/feature-section/FeatureSection.astro";
-import InfoSection from "@components/info-section/InfoSection.astro";
-import ServicesHero from "@components/common/ServicesHero.astro";
-import StepsSection from "@components/steps-section/StepsSection.astro";
-import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+import FeatureSection from '@components/feature-section/FeatureSection.astro';
+import InfoSection from '@components/info-section/InfoSection.astro';
+import ServicesHero from '@components/common/ServicesHero.astro';
+import StepsSection from '@components/steps-section/StepsSection.astro';
+import ServiceCaseStudySection from '@components/common/ServiceCaseStudySection.astro';
 
-import Layout from "@layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro';
 ---
 
 <script>
-  import { initTab } from "@scripts/tab";
+  import { initTab } from '@scripts/tab';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab("case-studies");
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initTab === 'function') {
+      initTab('case-studies');
     }
   });
 </script>
@@ -47,11 +47,7 @@ import Layout from "@layouts/Layout.astro";
     data={informationData}
   />
 
-  <StepsSection
-    title="We differentiate by"
-    subtitle="SCALING YOUR NEEDS IS A SOLVED PROBLEM"
-    data={stepsData}
-  />
+  <StepsSection title="We differentiate by" subtitle="SCALING YOUR NEEDS IS A SOLVED PROBLEM" data={stepsData} />
 
   <ServiceCaseStudySection
     title="Some of our Case Studies"

@@ -9,16 +9,12 @@ const { logo, className } = Astro.props;
 
 <div class={`partner-container ${className}`}>
   <div class="partner__logo">
-    <img
-      src={`/images/home/partners/${logo}`}
-      alt="picnet partner's logo"
-      loading="lazy"
-    />
+    <img src={`/images/home/partners/${logo}`} alt="picnet partner's logo" loading="lazy" />
   </div>
   <div class="partner__content"><slot /></div>
 </div>
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
+  @import '@styles/scss/base-var.scss';
 
   .partner-container {
     display: grid;

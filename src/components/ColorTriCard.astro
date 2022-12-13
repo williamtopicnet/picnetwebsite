@@ -1,5 +1,5 @@
 ---
-import { BorderColor } from "@utils/enums";
+import { BorderColor } from '@utils/enums';
 
 export interface Props {
   title: string;
@@ -10,14 +10,7 @@ export interface Props {
   class?: string;
 }
 
-const {
-  title,
-  subtitle,
-  icon,
-  link,
-  colour,
-  class: className = "",
-} = Astro.props;
+const { title, subtitle, icon, link, colour, class: className = '' } = Astro.props;
 ---
 
 <div class:list={`${className} card`}>
@@ -34,9 +27,9 @@ const {
   </a>
 </div>
 <style lang="scss" define:vars={{ icon, borderColor: BorderColor[colour] }}>
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/typography.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/typography.scss';
 
   .card {
     width: 100%;

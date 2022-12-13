@@ -1,20 +1,18 @@
-const show = (elem: Element) => elem.removeAttribute("style");
-const hide = (elem: Element) => elem.setAttribute("style", "display: none");
+const show = (elem: Element) => elem.removeAttribute('style');
+const hide = (elem: Element) => elem.setAttribute('style', 'display: none');
 
 const initTab = (containerId: string) => {
-  let activeIndex = "0";
+  let activeIndex = '0';
 
   const children = document.querySelectorAll(`#${containerId} .tabs__item`);
-  const buttons = document.querySelectorAll<HTMLButtonElement>(
-    `#${containerId} .tabs__button`
-  );
+  const buttons = document.querySelectorAll<HTMLButtonElement>(`#${containerId} .tabs__button`);
 
   const changeActiveState = (activeIndex: string) => {
     buttons.forEach((btn) => {
       if (btn.dataset.tabIndex !== activeIndex) {
-        btn.classList.remove("active");
+        btn.classList.remove('active');
       } else {
-        btn.classList.add("active");
+        btn.classList.add('active');
       }
     });
   };
@@ -26,15 +24,15 @@ const initTab = (containerId: string) => {
   };
 
   const onButtonClick = function (this: HTMLButtonElement) {
-    this.classList.add("active");
-    activeIndex = this.dataset.tabIndex ?? "0";
+    this.classList.add('active');
+    activeIndex = this.dataset.tabIndex ?? '0';
 
     changeActiveState(activeIndex);
     changeVisibleState(activeIndex);
   };
 
   buttons.forEach((button) => {
-    button.addEventListener("click", onButtonClick);
+    button.addEventListener('click', onButtonClick);
   });
 
   changeVisibleState(activeIndex);

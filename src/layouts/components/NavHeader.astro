@@ -6,10 +6,7 @@
     <div class="logo">
       <a href="/">
         <picture>
-          <source
-            media="(max-width: 780px)"
-            srcset="/images/home/logo-dark.webp"
-          />
+          <source media="(max-width: 780px)" srcset="/images/home/logo-dark.webp" />
           <img src="/images/home/logo.png" alt="picnet logo" loading="lazy" />
         </picture>
       </a>
@@ -27,11 +24,7 @@
     </nav>
 
     <div class="contact">
-      <a
-        href="https://www.linkedin.com/company/picnet-pty-ltd/"
-        target="_blank"
-        class="linkeldn"
-      >
+      <a href="https://www.linkedin.com/company/picnet-pty-ltd/" target="_blank" class="linkeldn">
         <i class="fa-brands fa-linkedin-in fa-xl"></i>
       </a>
 
@@ -45,23 +38,23 @@
 </header>
 
 <script>
-  window.document.addEventListener("DOMContentLoaded", () => {
-    const openBurgerButton = document.getElementById("openBurgerButton");
-    const headerNav = document.getElementById("headerNav");
-    const headerNavChildren = document.querySelectorAll("#headerNav > *");
+  window.document.addEventListener('DOMContentLoaded', () => {
+    const openBurgerButton = document.getElementById('openBurgerButton');
+    const headerNav = document.getElementById('headerNav');
+    const headerNavChildren = document.querySelectorAll('#headerNav > *');
 
     if (!openBurgerButton || !headerNav || !headerNavChildren) {
       return;
     }
 
     const showMenu = () => {
-      if (window.matchMedia("(max-width: 780px)").matches) {
+      if (window.matchMedia('(max-width: 780px)').matches) {
         headerNav.style.transform = `translateX(0%)`;
       }
     };
 
     const hideMenu = () => {
-      if (window.matchMedia("(max-width: 780px)").matches) {
+      if (window.matchMedia('(max-width: 780px)').matches) {
         headerNav.style.transform = `translateX(100%)`;
       }
     };
@@ -70,20 +63,20 @@
 
     // Close mobile menu when click on its child
     headerNavChildren.forEach((child) => {
-      child.addEventListener("click", hideMenu);
+      child.addEventListener('click', hideMenu);
     });
 
     let timeout: NodeJS.Timeout = -1 as unknown as NodeJS.Timeout, // holder for timeout id
       delay = 250; // delay after event is "complete" to run callback
 
     const onMatchMobileMedia = () => {
-      if (!window.matchMedia("(max-width: 780px)").matches) {
-        headerNav.style.transform = "";
+      if (!window.matchMedia('(max-width: 780px)').matches) {
+        headerNav.style.transform = '';
       }
     };
 
     // window.resize event listener
-    window.addEventListener("resize", function () {
+    window.addEventListener('resize', function () {
       // clear the timeout
       clearTimeout(timeout);
       // start timing for event "completion"
@@ -95,9 +88,9 @@
 </script>
 
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/typography.scss";
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/typography.scss';
 
   a {
     color: $color-fg-dark;

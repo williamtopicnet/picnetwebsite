@@ -1,21 +1,17 @@
 ---
-import CustomerTestimonial from "@components/CustomerTestimonial.astro";
-import { data } from "../../data/home/testimonial.json";
+import CustomerTestimonial from '@components/CustomerTestimonial.astro';
+import { data } from '../../data/home/testimonial.json';
 ---
 
 <section id="customerTestimonials" class="section customer-testimonials-area">
   <div class="container">
     <main>
-      {
-        data.map(({ content, logo, title }) => (
-          <CustomerTestimonial title={title} logo={logo} content={content} />
-        ))
-      }
+      {data.map(({ content, logo, title }) => <CustomerTestimonial title={title} logo={logo} content={content} />)}
     </main>
   </div>
 </section>
 <style lang="scss">
-  @import "@styles/scss/base-var.scss";
+  @import '@styles/scss/base-var.scss';
 
   section.customer-testimonials-area {
     padding-top: 0;

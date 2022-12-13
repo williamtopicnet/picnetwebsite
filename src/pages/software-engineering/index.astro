@@ -1,29 +1,29 @@
 ---
 // Static Data
-import { data as informationData } from "@data/software-engineering/information.json";
-import { data as featureData } from "@data/software-engineering/features.json";
-import { data as stepsData } from "@data/software-engineering/steps.json";
-import { data as caseStudiesData } from "@data/software-engineering/case-studies.json";
+import { data as informationData } from '@data/software-engineering/information.json';
+import { data as featureData } from '@data/software-engineering/features.json';
+import { data as stepsData } from '@data/software-engineering/steps.json';
+import { data as caseStudiesData } from '@data/software-engineering/case-studies.json';
 
 // Components
-import FeatureSection from "@components/feature-section/FeatureSection.astro";
-import InfoSection from "@components/info-section/InfoSection.astro";
-import ServicesHero from "@components/common/ServicesHero.astro";
-import StepsSection from "@components/steps-section/StepsSection.astro";
-import ServiceCaseStudySection from "@components/common/ServiceCaseStudySection.astro";
+import FeatureSection from '@components/feature-section/FeatureSection.astro';
+import InfoSection from '@components/info-section/InfoSection.astro';
+import ServicesHero from '@components/common/ServicesHero.astro';
+import StepsSection from '@components/steps-section/StepsSection.astro';
+import ServiceCaseStudySection from '@components/common/ServiceCaseStudySection.astro';
 
-import Layout from "@layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro';
 
 // Specific section components
-import Platforms from "./software-engineering-sections/Platforms.astro";
+import Platforms from './software-engineering-sections/Platforms.astro';
 ---
 
 <script>
-  import { initTab } from "@scripts/tab";
+  import { initTab } from '@scripts/tab';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab("case-studies");
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initTab === 'function') {
+      initTab('case-studies');
     }
   });
 </script>
@@ -50,11 +50,7 @@ import Platforms from "./software-engineering-sections/Platforms.astro";
     data={informationData}
   />
 
-  <StepsSection
-    title="Types of Systems"
-    subtitle="DESIGN, DEVELOP, DEPLOY"
-    data={stepsData}
-  />
+  <StepsSection title="Types of Systems" subtitle="DESIGN, DEVELOP, DEPLOY" data={stepsData} />
 
   <Platforms />
 

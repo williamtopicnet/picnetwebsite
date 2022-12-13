@@ -1,9 +1,9 @@
-import compress from "astro-compress";
-import { defineConfig } from "astro/config";
-import path from "node:path";
+import compress from 'astro-compress';
+import { defineConfig } from 'astro/config';
+import path from 'node:path';
 
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -15,8 +15,8 @@ export default defineConfig({
     resolve: {
       alias: [
         {
-          find: "@styles",
-          replacement: path.resolve(__dirname, "./src/styles"),
+          find: '@styles',
+          replacement: path.resolve(__dirname, './src/styles'),
         },
       ],
     },

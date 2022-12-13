@@ -37,14 +37,7 @@
         {
           "type": "list",
           "listTitle": "There are numerous iPaaS solutions in the marketplace, including:",
-          "content": [
-            "Microsoft Azure Integration Services",
-            "Informatica",
-            "Boomi",
-            "Mulesoft",
-            "Jitterbit",
-            "Others"
-          ]
+          "content": ["Microsoft Azure Integration Services", "Informatica", "Boomi", "Mulesoft", "Jitterbit", "Others"]
         }
       ]
     },
@@ -73,10 +66,7 @@
             "Tools to assist in other miscellaneous and common maintenance tasks",
             {
               "title": "Code to assist:",
-              "nested": [
-                "Efficient development of Azure functions",
-                "Efficient usage of Azure Service Bus"
-              ]
+              "nested": ["Efficient development of Azure functions", "Efficient usage of Azure Service Bus"]
             },
             {
               "title": "Best practices to assist in staging entities:",

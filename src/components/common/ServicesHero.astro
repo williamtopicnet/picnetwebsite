@@ -1,5 +1,5 @@
 ---
-import ArrowButton from "./ArrowButton.astro";
+import ArrowButton from './ArrowButton.astro';
 
 interface Props {
   title: string;
@@ -38,18 +38,16 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
         height="100%"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
-        ><path
-          d="M0,0 15,90 C16,95 16,97 23,91 L100,36 100,100 0,100 Z"
-          fill="rgba(255,255,255,1)"></path>
+        ><path d="M0,0 15,90 C16,95 16,97 23,91 L100,36 100,100 0,100 Z" fill="rgba(255,255,255,1)"></path>
       </svg>
     </div>
   </div>
 </section>
 
 <style lang="scss">
-  @import "@styles/scss/colors.scss";
-  @import "@styles/scss/base-var.scss";
-  @import "@styles/scss/typography.scss";
+  @import '@styles/scss/colors.scss';
+  @import '@styles/scss/base-var.scss';
+  @import '@styles/scss/typography.scss';
 
   .services-hero-area {
     background-color: #303f4f;
@@ -57,11 +55,7 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
 
   .services-hero__bg {
     background-color: rgba(21, 20, 36, 0.85);
-    background: linear-gradient(
-      to top,
-      rgba(21, 20, 36, 0.85),
-      rgba(21, 20, 36, 0.3)
-    );
+    background: linear-gradient(to top, rgba(21, 20, 36, 0.85), rgba(21, 20, 36, 0.3));
   }
 
   .services-hero-area .container main {

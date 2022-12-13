@@ -1,21 +1,21 @@
 ---
-import { data as featuresData } from "@data/risk-shield-services/features.json";
-import { data as infoData } from "@data/risk-shield-services/information.json";
+import { data as featuresData } from '@data/risk-shield-services/features.json';
+import { data as infoData } from '@data/risk-shield-services/information.json';
 
-import ServicesHero from "@components/common/ServicesHero.astro";
-import FeatureSection from "@components/feature-section/FeatureSection.astro";
-import InfoSection from "@components/info-section/InfoSection.astro";
+import ServicesHero from '@components/common/ServicesHero.astro';
+import FeatureSection from '@components/feature-section/FeatureSection.astro';
+import InfoSection from '@components/info-section/InfoSection.astro';
 
-import Layout from "@layouts/Layout.astro";
-import PenetrationTesting from "./risk-shield-services-sections/PenetrationTesting.astro";
+import Layout from '@layouts/Layout.astro';
+import PenetrationTesting from './risk-shield-services-sections/PenetrationTesting.astro';
 ---
 
 <script>
-  import { initTab } from "@scripts/tab";
+  import { initTab } from '@scripts/tab';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof initTab === "function") {
-      initTab("case-studies");
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof initTab === 'function') {
+      initTab('case-studies');
     }
   });
 </script>
@@ -46,8 +46,8 @@ import PenetrationTesting from "./risk-shield-services-sections/PenetrationTesti
 </Layout>
 
 <style lang="scss">
-  @use "@styles/scss/typography" as *;
-  @use "@styles/scss/base-var" as *;
+  @use '@styles/scss/typography' as *;
+  @use '@styles/scss/base-var' as *;
 
   :global(section#features main) {
     grid-template-columns: repeat(3, 1fr);
