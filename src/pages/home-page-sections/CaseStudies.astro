@@ -24,22 +24,22 @@ import { data } from '../../data/home/case-studies.json';
 </section>
 
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
+  @use '@styles/scss/base-var.scss' as bs;
 
   .case-studies-area {
-    padding: $base * 12 0 0;
+    padding: calc(var(--base) * 12) 0 0;
   }
 
   .case-studies {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: $base * 2;
-    padding-block: $base * 4;
+    gap: calc(var(--base) * 2);
+    padding-block: calc(var(--base) * 4);
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bs.$screen-lg) {
     .case-studies-area {
-      padding: $base * 12 $base * 4 0;
+      padding: calc(var(--base) * 12) calc(var(--base) * 4) 0;
     }
 
     .case-studies {

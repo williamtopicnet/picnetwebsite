@@ -49,26 +49,24 @@ const currentYear = currentDate.getFullYear();
   </div>
 </footer>
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/typography.scss';
+  @use '@styles/scss/base-var.scss' as bs;
 
   footer {
-    background-color: $color-bg-2;
-    color: $color-text-disabled;
-    padding: $base * 6;
+    background-color: var(--color-bg-2);
+    color: var(--color-text-disabled);
+    padding: calc(var(--base) * 6);
     a {
       color: inherit;
-      transition: color $base-transition;
+      transition: color var(--base-transition);
 
       &:hover {
-        color: $color-white;
+        color: var(--color-white);
       }
     }
 
     h1 {
-      color: $color-white;
-      font-size: $text-md;
+      color: var(--color-white);
+      font-size: var(--text-md);
     }
 
     .container {
@@ -86,7 +84,7 @@ const currentYear = currentDate.getFullYear();
         &__services {
           ul {
             li {
-              margin-top: $base;
+              margin-top: var(--base);
               font-weight: 500;
             }
           }
@@ -100,11 +98,11 @@ const currentYear = currentDate.getFullYear();
     }
   }
 
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: bs.$screen-lg) {
     footer {
       .container {
         grid-template-columns: 1fr;
-        gap: $base * 3;
+        gap: calc(var(--base) * 3);
 
         .footer {
           &__map {

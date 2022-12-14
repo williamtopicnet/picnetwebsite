@@ -18,19 +18,16 @@ const { title, logo, content } = Astro.props;
 </div>
 
 <style lang="scss">
-  @use '@styles/scss/base-var.scss' as *;
-  @use '@styles/scss/colors.scss' as *;
-  @use '@styles/scss/typography.scss' as *;
-
   .testimonial-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: $base * 4;
-    background-color: $color-white;
-    border-radius: $base * 0.5;
-    padding: $base * 6;
+    gap: calc(var(--base) * 4);
+
+    background-color: var(--color-white);
+    border-radius: calc(var(--base) * 0.5);
+    padding: calc(var(--base) * 6);
 
     & > * {
       min-width: 0;
@@ -46,7 +43,7 @@ const { title, logo, content } = Astro.props;
     }
     &__title {
       font-weight: 500;
-      font-size: $text-base;
+      font-size: var(--text-base);
     }
 
     &__content {

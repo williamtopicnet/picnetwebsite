@@ -88,20 +88,18 @@
 </script>
 
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/typography.scss';
+  @use '@styles/scss/base-var.scss' as bs;
 
   a {
-    color: $color-silver;
+    color: var(--color-silver);
 
     &:hover {
-      color: white;
+      color: var(--var(--color-white));
     }
   }
 
   header {
-    padding-top: $base;
+    padding-top: var(--base);
     background-color: transparent;
     position: absolute;
     left: 0;
@@ -114,7 +112,7 @@
       align-items: center;
       justify-content: center;
 
-      padding: $base * 2 $base * 10;
+      padding: calc(var(--base) * 2) calc(var(--base) * 10);
       font-weight: bold;
 
       .header__nav {
@@ -122,12 +120,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: $base * 4;
-        transition: transform $base-transition;
+        gap: calc(var(--base) * 4);
+        transition: transform var(--base-transition);
 
         a {
           font-weight: 600;
-          font-size: 14px;
+          font-size: var(--text-base);
           letter-spacing: -0.03px;
           text-transform: uppercase;
           line-height: 42px;
@@ -140,16 +138,17 @@
         gap: 2rem;
 
         .phone {
+          padding-inline: calc(var(--base) * 1.25);
           margin-left: auto;
-          background-color: white;
-          padding-inline: 1.75rem;
-          border-radius: 20px;
-          height: 42px;
-          vertical-align: middle;
-          color: #0d364c;
-          line-height: 42px;
-          display: inline-block;
+
+          color: var(--color-primary);
           font-weight: 600;
+          background-color: var(--color-white);
+          height: 42px;
+          line-height: 42px;
+          vertical-align: middle;
+          display: inline-block;
+          border-radius: 20px;
         }
       }
 
@@ -159,12 +158,12 @@
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bs.$screen-lg) {
     header {
-      background: $color-white;
+      background: var(--color-white);
       .container {
         justify-content: space-between;
-        padding: $base * 2;
+        padding: calc(var(--base) * 2);
 
         .contact {
           display: none;
@@ -174,18 +173,18 @@
           position: fixed;
           flex-direction: column;
           justify-content: flex-start;
-          padding-top: $base * 12;
-          background-color: $color-white;
+          padding-top: calc(var(--base) * 12);
+          background-color: var(--color-white);
           inset: 0;
           z-index: 3;
           transform: translateX(100%);
-          box-shadow: $base-box-shadow;
+          box-shadow: var(--base-box-shadow);
 
           a {
-            transition: color $base-transition;
+            transition: color var(--base-transition);
 
             &:hover {
-              color: $color-text-info;
+              color: var(--color-text-info);
             }
           }
         }

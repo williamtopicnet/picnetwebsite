@@ -1,6 +1,4 @@
 ---
-import '@styles/normalize.min.css';
-
 import NavHeader from './components/NavHeader.astro';
 import ContactUs from './components/ContactUs.astro';
 import Footer from './components/Footer.astro';
@@ -19,17 +17,18 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" /><link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="preload"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+
+    <link href="normalize.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
     <!-- Font Awesome -->
     <link
@@ -64,6 +63,9 @@ const { title } = Astro.props;
         rel="stylesheet"
         type="text/css"
       />
+
+      <link href="normalize.min.css" rel="stylesheet" type="text/css" />
+
       <link href="/font/fontawesome/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
       <link href="/font/fontawesome/css/brands.min.css" rel="stylesheet" type="text/css" />
       <link href="/font/fontawesome/css/solid.min.css" rel="stylesheet" type="text/css" />
@@ -100,7 +102,8 @@ const { title } = Astro.props;
     <ScrollToTop />
   </body>
 </html>
+
 <style lang="scss" is:global>
   // New Global style
-  @import '@styles/scss/index.scss';
+  @use '@styles/scss/index.scss';
 </style>

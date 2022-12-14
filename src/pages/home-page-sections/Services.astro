@@ -23,7 +23,7 @@ import { data } from '../../data/home/services.json';
   </div>
 </section>
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
+  @use '@styles/scss/base-var.scss' as bs;
 
   main {
     padding: 0;
@@ -32,9 +32,9 @@ import { data } from '../../data/home/services.json';
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bs.$screen-lg) {
     main {
-      padding: $base * 4;
+      padding: calc(var(--base) * 4);
       grid-template-columns: 1fr;
     }
   }

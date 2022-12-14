@@ -35,43 +35,41 @@ import { data } from '../../data/home/management.json';
   </div>
 </section>
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/typography.scss';
+  @use '@styles/scss/base-var.scss' as bs;
 
   .section__header .section__title {
-    color: $color-white;
+    color: var(--color-white);
   }
 
   .management-area {
-    background-color: $color-bg-1;
-    padding-block: $base * 12;
+    background-color: var(--color-bg-1);
+    padding-block: calc(var(--base) * 12);
   }
 
   .management__body {
     display: flex;
-    gap: $base * 4;
+    gap: calc(var(--base) * 4);
     .management__card {
       min-width: 0;
       flex: 1;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      background-color: $color-bg-3;
-      padding: $base * 4;
-      border-radius: $base * 0.5;
+      background-color: var(--color-bg-3);
+      padding: calc(var(--base) * 4);
+      border-radius: calc(var(--base) * 0.5);
 
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: $base * 4;
+      gap: calc(var(--base) * 4);
 
       hr {
-        margin-block: $base * 2;
+        margin-block: calc(var(--base) * 2);
         border-color: rgba(149, 157, 165, 0.4);
       }
 
       &__divider {
         position: relative;
-        margin-bottom: $base * 3;
+        margin-bottom: calc(var(--base) * 3);
       }
 
       &__linkedin {
@@ -79,20 +77,20 @@ import { data } from '../../data/home/management.json';
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: $color-white;
-        padding: $base * 1.25;
+        background-color: var(--color-white);
+        padding: calc(var(--base) * 1.25);
         border-radius: 50%;
         aspect-ratio: 1;
         display: grid;
         place-items: center;
-        transition: transform 0.4s #{$base-animation-timing};
+        transition: transform 0.4s var(--base-animation-timing);
 
         &:hover {
           transform: translate(-50%, -50%) scale(1.1);
         }
 
         i {
-          color: $color-text-primary;
+          color: var(--color-text-primary);
         }
       }
 
@@ -112,16 +110,16 @@ import { data } from '../../data/home/management.json';
         }
 
         span {
-          font-size: $text-sm;
+          font-size: var(--text-sm);
         }
       }
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bs.$screen-lg) {
     .management__body {
       flex-direction: column;
-      padding: $base * 4;
+      padding: calc(var(--base) * 4);
     }
   }
 </style>

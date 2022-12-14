@@ -34,28 +34,26 @@
   </div>
 </section>
 <style lang="scss">
-  @use '@styles/scss/base-var.scss' as *;
-  @use '@styles/scss/colors.scss' as *;
-  @use '@styles/scss/typography.scss' as *;
+  @use '@styles/scss/base-var.scss' as bs;
 
   section.about-us-area {
-    background-color: $color-white;
+    background-color: var(--color-white);
   }
 
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $base * 6;
-    margin-top: $base * 6;
+    gap: calc(var(--base) * 6);
+    margin-top: calc(var(--base) * 6);
   }
 
   p {
-    color: $color-text-primary;
-    margin-top: $base;
+    color: var(--color-text-primary);
+    margin-top: var(--base);
     font-weight: 300;
 
     a {
-      color: $color-text-info;
+      color: var(--color-text-info);
     }
   }
 
@@ -67,10 +65,10 @@
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bs.$screen-lg) {
     main {
       grid-template-columns: 1fr;
-      padding: $base * 4;
+      padding: calc(var(--base) * 4);
     }
   }
 </style>

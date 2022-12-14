@@ -11,23 +11,25 @@ import { data } from '@data/home/testimonial.json';
   </div>
 </section>
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
+  @use '@styles/scss/base-var.scss' as bs;
 
   section.customer-testimonials-area {
     padding-top: 0;
   }
 
   main {
+    --main-offset: calc(var(--base) * 4);
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-top: $base * 4;
-    gap: $base * 4;
+    margin-top: var(--main-offset);
+    gap: var(--main-offset);
 
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: bs.$screen-lg) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
-      padding: 0 $base * 4;
+      padding: 0 var(--main-offset);
     }
   }
 </style>

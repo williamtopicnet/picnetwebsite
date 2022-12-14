@@ -1,6 +1,6 @@
-@import '../typography.scss';
-@import '../colors.scss';
-@import '../base-var.scss';
+@use '../typography.scss' as *;
+@use '../colors.scss' as *;
+@use '../base-var.scss' as *;
 
 .section {
   padding-block: $base * 12;
