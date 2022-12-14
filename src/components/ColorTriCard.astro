@@ -33,16 +33,9 @@ const { title, subtitle, icon, link, colour, class: className = '' } = Astro.pro
 
   .card {
     width: 100%;
-    aspect-ratio: 2;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 9px;
     overflow: hidden;
-
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
 
     &__content {
       color: $color-text-primary;
@@ -83,13 +76,8 @@ const { title, subtitle, icon, link, colour, class: className = '' } = Astro.pro
 
   @media only screen and (max-width: $screen-lg) {
     .card {
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-
       &__content {
+        padding: $base * 3 $base * 4;
         border: 0;
         flex-direction: column;
         text-align: center;
