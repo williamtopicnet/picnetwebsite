@@ -1,6 +1,6 @@
 ---
 import CustomerLogoAndDialog from '@components/CustomerLogoAndDialog.astro';
-import { data } from '../../data/home/case-studies.json';
+import { data } from '@data/home/case-studies.json';
 ---
 
 <section id="caseStudies" class="case-studies-area">
@@ -33,13 +33,13 @@ import { data } from '../../data/home/case-studies.json';
   .case-studies {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: calc(var(--base) * 2);
-    padding-block: calc(var(--base) * 4);
+    gap: var(--base-2x);
+    padding-block: var(--base-4x);
   }
 
   @media only screen and (max-width: bs.$screen-lg) {
     .case-studies-area {
-      padding: calc(var(--base) * 12) calc(var(--base) * 4) 0;
+      padding: calc(var(--base) * 12) var(--base-4x) 0;
     }
 
     .case-studies {

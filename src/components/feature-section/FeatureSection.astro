@@ -28,23 +28,22 @@ const { title, subtitle, data } = Astro.props;
 </section>
 
 <style lang="scss">
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/base-var.scss';
+  @use '@styles/scss/base-var.scss' as bv;
 
   .features-area {
-    background-color: $color-white;
+    background-color: var(--color-white);
 
     main {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      margin-top: $base * 8;
-      gap: $base * 8;
+      margin-top: var(--base-8x);
+      gap: var(--base-8x);
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     .features-area {
-      padding-inline: $base * 4;
+      padding-inline: var(--base-4x);
       main {
         grid-template-columns: 1fr;
       }

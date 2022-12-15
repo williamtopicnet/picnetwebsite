@@ -34,13 +34,12 @@ const { dialogId } = Astro.props;
 </dialog>
 
 <style lang="scss">
-  @use '@styles/scss/base-var.scss' as *;
-  @use '@styles/scss/colors.scss' as *;
+  @use '@styles/scss/base-var.scss' as bv;
 
   dialog {
     border: 0;
-    border-radius: $base-radius;
-    box-shadow: $base-box-shadow;
+    border-radius: var(--base-radius);
+    box-shadow: var(--base-box-shadow);
     position: fixed;
     left: 50%;
     top: 50%;
@@ -55,26 +54,24 @@ const { dialogId } = Astro.props;
   }
 
   .close button {
-    --offset: #{$base * 2};
-
     background: none;
     position: absolute;
-    right: var(--offset);
-    top: var(--offset);
-    color: $color-text-primary;
+    right: var(--base-2x);
+    top: var(--base-2x);
+    color: var(--color-text-primary);
     display: grid;
     place-items: center;
-    width: $base * 2.5;
-    height: $base * 2.5;
+    width: calc(var(--base) * 2.5);
+    height: calc(var(--base) * 2.5) ;
 
     &:focus-visible {
       border-radius: 50%;
-      outline-color: $color-text-primary;
-      outline-offset: $base * 0.25;
+      outline-color: var(--color-text-primary);
+      outline-offset: calc(var(--base) * 0.25);
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     dialog {
       width: 100%;
     }

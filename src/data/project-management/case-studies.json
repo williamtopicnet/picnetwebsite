@@ -2,7 +2,7 @@
   "data": [
     {
       "title": "CYCA",
-      "image": "/images/customers/cyca.png",
+      "image": "/images/customers/cyca.webp",
       "mainContent": {
         "title": "WHEN INSTITUTIONS NEED TO MODERNISE",
         "content": "Institutions are the cornerstones of our society and shape our culture. They are often slow to adapt and adjust to the changing tide of technology however. This can lead to inefficient and costly problems in a fast paced advancing world."
@@ -85,7 +85,7 @@
     },
     {
       "title": "NSW Health",
-      "image": "/images/customers/nswhealth.png",
+      "image": "/images/customers/nswhealth.webp",
       "mainContent": {
         "title": "THE IMPORTANCE OF IT HEALTH",
         "content": "The use of information systems for the healthcare industry is important to improve the quality of patient care, increase productivity, lower medical costs, boost patient satisfaction, and create a better working environment for healthcare providers."
@@ -125,7 +125,7 @@
     },
     {
       "title": "Reckitt Benckiser",
-      "image": "/images/customers/reckitt.png",
+      "image": "/images/customers/reckitt.webp",
       "mainContent": {
         "title": "A GLOBAL BRAND",
         "content": "Being a global consumer goods company with focus on hygiene, health, and nutrition, Reckitt Benckiser aims to make the world a cleaner and healthier place to live in. They intend to make this possible with the use of their innovative products and educational initiatives."
@@ -145,7 +145,7 @@
     },
     {
       "title": "Pfizer Australia",
-      "image": "/images/customers/pfizer.png",
+      "image": "/images/customers/pfizer.webp",
       "mainContent": {
         "title": "PROVIDER AND PARTNER",
         "content": "Access to medicine and high quality health care is a must in the modern world. For over half a century, Pfizer Australia has been the nation's leading provider of prescription medicines and health products. This was not possible without partnering with Government and other healthcare providers."

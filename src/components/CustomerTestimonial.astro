@@ -23,11 +23,11 @@ const { title, logo, content } = Astro.props;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: calc(var(--base) * 4);
+    gap: var(--base-4x);
 
     background-color: var(--color-white);
-    border-radius: calc(var(--base) * 0.5);
-    padding: calc(var(--base) * 6);
+    border-radius: var(--base-half);
+    padding: var(--base-6x);
 
     & > * {
       min-width: 0;

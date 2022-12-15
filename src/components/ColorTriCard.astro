@@ -39,9 +39,9 @@ const { title, subtitle, icon, link, colour, class: className = '' } = Astro.pro
       color: var(--color-text-primary);
       background-color: var(--color-white);
       border-right: 1rem solid var(--borderColor);
-      transition: background-color 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+      transition: background-color var(--base-transition);
 
-      padding: calc(var(--base) * 4);
+      padding: var(--base-4x);
       width: 100%;
       height: 100%;
 
@@ -61,7 +61,7 @@ const { title, subtitle, icon, link, colour, class: className = '' } = Astro.pro
       }
 
       p {
-        margin-top: calc(var(--base) * 0.5);
+        margin-top: var(--base-half);
         font-size: var(--text-sm);
         color: var(--color-text-secondary);
       }
@@ -75,7 +75,7 @@ const { title, subtitle, icon, link, colour, class: className = '' } = Astro.pro
   @media only screen and (max-width: bs.$screen-lg) {
     .card {
       &__content {
-        padding: calc(var(--base) * 3) calc(var(--base) * 4);
+        padding: var(--base-3x) var(--base-4x);
         border: 0;
         flex-direction: column;
         text-align: center;

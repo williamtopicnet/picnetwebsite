@@ -49,14 +49,12 @@ import InfoItem from '@components/info-section/InfoItem.astro';
 </section>
 
 <style lang="scss">
-  @use '@styles/scss/colors.scss' as *;
-  @use '@styles/scss/base-var.scss' as *;
-  @use '@styles/scss/typography.scss' as *;
+  @use '@styles/scss/base-var.scss' as bv;
 
   #penetration-testing {
-    background-color: $color-white;
-    padding-top: $base * 2;
-    padding-bottom: $base * 8;
+    background-color: var(--color-white);
+    padding-top: var(--base-2x);
+    padding-bottom: var(--base-8x);
 
     main {
       display: grid;
@@ -65,17 +63,17 @@ import InfoItem from '@components/info-section/InfoItem.astro';
       .penetration-testing {
         &__text {
           strong {
-            color: $color-text-2;
-            font-size: $text-md;
+            color: var(--color-text-2);
+            font-size: var(--text-md);
             font-weight: 600;
           }
 
           .contact-us {
-            color: $color-text-primary;
-            margin-top: $base * 2;
+            color: var(--color-text-primary);
+            margin-top: var(--base-2x);
 
             a {
-              color: $color-text-info;
+              color: var(--color-text-info);
             }
           }
         }
@@ -91,14 +89,14 @@ import InfoItem from '@components/info-section/InfoItem.astro';
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     #penetration-testing {
-      padding-inline: $base * 4;
-      margin-top: $base * -12;
+      padding-inline: var(--base-4x);
+      margin-top: calc(var(--base) * -12);
 
       main {
         grid-template-columns: 1fr;
-        gap: $base * 4;
+        gap: var(--base-4x);
       }
     }
   }

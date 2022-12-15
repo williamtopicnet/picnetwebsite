@@ -6,6 +6,13 @@
 
 :root {
   --base: #{$base};
+  --base-half: #{$base* 0.5};
+  --base-2x: #{$base * 2};
+  --base-3x: #{$base * 3};
+  --base-4x: #{$base * 4};
+  --base-5x: #{$base * 5};
+  --base-6x: #{$base * 6};
+  --base-8x: #{$base * 8};
   --base-animation-timing: cubic-bezier(0.2, 0, 0.3, 1);
   --base-radius: #{$base-radius};
   --base-transition: #{$base-transition};

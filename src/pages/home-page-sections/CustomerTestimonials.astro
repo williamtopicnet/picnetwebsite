@@ -18,18 +18,16 @@ import { data } from '@data/home/testimonial.json';
   }
 
   main {
-    --main-offset: calc(var(--base) * 4);
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-top: var(--main-offset);
-    gap: var(--main-offset);
+    margin-top: var(--base-4x);
+    gap: var(--base-4x);
 
     @media only screen and (max-width: bs.$screen-lg) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
-      padding: 0 var(--main-offset);
+      padding: 0 var(--base-4x);
     }
   }
 </style>

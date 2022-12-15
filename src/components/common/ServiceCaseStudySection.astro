@@ -62,20 +62,18 @@ const tabs = data.map(({ title }) => title);
 </section>
 
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/typography.scss';
-  @import '@styles/scss/colors.scss';
+  @use '@styles/scss/base-var.scss' as bv;
 
   .service-case-study-area {
     .case-study {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: $base * 2;
+      gap: var(--base-2x);
 
       &__img,
       &__icon {
-        margin-top: $base * 4;
-        margin-left: $base * 4;
+        margin-top: var(--base-4x);
+        margin-left: var(--base-4x);
       }
 
       &__img {
@@ -83,48 +81,48 @@ const tabs = data.map(({ title }) => title);
       }
 
       &__icon {
-        color: $color-text-info;
+        color: var(--color-text-info);
       }
 
       &__main-content {
         grid-column: 1/2;
-        padding-inline: $base * 4;
-        padding-bottom: $base * 4;
+        padding-inline: var(--base-4x);
+        padding-bottom: var(--base-4x);
 
         h1 {
           font-weight: 300;
-          font-size: $text-2xl;
-          margin-bottom: $base;
+          font-size: var(--text-2xl);
+          margin-bottom: var(--base);
         }
 
         p {
-          color: $color-text-primary;
+          color: var(--color-text-primary);
           font-weight: 300;
-          font-size: $text-md;
+          font-size: var(--text-md);
         }
       }
 
       &__sub-content {
         grid-column: 2/3;
-        padding: $base * 4;
+        padding: var(--base-4x);
 
-        background-color: $color-text-info;
+        background-color: var(--color-text-info);
       }
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     .service-case-study-area {
-      padding-inline: $base * 4;
+      padding-inline: var(--base-4x);
 
       .case-study {
         grid-template-columns: 1fr;
-        gap: $base;
+        gap: var(--base);
 
         &__img,
         &__icon {
           margin-left: 0;
-          padding-left: $base * 4;
+          padding-left: var(--base-4x);
         }
 
         &__sub-content {
@@ -143,8 +141,9 @@ const tabs = data.map(({ title }) => title);
     .case-study {
       &__sub-content-item {
         strong,
-        p {
-          color: $color-white;
+        p,
+        ul li {
+          color: var(--color-white);
         }
 
         strong {
@@ -153,12 +152,6 @@ const tabs = data.map(({ title }) => title);
 
         p {
           font-weight: 300;
-        }
-
-        ul {
-          li {
-            color: $color-white;
-          }
         }
       }
     }

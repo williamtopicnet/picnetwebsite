@@ -45,12 +45,10 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
 </section>
 
 <style lang="scss">
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/typography.scss';
+  @use '@styles/scss/base-var.scss' as bv;
 
   .services-hero-area {
-    background-color: #303f4f;
+    background-color: var(--color-text-2);
   }
 
   .services-hero__bg {
@@ -62,8 +60,8 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: $base * 16 $base * 10 0; // top left-right bottom
-    gap: $base * 10;
+    padding: calc(var(--base) * 16) calc(var(--base) * 10) 0; // top left-right bottom
+    gap: calc(var(--base) * 10);
     max-height: 55vh;
 
     & > * {
@@ -72,17 +70,17 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
 
     .services-hero {
       &__text {
-        color: $color-white;
+        color: var(--color-white);
 
         h1 {
-          font-size: $text-3xl;
+          font-size: var(--text-3xl);
           margin-bottom: 0;
         }
 
         p {
-          font-size: $text-base;
-          color: $color-text-1;
-          margin-bottom: $base * 4;
+          font-size: var(--text-base);
+          color: var(--color-text-1);
+          margin-bottom: var(--base-4x);
         }
       }
 
@@ -96,15 +94,15 @@ const { title, subtitle, ctaText, ctaUrl, heroImage } = Astro.props;
   }
 
   .svg-container {
-    height: $base * 37.5;
+    height: calc(var(--base) * 37.5);
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     .services-hero-area .container main {
       max-height: max-content;
       grid-template-columns: 1fr;
       gap: 0;
-      padding: $base * 16 $base * 4 0; // top left-right bottom
+      padding: calc(var(--base) * 16) var(--base-4x) 0; // top left-right bottom
 
       .services-hero {
         &__text {

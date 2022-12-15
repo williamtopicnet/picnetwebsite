@@ -62,39 +62,37 @@
 </section>
 
 <style lang="scss">
-  @use '@styles/scss/base-var.scss' as *;
-  @use '@styles/scss/colors.scss' as *;
-  @use '@styles/scss/typography.scss' as *;
+  @use '@styles/scss/base-var.scss' as bv;
 
   .platforms-area {
-    background-color: $color-bg;
+    background-color: var(--color-bg);
   }
 
   .platforms__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $base * 8;
-    margin-top: $base * 6;
+    gap: var(--base-8x);
+    margin-top: var(--base-6x);
 
     .platforms__item {
       display: flex;
       flex-direction: column;
-      gap: $base;
+      gap: var(--base);
 
       a {
-        color: $color-text-info;
+        color: var(--color-text-info);
       }
 
       &__title {
         font-weight: 600;
-        font-size: $text-md;
-        color: $color-text-2;
+        font-size: var(--text-md);
+        color: var(--color-text-2);
       }
 
       &__description {
-        font-size: $text-base;
+        font-size: var(--text-base);
         font-weight: 300;
-        color: $color-text-primary;
+        color: var(--color-text-primary);
       }
 
       &__img {
@@ -109,9 +107,9 @@
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     .platforms-area {
-      padding-inline: $base * 4;
+      padding-inline: var(--base-4x);
 
       .platforms__content {
         grid-template-columns: 1fr;

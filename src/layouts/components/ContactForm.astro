@@ -45,7 +45,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: var(--color-white);
-    gap: calc(var(--base) * 3);
+    gap: var(--base-3x);
 
     // Inputs
     &__item {
@@ -66,8 +66,8 @@
         background-color: rgba(255, 255, 255, 0.3);
         border-color: transparent;
         color: inherit;
-        border-radius: calc(var(--base) * 3);
-        padding: calc(var(--base) * 2);
+        border-radius: var(--base-3x);
+        padding: var(--base-2x);
 
         &::placeholder {
           color: rgba(255, 255, 255, 0.5);
@@ -78,8 +78,8 @@
     button {
       background-color: var(--color-text-info);
       color: var(--color-white);
-      border-radius: calc(var(--base) * 3);
-      padding: calc(var(--base) * 2);
+      border-radius: var(--base-3x);
+      padding: var(--base-2x);
 
       grid-column: 2/3;
       transition: filter var(--base-transition);

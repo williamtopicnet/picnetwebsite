@@ -57,7 +57,7 @@
   .hero__content {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--base) * 2);
+    gap: var(--base-2x);
     align-items: center;
   }
 
@@ -68,7 +68,7 @@
 
   .hero__title {
     font-size: var(--text-3xl);
-    margin-top: calc(var(--base) * 4);
+    margin-top: var(--base-4x);
   }
 
   .hero__subtitle {
@@ -80,9 +80,9 @@
     color: inherit;
     border: solid 1px;
     display: inline-block;
-    padding: calc(var(--base) * 1.5) calc(var(--base) * 3);
-    margin-top: calc(var(--base) * 6);
-    border-radius: calc(var(--base) * 4);
+    padding: calc(var(--base) * 1.5) var(--base-3x);
+    margin-top: var(--base-6x);
+    border-radius: var(--base-4x);
 
     &:hover {
       background-color: var(--color-white);
@@ -96,7 +96,7 @@
     }
 
     .hero__content {
-      padding-inline: calc(var(--base) * 4);
+      padding-inline: var(--base-4x);
       .hero__title {
         font-size: var(--text-lg);
       }

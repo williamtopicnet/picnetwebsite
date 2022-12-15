@@ -1,7 +1,7 @@
 ---
 import ColorTriCard from '@components/ColorTriCard.astro';
 import type { BorderColor } from '@utils/enums';
-import { data } from '../../data/home/services.json';
+import { data } from '@data/home/services.json';
 ---
 
 <section id="services" class="section services-area">
@@ -34,7 +34,7 @@ import { data } from '../../data/home/services.json';
 
   @media only screen and (max-width: bs.$screen-lg) {
     main {
-      padding: calc(var(--base) * 4);
+      padding: var(--base-4x);
       grid-template-columns: 1fr;
     }
   }

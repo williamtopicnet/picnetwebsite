@@ -43,8 +43,8 @@
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: calc(var(--base) * 6);
-    margin-top: calc(var(--base) * 6);
+    gap: var(--base-6x);
+    margin-top: var(--base-6x);
   }
 
   p {
@@ -68,7 +68,7 @@
   @media only screen and (max-width: bs.$screen-lg) {
     main {
       grid-template-columns: 1fr;
-      padding: calc(var(--base) * 4);
+      padding: var(--base-6x);
     }
   }
 </style>

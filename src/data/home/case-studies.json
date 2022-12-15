@@ -22,7 +22,7 @@
       ]
     },
     {
-      "logo": "indivior.png",
+      "logo": "indivior.webp",
       "brand": "indivior_brand.jpg",
       "title": "Indivior is a global pharmaceutical company working to change patients' lives.",
       "more": "software-engineering",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "logo": "cyca.png",
+      "logo": "cyca.webp",
       "brand": "cyca_brand.jpg",
       "title": "",
       "more": "software-engineering",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "logo": "gd.png",
+      "logo": "gd.webp",
       "brand": "gd_brand.jpg",
       "title": "",
       "more": "software-engineering",
@@ -54,14 +54,14 @@
       ]
     },
     {
-      "logo": "nswhealth.png",
+      "logo": "nswhealth.webp",
       "brand": "nswhealth_brand.jpg",
       "title": "NSW Health needed an integrated and real-time visualisation platform.",
       "more": "software-engineering",
       "content": "NSW Health needed an integrated and real-time visualisation platform that displays KPI and performance statistics at the State, Area Health District and Hospitals levels allowing state and LHD managers to quickly view critical statistics from their desktop, tablet, or mobile device. Additionally, a Clinician Billing Portal which allows identification of MBS and Repeatable item data for billing purposes to increase revenue and improve cash flow"
     },
     {
-      "logo": "rwb.png",
+      "logo": "rwb.webp",
       "brand": "rwb_brand.jpg",
       "title": "",
       "more": "software-engineering",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "logo": "fxa.png",
+      "logo": "fxa.webp",
       "brand": "fxa_brand.jpg",
       "title": "",
       "more": "software-engineering",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "logo": "fma.png",
+      "logo": "fma.webp",
       "brand": "fma_brand.jpg",
       "title": "",
       "more": "software-engineering",
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "logo": "pfizer.png",
+      "logo": "pfizer.webp",
       "brand": "pfizer_brand.jpg",
       "title": "",
       "more": "software-engineering",
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "logo": "reckitt.png",
+      "logo": "reckitt.webp",
       "brand": "reckitt_brand.png",
       "title": "",
       "more": "software-engineering",

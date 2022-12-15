@@ -54,37 +54,34 @@ const { type, title, content, subtitle, listTitle, className = '' } = Astro.prop
 }
 
 <style lang="scss">
-  @import '@styles/scss/colors.scss';
-  @import '@styles/scss/base-var.scss';
-
   .information__item {
-    margin-top: $base * 2;
+    margin-top: var(--base-2x);
 
     &__title {
-      color: $color-text-2;
+      color: var(--color-text-2);
       font-weight: 500;
     }
 
     &__subtitle {
-      color: $color-text-primary;
+      color: var(--color-text-primary);
       font-weight: 400;
     }
 
     p.information__item__list-title {
-      margin-top: $base * 2;
+      margin-top: var(--base-2x);
     }
 
     &__body {
-      color: $color-text-primary;
+      color: var(--color-text-primary);
 
       p {
-        margin-top: $base * 0.5;
+        margin-top: var(--base-half);
       }
 
       ul {
-        padding-left: $base * 3;
+        padding-left: var(--base-3x);
         list-style: disc;
-        margin-top: $base;
+        margin-top: var(--base);
       }
     }
   }

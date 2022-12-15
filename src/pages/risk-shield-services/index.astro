@@ -46,14 +46,13 @@ import PenetrationTesting from './risk-shield-services-sections/PenetrationTesti
 </Layout>
 
 <style lang="scss">
-  @use '@styles/scss/typography' as *;
-  @use '@styles/scss/base-var' as *;
+  @use '@styles/scss/base-var' as bv;
 
   :global(section#features main) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     :global(section#features main) {
       grid-template-columns: 1fr;
     }
@@ -62,7 +61,7 @@ import PenetrationTesting from './risk-shield-services-sections/PenetrationTesti
   :global(section#information main) {
     :global(.information__text > :first-child) {
       :global(.information__item__title) {
-        font-size: $text-md;
+        font-size: var(--text-md);
         font-weight: 600;
       }
     }

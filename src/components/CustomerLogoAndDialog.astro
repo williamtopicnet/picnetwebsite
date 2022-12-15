@@ -31,16 +31,14 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
 </Dialog>
 
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/typography.scss';
-  @import '@styles/scss/colors.scss';
+  @use '@styles/scss/base-var.scss' as bv;
 
   .case-studies__image {
     max-width: 180px;
     max-height: 100px;
-    background-color: $color-white;
-    padding: $base * 2;
-    border-radius: $base * 0.5;
+    background-color: var(--color-white);
+    padding: var(--base-2x);
+    border-radius: var(--base-half);
 
     cursor: pointer;
 
@@ -50,7 +48,7 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
       height: 100%;
       object-fit: contain;
       object-position: center;
-      transition: filter 0.2s $base-transition;
+      transition: filter 0.2s vaar(--base-transition);
     }
 
     &:hover {
@@ -63,8 +61,8 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
   .modal__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: $base * 4;
-    padding: $base * 6 $base * 4;
+    gap: var(--base-4x);
+    padding: var(--base-6x) var(--base-4x);
   }
 
   .customer__logo {
@@ -77,23 +75,23 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
   }
 
   .customer__content {
-    color: $color-text-primary;
+    color: var(--color-text-primary);
 
     h3 {
-      font-size: $text-md;
+      font-size: var(--text-md);
       font-weight: 500;
     }
 
     p {
       font-weight: 300;
-      margin-top: $base;
+      margin-top: var(--base);
     }
 
     a {
-      color: $color-text-info;
-      transition: filter $base-transition;
+      color: var(--color-text-info);
+      transition: filter var(--base-transition);
       display: inline-block;
-      margin-top: $base * 2;
+      margin-top: var(--base-2x);
 
       &:hover {
         filter: saturate(0.6);
@@ -101,7 +99,7 @@ const dialogid = `dialogid_${logo.split('.')[0]}`;
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     .modal__content {
       grid-template-columns: 1fr;
     }

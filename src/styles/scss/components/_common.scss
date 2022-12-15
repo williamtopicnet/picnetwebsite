@@ -4,7 +4,16 @@
   margin: 0 auto;
   position: relative;
 
+  // For iPad and ipad in landscape mode:
   @media only screen and (width: 1024px) {
-    padding-inline: calc(var(--base) * 2);
+    padding-inline: var(--base-4x);
+  }
+
+  @media only screen and (width: 1180px) {
+    padding-inline: var(--base-4x);
+  }
+
+    @media only screen and (width: 820px) {
+    padding-inline: var(--base-4x);
   }
 }

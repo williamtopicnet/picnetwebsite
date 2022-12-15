@@ -22,45 +22,42 @@ const { tabs } = Astro.props;
 </div>
 
 <style lang="scss">
-  @import '@styles/scss/base-var.scss';
-  @import '@styles/scss/colors.scss';
-
   .tabs__action {
-    border-top-left-radius: $base-radius;
-    border-top-right-radius: $base-radius;
+    border-top-left-radius: var(--base-radius);
+    border-top-right-radius: var(--base-radius);
     display: flex;
     flex-wrap: wrap;
-    gap: $base;
+    gap: var(--base);
 
     .tabs__button {
       min-width: 0;
-      border-radius: $base;
+      border-radius: var(--base);
       transition: background-color 0.2s, color 0.2s;
-      transition-timing-function: $base-animation-timing;
+      transition-timing-function: var(--base-animation-timing);
 
       &.active {
-        background-color: $color-text-info;
-        color: $color-white;
+        background-color: var(--color-text-info);
+        color: var(--color-white);
       }
     }
   }
 
   button {
     border: 0;
-    background-color: $color-white;
-    padding: $base * 2;
+    background-color: var(--color-white);
+    padding: var(--base-2x);
     cursor: pointer;
     text-align: left;
 
     &:hover {
-      color: $color-white;
-      background-color: $color-text-info;
+      color: var(--color-white);
+      background-color: var(--color-text-info);
     }
   }
 
   .tabs__content {
-    margin-top: $base * 2;
-    background-color: $color-white;
-    border-radius: $base-radius;
+    margin-top: var(--base-2x);
+    background-color: var(--color-white);
+    border-radius: var(--base-radius);
   }
 </style>

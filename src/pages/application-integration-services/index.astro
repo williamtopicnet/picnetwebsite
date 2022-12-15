@@ -59,15 +59,13 @@ import ArrowButton from '@components/common/ArrowButton.astro';
 </Layout>
 
 <style lang="scss">
-  @use '@styles/scss/base-var.scss' as *;
-
   .see-more-on-blog {
-    padding-bottom: $base * 12;
+    padding-bottom: calc(var(--base) * 12);
   }
 </style>
 
 <style lang="scss" is:global>
-  @use '@styles/scss/base-var.scss' as *;
+  @use '@styles/scss/base-var.scss' as bv;
 
   #case-studies {
     .case-study__img {
@@ -77,7 +75,7 @@ import ArrowButton from '@components/common/ArrowButton.astro';
     }
   }
 
-  @media only screen and (max-width: $screen-lg) {
+  @media only screen and (max-width: bv.$screen-lg) {
     #case-studies {
       .case-study__img {
         max-width: 100%;

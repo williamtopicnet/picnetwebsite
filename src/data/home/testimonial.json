@@ -2,12 +2,12 @@
   "data": [
     {
       "title": "John Doran, Regional Information Systems Director",
-      "logo": "reckitt.png",
+      "logo": "reckitt.webp",
       "content": "I've worked with consultants at PicNet before and I knew that if I could immerse them in our business and then harness their technical expertise - there'd be benefits all round."
     },
     {
       "title": "Alex Pantazis, IT & Technology Manager",
-      "logo": "gd.png",
+      "logo": "gd.webp",
       "content": "We have engaged PicNet for more than 10 years in many areas of IT consulting, including: outsourcing IT help desk, database/backup management, applications development & support and a rewrite of a mobility application. PicNet are an IT Services Organisation you can trust to listen to your requirements and deliver on what they promise."
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "title": "Alan Fear, IT Manager",
-      "logo": "fma.png",
+      "logo": "fma.webp",
       "content": "The quality of the people provided and the fact that PicNet rotates engineers between customers, have given FMA greater capabilities and depth of support."
     }
   ]
