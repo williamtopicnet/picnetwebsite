@@ -103,6 +103,15 @@ import InfoItem from '@components/info-section/InfoItem.astro';
       main {
         grid-template-columns: 1fr;
         gap: var(--base-4x);
+
+        .penetration-testing {
+          &__img {
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+        }
       }
     }
   }
