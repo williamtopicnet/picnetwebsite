@@ -1,7 +1,9 @@
 ---
 ---
 
-<form class="contact__form">
+<form action="https://formspree.io/f/mdovndry"
+        method="POST"
+        class="contact__form">
   <div class="contact__form__item">
     <label for="contactName">Name*</label>
     <input required placeholder="Name" name="name" id="contactName" />
@@ -14,7 +16,7 @@
 
   <div class="contact__form__item">
     <label for="contactEmail">Email*</label>
-    <input required placeholder="Email" name="email" id="contactEmail" />
+    <input required placeholder="Email" type="email" name="email" id="contactEmail" />
   </div>
 
   <div class="contact__form__item">
@@ -35,7 +37,7 @@
       id="contactMessage"></textarea>
   </div>
 
-  <button type="button">Send Message</button>
+  <button type="submit">Send Message</button>
 </form>
 
 <style lang="scss">

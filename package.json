@@ -13,6 +13,10 @@
   "dependencies": {
     "astro": "1.6.11"
   },
+  "engines": {
+      "npm": "^8.18.0",
+      "node": "^v18.8.0"
+  },
   "devDependencies": {
     "astro-compress": "1.1.17",
     "prettier": "^2.8.1",
