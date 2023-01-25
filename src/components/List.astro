@@ -1,0 +1,35 @@
+---
+import Card from './Card.astro';
+import Pagination from './Pagination.astro';
+
+export interface Props {
+  title: string;
+  posts: Object;
+  page: Object;
+  url?: string;
+}
+
+const { title, posts, page, url } = Astro.props;
+
+function convAuthor(text) {
+  return text.replace("-"," ").replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+}
+---
+<div class="main-background">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7 pt-4">
+        <h1 class="font-weight-bold text-white display-5 my-5 my-lg-6 text-center">{convAuthor(title)}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-skew bg-skew-light">
+  <div class="py-5">
+      <div class="row mx-5">
+        {posts.map(post => <Card post={post} />)}
+      </div>
+      <Pagination page={page} url={url} />
+  </div>
+</div>

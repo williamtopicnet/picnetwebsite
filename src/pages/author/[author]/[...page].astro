@@ -1,0 +1,31 @@
+---
+import Config from '../../../config.cjs';
+import Layout from '../../../layouts/index.astro';
+import List from '../../../components/List.astro';
+
+export async function getStaticPaths({paginate}) {
+  let allPosts = await Astro.glob('../../posts/*.md');
+  allPosts = allPosts.sort((a, b) => new Date(a.frontmatter.date).valueOf() - new Date(b.frontmatter.date).valueOf());
+  
+  const allAuthors = new Set()
+  allPosts.map(post => {
+      post.frontmatter.authors && post.frontmatter.authors.map(tag => allAuthors.add(tag.toLowerCase()))
+  })
+
+  return Array.from(allAuthors).map((author) => {
+    const filteredPosts = allPosts.filter((post) => post.frontmatter.authors && post.frontmatter.authors.includes(author))
+    return paginate(filteredPosts, {
+      params: { author },
+      pageSize: Config.paginate,
+    });
+  });
+}
+
+const { page } = Astro.props
+const { author } = Astro.params;
+const title = `${author}`;
+---
+
+<Layout title={title} lang="en">
+  <List title={title} posts={page.data} page={page} url={`author/${author}/`} />
+</Layout>

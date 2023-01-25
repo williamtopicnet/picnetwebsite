@@ -1,0 +1,210 @@
+
+.my-lg-6 {
+    margin-top: 5rem!important;
+    margin-bottom: 5rem!important
+  }
+    
+  .bg-skew {
+    position: relative
+  }
+  
+  .bg-skew:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    z-index: -1
+  }
+  
+  .bg-skew-light:before {
+    background-color: #f8f9fa
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    transform: translateY(-3px)
+  }
+  
+  .link-cta {
+    border-bottom: 2px solid #006aff;
+    color: #343a40;
+    font-size: .875rem;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    text-transform: uppercase
+  }
+  
+  .link-cta:hover {
+    color: #006aff;
+    text-decoration: none
+  }
+  
+  .link-tag {
+    padding-right: 2px;
+  }
+  
+  
+  .card-title a {
+    color: #212529
+  }
+  
+  .card-title a:focus, .card-title a:hover {
+    color: #006aff;
+    text-decoration: none
+  }
+  
+  
+.card-author{
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.main-background{
+  background-image: url("/images/home-bg.jpg");
+}
+
+/* HUGO_PICNET_STYLE */
+/* your styles go here */
+@charset "UTF-8";
+/*
+Theme Name: Tracks
+Theme URI: https://www.competethemes.com/tracks/
+Author: Compete Themes
+Author URI: https://www.competethemes.com
+Description: A bold, beautiful, and responsive theme. Tracks is perfect for personal blogs, magazines, and photography websites. It includes a logo uploader, over 50+ social media icons, search bar, comment display controls, premium layouts, and more. Tracks has a dark, simple, and minimalist design that makes it great for publish both text and image based content. Use it for a travel blog, online newspaper, video site, or podcast. As a free theme, you can use Tracks for as many projects as you’d like. Preview Tracks now on desktop, tablets, and mobile devices with the interactive live demo: https://www.competethemes.com/demos/?theme=tracks
+Version: 1.59
+Tags: one-column, custom-logo, custom-menu, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, photography, portfolio
+Text Domain: tracks
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Tracks WordPress Theme, Copyright 2017 Compete Themes
+Tracks is distributed under the terms of the GNU GPL
+*/
+/*===== Variables =====*/
+/* Theme Colors */
+.site-title, .toggle-navigation i {
+  font-size: 1.625em;
+  line-height: 1.85;
+}
+
+.wp-caption-text, .excerpt-meta, .entry-meta, .more-link, .pagination, .further-reading span,
+.further-reading a,
+.entry-categories span,
+.entry-categories a,
+.entry-tags span,
+.entry-tags a, .author-meta .author span, .comments-number h2, .comment-author div, .design-credit, .singular-attachment .attachment-caption, .widget li, .menu-footer-items a, .menu-secondary-items a {
+  font-size: 0.813em;
+  line-height: 1.85;
+}
+
+.entry-container, .comments {
+  padding: 0 5.55%;
+}
+
+.site-title, .menu-unset > ul a,
+.menu-primary-items a, .excerpt-meta, .entry-meta, .excerpt-title, .entry-title, .more-link, .pagination, .further-reading,
+.entry-categories,
+.entry-tags, .author-meta .author span, .comments-number h2, .comment-author .author-name, .site-footer h1, .design-credit, .widget-title, .widget li, .menu-footer-items a, .menu-secondary-items a {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* Markup styles */
+pre {
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  padding: 0.75em;
+  background: #f5f5f5;
+}
+
+code {
+  padding: 0 0.375em;
+  background: #f5f5f5;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0 1.5em;
+  border-left: solid 0.75em #222;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+}
+
+hr {
+  margin: 0.69em 0;
+}
+
+/* Table styles */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+td {
+  padding: 0.5em 0.75em;
+  border: solid 1px #4d4d4d;
+  line-height: 1.5;
+}
+
+th {
+  padding: 0.5em 0.75em;
+  border: solid 1px #4d4d4d;
+  line-height: 1.5;
+}
+
+ul {
+  margin-left: 60px;
+}
+
+ul,
+ol {
+  font-size: 1em;
+  padding: 0;
+  margin: 1.5em;
+}
+ul ul, ul ol,
+ol ul,
+ol ol {
+  margin: 0 1.5em;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul,
+li li {
+  font-size: 1em;
+}
+
+.alignright img,
+.alignleft img,
+.aligncenter img,
+.alignnone img,
+.size-auto img,
+.size-full img,
+.size-large img,
+.size-medium img,
+.size-thumbnail img {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  line-height: 0;
+}
+
+
+.singular-attachment img {
+  max-width: 100%;
+}

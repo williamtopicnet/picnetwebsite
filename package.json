@@ -11,7 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "1.6.11"
+    "astro": "1.6.11",
+    "@types/html-to-text": "^9.0.0",
+    "dayjs": "^1.11.1",
+    "html-to-text": "^9.0.3",
+    "sass": "^1.57.1"
   },
   "engines": {
       "npm": "^8.18.0",

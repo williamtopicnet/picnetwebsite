@@ -1,0 +1,54 @@
+---
+import Config from "../config.cjs";
+import dayjs from 'dayjs'
+import { htmlToText, convert } from 'html-to-text';
+export interface Props {
+  post: any;
+}
+
+const { post } = Astro.props;
+const {authors } = post;
+
+const text = convert(post.compiledContent(), {
+  baseElements: {selectors: ['p']},
+  decodeEntities: true,
+  limits: { maxInputLength: 250}
+});
+
+function fixSpecialChar(text) {
+  return text.replace("–","-").replace("’","'").replace('“','"').replace('”','"').replace(" "," ").replace("’","'");
+}
+
+
+function convAuthor(text) {
+  return text.replace("-"," ").replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+}
+
+
+---
+<div class="col-lg-4">
+  <div class="card card-hover mb-5 mx-lg-2">
+    <div class="card-body pt-5 px-5 pb-4">
+      <p class="card-author">{ post.frontmatter.authors.map((author) => (
+        <a href={`${Config.siteBaseUrl}author/${author}/`}>{ convAuthor(author) } </a>
+        )) }</p>
+      <p class="card-date small"><span class="text-uppercase">{ dayjs(post.frontmatter.date).format(Config.dateFormat) }</span></p>
+      
+      <h3 class="card-title mb-4">
+        <a class="stretched-link" href={ `${Config.siteBaseUrl}posts/${post.frontmatter.slug}` }>{ fixSpecialChar(post.frontmatter.title) }</a>
+      </h3>
+      <p class="card-text">{ fixSpecialChar(text) } ...</p>
+      <p>
+        { post.frontmatter.tags && post.frontmatter.tags.map((tag) => (
+          <a href={`${Config.siteBaseUrl}tag/${tag}/`} class="link-tag text-dark">#{tag}</a>
+        ))}
+      </p>
+      <p>in { post.frontmatter.categories && post.frontmatter.categories.map((categorie) => (
+        <a href={`${Config.siteBaseUrl}categorie/${categorie}/`}>{ categorie } </a>
+        ))}</p>
+    </div>
+  </div>
+</div>
+<style>
+
+</style>

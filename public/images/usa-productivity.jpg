@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="PicNet Blog">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<title>Nothing to see here! - PicNet Blog</title>
+<link rel="pingback" href="https://www.picnet.com.au/blogs/xmlrpc.php" />
+<link rel="shortcut icon" href="https://www.picnet.com.au/wp-content/uploads/2017/02/picnet-avatar.png">
+
+
+    <!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <![endif]-->
+	
+	<!--[if IE]>
+		<link rel="stylesheet" href="https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/ie.css" media="screen" type="text/css" />
+    	<![endif]-->
+
+    
+<!-- This site is optimized with the Yoast SEO plugin v4.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://www.picnet.com.au/blogs/" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.picnet.com.au\/blogs\/","name":"PicNet Blog","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.picnet.com.au\/blogs\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="PicNet Blog &raquo; Feed" href="https://www.picnet.com.au/blogs/feed/" />
+<link rel="alternate" type="application/rss+xml" title="PicNet Blog &raquo; Comments Feed" href="https://www.picnet.com.au/blogs/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.picnet.com.au\/blogs\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.24"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.picnet.com.au/blogs/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='forms-for-campaign-monitor-custom_cm_monitor_css-css'  href='https://www.picnet.com.au/blogs/wp-content/plugins/forms-for-campaign-monitor/forms/views/public/css/app.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C300%2C600%2C800&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-opensans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600%2C700%2C800&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/bootstrap.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/libs/font-awesome/css/font-awesome.min.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='YTPlayer-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/YTPlayer.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='woocm-uxqode-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/woocommerce-ux.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-layout-ux-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/woo-layout-ux.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-child/style.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='resize-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/resize.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='retina-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/retina.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='nivo-lightbox-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/nivo-lightbox.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='nivolightbox-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/nivo_themes/default/default.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='owl.carousel-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/owl.carousel.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/css/animate.css?ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='dikka-style-css-css'  href='https://www.picnet.com.au/blogs/wp-content/themes/dikka-child/assets/css/color-variations/red.css?ver=4.7.24' type='text/css' media='all' />
+<style id='dikka-style-css-inline-css' type='text/css'>
+
+    .navbar-default.style1 .navbar-nav > .open > a, .navbar-default.style1 .navbar-nav > .open > a:hover, .navbar-default.style1 .navbar-nav > .open > a:focus{color: #fff;}
+a, .pageXofY .pageX, .pricing .bestprice .name, .filter li a:hover, .widget ul li a:hover, #contacts a:hover, .title-color, .ms-staff-carousel .ms-staff-info h4, .filter li a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > li > a:hover, .widget_nav_menu li a:hover, .navbar-default .navbar-nav > li > a:focus, a.go-about:hover, .text_color, .navbar-nav .dropdown-menu a:hover, .profile .profile-name, #elements h4, #contact li a:hover, #agency-slider h5, .ms-showcase1 .product-tt h3, .filter li a.active, .contacts li i, .big-icon i, .navbar-default.dark .navbar-brand:hover,.navbar-default.dark .navbar-brand:focus, a.p-button.border:hover, a.social:hover:before, .symbol.colored i, .icon-nofill, .slidecontent-bi .project-title-bi p a:hover, .grid .figcaption a.thumb-link:hover, .tp-caption a:hover, .btn-1d:hover, .btn-1d:active, #contacts .tweet_text a, #contacts .tweet_time a, .social-font-awesome li a:hover, h2.post-title a:hover, .tags a:hover, .category a:hover, .btn-color span, #contacts .form-success p, .center-icon i, .social-icomoon a:hover, .team-details .team-position, .blog-nav a:hover, a:hover .text-inner, .btn-color, .navbar-default .navbar-nav > li > a.selected, .navbar-default .navbar-nav li a:hover, .metas .post-type i, .list-body i, .social-icomoon li a:hover i{
+  color: #0079c1;
+}
+.collapse-group .collapse-heading h4 a, .collapse-group .collapse-heading h4 a .toggle-icon i{
+    color: #0079c1 !important;
+}
+.collapse-group .collapse-heading h4 a .toggle-icon i{
+    color: #0079c1;
+}
+.collapse-group .collapse-heading h4 a.collapsed .toggle-icon i{color: #676767 !important;}
+.slight .navbar-nav a.current-menu-item, .slight.navbar-default.default .navbar-nav > .open > a, .slight.navbar-default.default .navbar-nav > .open > a > .open > a, .slight ul.cart_list li a:hover, .woocommerce ul.cart_list li a:hover, .slight .navbar-nav a:hover, .sdark .navbar-nav a.current-menu-item, .sdark.navbar-default.default .navbar-nav > .open > a, .sdark.navbar-default.default .navbar-nav > .open > a > .open > a, .sdark ul.cart_list li a:hover, .woocommerce ul.cart_list li a:hover, .sdark .navbar-nav a:hover, .tLight .navbar-nav a.current-menu-item, .tLight.navbar-default.default .navbar-nav > .open > a, .tLight.navbar-default.default .navbar-nav > .open > a > .open > a, .tLight ul.cart_list li a:hover, .woocommerce ul.cart_list li a:hover, .tLight .navbar-nav a:hover, .navbar-default.default.slight .nav a.current-menu-ancestor{color: #0079c1 !important;opacity: 1;}
+
+a.sf-button.hide-icon, .tabs li.current, .readmore:hover, a.p-button:hover, a.p-button.colored, .navbar-default.style1 .navbar-nav > li > a.selected, .light #contacts a.p-button, .tagcloud a:hover, .rounded.fill, .colored-section, .pricing .bestprice .price, .pricing .bestprice .signup, .signup:hover, .divider.colored, .services-graph li span, .hi-icon-effect-1b .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, .symbol.colored .line-left, .symbol.colored .line-right, .projects-overlay #projects-loader, .panel-group .panel.active .panel-heading, .mail-box, .double-bounce1, .double-bounce2, .btn-color-1d:after, .container1 > div, .container2 > div, .container3 > div, .btn-color:hover, .collapse-group .collapse-heading h4 a:hover .toggle-icon, .collapse-group .collapse-heading h4 a .toggle-icon, .blog-nav span, #back-top a:hover, .btn-color-fill, .team-div .overlaycolor{
+    background-color:#0079c1;
+}
+.cbp-l-project-details-visit, .cbp-l-inline-view, .light .divider.colored, .origin-widget-title.text-lightest .divider.colored, .mc4wp-form button, .mc4wp-form input[type=button], .mc4wp-form input[type=submit], .origin-widget-price-box.featured h4, .navbar-default.default .nav li a.border-menu-item{
+    background-color:#0079c1 !important;
+}
+
+/* Woocommerce */
+.woocommerce span.onsale,.woocommerce-page span.onsale, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range, .woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover, .woocommerce #payment #place_order, .woocommerce-page #payment #place_order{
+    background: #0079c1 !important;
+}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{
+    color: #0079c1;
+}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle{border: 1px solid #d44646 !important;background: #d44646 !important;}
+.blog-nav span, .blog-nav a:hover{border: 1px solid #0079c1;}
+.hi-icon-effect-1 .hi-icon:after{box-shadow: 0 0 0 4px #0079c1;}
+.colored-section:after {border: 20px solid #0079c1;}
+.filter li a.active, .filter li a:hover, .panel-group .panel.active .panel-heading{border:1px solid #0079c1}
+a.p-button.colored:hover{background-color: #cb4646;}
+.navbar-default.default.border .navbar-nav > li > a.selected:before, .navbar-default.default.border .navbar-nav > li > a.selected:hover, .navbar-default.default.border .navbar-nav > li > a.selected, .mc4wp-form button, .mc4wp-form input[type=button], .mc4wp-form input[type=submit]{
+    border-bottom: 1px solid #0079c1;
+}
+.bs-callout-theme-color {
+    background-color: #d3ecfd;
+    border-color: #0079c1;
+}
+.overlay-color{
+    background-color: rgba(0,121,193, 0.9);
+}
+.overlay-color.medium, .skill-bar-percent, .post-content .featured-image a:hover .hover-image-blog{ background-color: rgba(0,121,193, 0.80);
+}
+.triangle{border-left-color: #0079c1 !important;}
+.overlay-color.soft{
+    background-color: rgba(0,121,193, 0.25);
+}
+.navbar-default.default.slight ul.dropdown-menu, .slight .dikka_minicart, .navbar-default.default.sdark ul.dropdown-menu, .sdark .dikka_minicart{
+    border-top: 2px solid #0079c1 !important;
+}
+.btn-color, a:hover .text-inner{
+    border: 1px solid #0079c1;
+}
+.appdesign .app-service:hover .icon-container .icon {
+    background: #0079c1;
+    color: #ffffff;  
+}
+.appdesign .app-service .icon-container .icon {
+    border: 1px solid #0079c1;
+    color: #0079c1;
+}
+.navbar-default .navbar-nav > li:hover > a::before, .navbar-default .navbar-nav > li.active > a::before {
+    border-bottom-color: #0079c1;
+}
+.loading-css, .nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading{
+    border-right: 6px solid #0079c1;
+    border-top: 6px solid #0079c1;
+}
+.tp-caption a.slider-link{
+    color: #0079c1 !important;
+    font-weight: 800 !important;
+}
+
+    
+
+        #load .loader-container {
+        margin-top:-50px;
+        }                        .title {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.call-now{
+	background: #0079C1;
+	border: 1px solid #0079C1;
+	color: #fff !important;
+	font-weight: bold;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+    padding: 10px 15px !important;
+    margin-top: 27px !important;
+    margin-left: 20px !important;
+}
+
+.call-now:hover,
+.call-now:focus{
+	border-color: #0079C1;
+	/*background: #0079C1 !important;*/
+	color: #fff !important; 
+}                    
+
+        #load .loader-container {
+        margin-top:-50px;
+        }                        .title {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.call-now{
+	background: #0079C1;
+	border: 1px solid #0079C1;
+	color: #fff !important;
+	font-weight: bold;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+    padding: 10px 15px !important;
+    margin-top: 27px !important;
+    margin-left: 20px !important;
+}
+
+.call-now:hover,
+.call-now:focus{
+	border-color: #0079C1;
+	/*background: #0079C1 !important;*/
+	color: #fff !important; 
+}                    .top-bar {background-color: rgba(30,115,190,0.5);}
+
+        #load .loader-container {
+        margin-top:-50px;
+        }                        .title {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.call-now{
+	background: #0079C1;
+	border: 1px solid #0079C1;
+	color: #fff !important;
+	font-weight: bold;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+    padding: 10px 15px !important;
+    margin-top: 27px !important;
+    margin-left: 20px !important;
+}
+
+.call-now:hover,
+.call-now:focus{
+	border-color: #0079C1;
+	/*background: #0079C1 !important;*/
+	color: #fff !important; 
+}                    .top-bar {background-color: rgba(30,115,190,0.5);}.navbar .social-icons-fa a, .navbar .phone-mail, .navbar .phone-mail a {color: #ffffff !important;}
+</style>
+<link rel='stylesheet' id='googlefont-custom-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-h1-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-h2-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-h3-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-h4-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-h5-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont-h6-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.7.24' type='text/css' media='all' />
+<link rel='stylesheet' id='cubeportfolio-jquery-css-css'  href='https://www.picnet.com.au/blogs/wp-content/plugins/cubeportfolio/public/css/main.min.css?ver=1.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600%2C700%7CUbuntu%3A500&#038;subset=latin-ext&#038;ver=1527490698' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_request = {"ajax_url":"https:\/\/www.picnet.com.au\/blogs\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/plugins/forms-for-campaign-monitor/forms/views/public/js/app.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/plugins/cubeportfolio/public/js/main.min.js?ver=1.3.2'></script>
+<link rel='https://api.w.org/' href='https://www.picnet.com.au/blogs/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.picnet.com.au/blogs/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.picnet.com.au/blogs/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.24" />
+<link rel='shortlink' href='https://www.picnet.com.au/blogs/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.picnet.com.au/blogs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.picnet.com.au%2Fblogs%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.picnet.com.au/blogs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.picnet.com.au%2Fblogs%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.picnet.com.au/blogs/?wordfence_logHuman=1&hid=0D19697362ECFFCFDC28D66C0BC62AE5');
+</script><script type="text/javascript">if (typeof ajaxurl === "undefined") {var ajaxurl = "https://www.picnet.com.au/blogs/wp-admin/admin-ajax.php"}</script><link rel="icon" href="https://www.picnet.com.au/blogs/wp-content/uploads/2017/02/cropped-picnet-avatar-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.picnet.com.au/blogs/wp-content/uploads/2017/02/cropped-picnet-avatar-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.picnet.com.au/blogs/wp-content/uploads/2017/02/cropped-picnet-avatar-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.picnet.com.au/blogs/wp-content/uploads/2017/02/cropped-picnet-avatar-270x270.png" />
+<style type="text/css" title="dynamic-css" class="options-output">.footer{background-color:#e0e0e0;}body{font-family:Open Sans;text-align:left;line-height:21px;font-weight:400;font-style:normal;color:#676767;font-size:14px;}.navbar .nav li a{font-family:Ubuntu;line-height:13px;font-weight:500;font-style:normal;font-size:13px;}H1{font-family:Open Sans;line-height:38px;font-weight:300;font-style:normal;color:#0079c1;font-size:36px;}H2{font-family:Open Sans;line-height:36px;font-weight:600;font-style:normal;color:#383838;font-size:30px;}h3{font-family:Open Sans;text-align:left;line-height:30px;font-weight:700;font-style:normal;color:#444444;font-size:24px;}h4{font-family:Open Sans;text-align:left;line-height:30px;font-weight:600;font-style:normal;color:#444444;font-size:18px;}h5{font-family:Open Sans;line-height:16px;font-weight:300;font-style:normal;color:#0079c1;font-size:16px;}h6{font-family:Open Sans;line-height:23px;font-weight:400;font-style:normal;color:#0079c1;font-size:20px;}.light-text .section-title h1{font-family:Open Sans;line-height:32px;font-weight:700;font-style:normal;color:#f4f4f4;font-size:28px;}.pagetitle{background-color:transparent;background-size:contain;background-attachment:fixed;background-image:url('https://www.picnet.com.au/wp-content/uploads/2015/01/texture-bg3.jpg');}</style>	<script async type="text/javascript" src="https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/captcha.js"></script>
+<meta name="google-site-verification" content="7ep1hJJdUS-Isk7eszatVu6eTNpoZRUqrWrtS_WQ3H4" />
+</head> 
+<!-- BEGIN BODY -->
+<body data-rsssl=1  class="home page-template-default page page-id-2 siteorigin-panels siteorigin-panels-home multipage">
+<!-- GOOGLE ANALYTICS CODE -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-226280-2', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+<script>
+jQuery(document).ready(function(){
+    jQuery(".menu-toggle").click(function(){
+    	// alert('test');
+    	jQuery(".navbar-nav>li:nth-child(5)").toggleClass("open");
+    });
+});
+</script>
+ 
+
+  	
+<!-- BEGIN: FULL CONTENT DIV -->
+<div class="full-content"> 
+
+
+
+<div class="navbar  navbar-default default navbar-fixed-top navbar-shrink tdark " role="navigation">
+            
+             
+            <!-- BEGIN: NAV-CONTAINER -->
+            <div class="nav-container container">
+                <div class="navbar-header">
+                	
+                    <!-- BEGIN: TOGGLE BUTTON (RESPONSIVE)-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- BEGIN: LOGO -->
+
+         
+        
+            <a class="navbar-brand nav-to logo" href="https://www.picnet.com.au/blogs" title="PicNet Blog">
+            <img src="https://www.picnet.com.au/wp-content/uploads/2015/01/picnet-logo-retina-footer.png"  data-at2x="http://www.picnet.com.au/wp-content/uploads/2015/01/picnet-logo-retina-footer.png" alt="PicNet Blog" />
+            </a>
+            
+                     
+		
+       <!-- BEGIN: WPML MENU -->     
+        
+                    
+                  
+                </div>
+        <div class="icons-style-mobile">
+                       
+            
+                             
+          
+        </div>
+               
+                <div class="menu-main-container"><div class="collapse navbar-collapse "><ul class="nav navbar-nav navbar-right sm"><li ><a class="nav-to  menu-item menu-item-type-custom menu-item-object-custom"  href="/">Home</a></li>
+<li ><a class="nav-to  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"  href="/services/">Services</a>
+<ul class="dropdown-menu ">
+	<li ><a class=" menu-item menu-item-type-custom menu-item-object-custom"  href="https://picnet.com.au/software-engineering/">Enterprise Software Development</a></li>
+	<li ><a class=" menu-item menu-item-type-custom menu-item-object-custom"  href="https://picnet.com.au/business-it-support/">Enterprise IT Support</a></li>
+</ul>
+</li>
+<li ><a class="nav-to  menu-item menu-item-type-custom menu-item-object-custom"  href="/clients-and-industries/">Clients &#038; Case Studies</a></li>
+<li ><a class="nav-to  menu-toggle menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"  href="https://www.picnet.com.au/blogs/marco/">News</a>
+<ul class="dropdown-menu ">
+	<li ><a class=" menu-item menu-item-type-custom menu-item-object-custom"  href="/blogs/david/">IT Support and Managed Services</a></li>
+	<li ><a class=" menu-item menu-item-type-custom menu-item-object-custom"  href="/blogs/marco/">IT Consulting</a></li>
+	<li ><a class=" menu-item menu-item-type-custom menu-item-object-custom"  href="/blogs/guido/">Software Development &#038; Predictive Analytics</a></li>
+</ul>
+</li>
+<li ><a class="nav-to  menu-item menu-item-type-custom menu-item-object-custom"  href="/about-us/">About Us</a></li>
+<li ><a class="nav-to  menu-item menu-item-type-custom menu-item-object-custom"  href="/contact-us/">Contact</a></li>
+<li ><a class="nav-to  call-now menu-item menu-item-type-custom menu-item-object-custom"  href="tel:+61284377900">+61 2 8437 7900</a></li>
+</ul></div></div>               
+               
+                <!-- END: MENU -->
+            </div>
+            
+          
+		    
+            <!--END: NAV-CONTAINER -->
+        </div>
+
+
+
+
+<div class="pagetitle black-section light-text align-left " >
+            
+            <div class="title" style="padding-top:80px;padding-bottom:40px;">
+                <div class="section-title container light">
+                    
+                                
+                                        <h1>Nothing to see here!</h1>
+                                        </h1>
+                </div>
+            </div>
+        </div>
+ 
+
+<section id="blog-normal" class="light-section nopaddingbottom blog-normal">
+            
+            <!-- BEGIN BLOG WIDTH | OPTION: "big", "medium" container -->
+            <div class="container"> 
+                
+                <!-- BEGIN BLOG POSTS -->       
+                <div class="journal col-xs-12 col-sm-12 col-md-9">
+                     
+                        
+                            <div class="blog-normal">
+
+                    <div id="post-2" class="journal-post post-2 page type-page status-publish hentry">
+                        <div class="post-content fadeInUpBig">
+
+                              
+                                                             <!-- Featured image -->
+                            
+
+                                 
+                                                                 
+                                  
+
+                          
+                            
+                            <h2 class="post-title"><a href="https://www.picnet.com.au/blogs/">Nothing to see here!</a></h2>
+    
+                            <div class="post-summary">
+                                <p>   
+                                <p>We don&#8217;t have any post in this section, please read our posts by category:</p>
+<ul>
+<li><a href="/blogs/marco/">IT Support &amp; Managed Services</a></li>
+<li><a href="/blogs/david/">IT Consulting</a></li>
+<li><a href="/blogs/guido/">Software Development and Predictive Analytics</a></li>
+</ul>
+</p>
+                            </div>
+                            
+                                                                             </div>
+                    </div><!-- #post -->
+                </div>                            
+
+                              <h4>About the Author</h4>
+<div class="about-author">
+					    
+    <div class="img-container">
+	    
+	     <img alt='mm' src='https://www.picnet.com.au/blogs/wp-content/uploads/2017/02/picnet-logo-vertical-150x150.jpg' class='avatar avatar-80 photo' height='80' width='80' />    </div>
+    <h5> PicNet</h5>
+    <p></p>
+</div>
+
+
+
+
+
+                            
+
+                        
+                        
+                      
+                </div>
+                <!-- END journal -->
+                
+                <!-- START SIDEBAR -->
+                <div class="col-xs-12 col-sm-12 col-md-3 blog-sidebar">
+                                <div id="text-3" class="well well-sm widget widget_text">			<div class="textwidget"></div>
+		</div>                                   
+                </div>
+                
+        
+            </div>  
+            <!-- END: BLOG CONTAINER -->
+        </section>
+
+
+
+
+        </div>
+     
+       <div class="footer" >
+            <!-- BEGIN BOTTOM FOOTER -->
+            <div class="container">
+                
+       <div class="row">
+                    
+
+
+                     
+                                                 <div class="col-sm-6">
+                                                                                                      
+                            </div>
+
+                            <div class="col-sm-6">
+                                                                                                                                </div>
+                     
+                    
+                    
+                     
+
+                      
+                     
+                      
+
+                     
+                    
+
+                </div>
+                        
+            </div>
+
+            <p id="back-top"><a href="#home"><i class="fa fa-angle-up"></i></a></p>       
+       </div>
+       
+       <div id="bottom-footer" class="text-center" style="display:none;" >
+                                  
+       		<div class="container">
+	             
+	            <!-- BEGIN: LOGO FOOTER -->
+	            <div class="logo-footer">
+	                 <img src="https://www.picnet.com.au/wp-content/uploads/2015/01/logo-dark.png" data-at2x="http://www.picnet.com.au/wp-content/uploads/2015/01/picnet-logo-retina-footer.png" alt="PicNet Blog" />
+	                 
+	                 <ul class="contacts-footer">
+	                     
+	                 	<li><i class="fa fa-envelope-o"></i> picnet@picnet.com.au</li> 
+	                    	                     
+	                 	<li><i class="fa fa-phone"></i> +61 2 8437 7977</li>
+	                    	                 
+	                 </ul>
+	                 
+	            </div>
+	            	              	            <!-- BEGIN: ICONS FOOTER -->
+	            <div class="socialdiv colored">
+	                <ul>
+	                    	                    <li><a class="facebook" href="https://www.facebook.com/PicNetIT" target="_blank" data-original-title="" title=""></a></li>
+	                    	                    <li><a class="twitter" href="http://www.twitter.com/PicNetIT" target="_blank" data-original-title="" title=""></a></li>
+	                    	                    <li><a title="Picnet on Google+" class="google" href="https://plus.google.com/+PicNetITServicesStLeonards/about?gl=AU&#038;hl=en-AU#+PicNetITServicesStLeonards/about?gl=AU&#038;hl=en-AU" target="_blank" data-original-title="" title=""></a></li>
+	                    	                    <li><a class="youtube" href="http://www.youtube.com/user/PicNetTV" target="_blank" data-original-title="" title=""></a></li>
+	                    	                    <li><a class="linkedin" href="http://www.linkedin.com/company/picnet-pty-ltd?trk=fc_badge" target="_blank" data-original-title="" title=""></a></li>
+	                    	                </ul>   
+	            </div>  
+	                 
+	             
+	            <!-- BEGIN: COPYRIGHTS -->
+	            <div class="b-text">
+	                <p>© 2016 PicNet Pty Ltd. All Rights Reserved. | <a title="Contact Us" href="http://www.picnet.com.au/contact-us/">Contact Us</a> - <a href="/newsletter/">Newsletter</a></p>
+	            </div>
+	            	        </div>
+	        <!-- END CONTAINER -->
+	    </div><!-- END BOTTOM FOOTER test -->
+	    
+    </div>    
+    <script type='text/javascript'>
+var client = new XMLHttpRequest();
+client.open('GET', 'http://api.picnet.com.au/visitor/' + encodeURIComponent(document.location.pathname.replace(/\//g, '$')));
+client.send();
+</script>
+	<!-- Don't forget analytics -->
+   <div id="footer-analytics">
+		  
+		
+<!-- font handler -->
+    <script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6.1'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/isotope-min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/retina.min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/queryloader.min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/bootstrap.min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/smartmenus.min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/ytplayer.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/wow.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var UtilParam = {"url":"https:\/\/www.picnet.com.au\/blogs\/wp-content\/themes\/dikka-installable"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/utils.js?ver=4.7.24'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var MainParam = {"twitter_username":"uxqode","twitter_count":"5"};
+var main = {"home_url":"https:\/\/www.picnet.com.au\/blogs","template_active":"non-builder"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/main.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/SmoothScroll.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/owl.carousel.min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-content/themes/dikka-installable/assets/js/nivo-lightbox.min.js?ver=4.7.24'></script>
+<script type='text/javascript' src='https://www.picnet.com.au/blogs/wp-includes/js/wp-embed.min.js?ver=4.7.24'></script>
+	<!-- Google Code for Remarketing Tag --><!--------------------------------------------------Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup---------------------------------------------------><script type="text/javascript">/* <![CDATA[ */var google_conversion_id = 1071628828;var google_custom_params = window.google_tag_params;var google_remarketing_only = true;/* ]]> */</script><script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script><noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071628828/?value=0&amp;guid=ON&amp;script=0"/></div></noscript>
+	</div>
+    </body>
+</html>

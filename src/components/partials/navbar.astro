@@ -1,0 +1,214 @@
+---
+import Config from "../../config.cjs";
+
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<header class="nav-header">
+  <div class="container">
+    <div class="logo">
+      <a href="/">
+        <picture>
+          <source media="(max-width: 780px)" srcset="/images/home/logo-dark.webp" />
+          <img src="/images/home/logo.webp" alt="picnet logo" loading="lazy" width="150" height="40" />
+        </picture>
+      </a>
+    </div>
+
+    <nav class="header__nav" id="headerNav">
+      <a href="/#services">Services</a>
+      <a href="/#about-us">About Us</a>
+      <a href="https://picnet.com.au/blog/">News & Updates</a>
+      <a href="/#contact">Contact Us</a>
+
+      <button type="button" class="burger-btn" id="closeBurgerButton">
+        <i class="fa-solid fa-xmark fa-xl"></i>
+      </button>
+    </nav>
+
+    <div class="contact">
+      <a href="https://www.linkedin.com/company/picnet-pty-ltd/" target="_blank" class="linkeldn">
+        <i class="fa-brands fa-linkedin-in fa-xl"></i>
+      </a>
+
+      <a href="tel:+61284377900" class="phone">+61 2 8437 7900</a>
+    </div>
+
+    <button type="button" class="burger-btn" id="openBurgerButton">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </button>
+  </div>
+</header>
+
+<script>
+  window.document.addEventListener('DOMContentLoaded', () => {
+    const openBurgerButton = document.getElementById('openBurgerButton');
+    const headerNav = document.getElementById('headerNav');
+    const headerNavChildren = document.querySelectorAll('#headerNav > *');
+
+    if (!openBurgerButton || !headerNav || !headerNavChildren) {
+      return;
+    }
+
+    const showMenu = () => {
+      if (window.matchMedia('(max-width: 780px)').matches) {
+        headerNav.style.transform = `translateX(0%)`;
+      }
+    };
+
+    const hideMenu = () => {
+      if (window.matchMedia('(max-width: 780px)').matches) {
+        headerNav.style.transform = `translateX(100%)`;
+      }
+    };
+
+    openBurgerButton.onclick = showMenu;
+
+    // Close mobile menu when click on its child
+    headerNavChildren.forEach((child) => {
+      child.addEventListener('click', hideMenu);
+    });
+
+    let timeout: NodeJS.Timeout = -1 as unknown as NodeJS.Timeout, // holder for timeout id
+      delay = 250; // delay after event is "complete" to run callback
+
+    const onMatchMobileMedia = () => {
+      if (!window.matchMedia('(max-width: 780px)').matches) {
+        headerNav.style.transform = '';
+      }
+    };
+
+    // window.resize event listener
+    window.addEventListener('resize', function () {
+      // clear the timeout
+      clearTimeout(timeout);
+      // start timing for event "completion"
+      timeout = setTimeout(onMatchMobileMedia, delay);
+    });
+
+    onMatchMobileMedia();
+  });
+</script>
+
+<style lang="scss">
+  @use '@styles/scss/base-var.scss' as bs;
+
+  a {
+    color: var(--color-silver);
+
+    &:hover {
+      color: var(--var(--color-white));
+    }
+  }
+
+  header {
+    padding-top: var(--base);
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: var(--base-2x) calc(var(--base) * 10);
+      font-weight: bold;
+
+      .header__nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--base-4x);
+        transition: transform var(--base-transition);
+
+        a {
+          font-weight: 600;
+          font-size: var(--text-base);
+          letter-spacing: -0.03px;
+          text-transform: uppercase;
+          line-height: 42px;
+          
+        }
+        a:hover {
+          text-decoration: none;
+          color: var(--color-white);
+        }
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .phone {
+          padding-inline: calc(var(--base) * 1.25);
+          margin-left: auto;
+
+          color: var(--color-primary);
+          font-weight: 600;
+          background-color: var(--color-white);
+          height: 42px;
+          line-height: 42px;
+          vertical-align: middle;
+          display: inline-block;
+          border-radius: 20px;
+        }
+      }
+
+      .burger-btn {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: bs.$screen-lg) {
+    header {
+      background: var(--color-white);
+      .container {
+        justify-content: space-between;
+        padding: var(--base-2x);
+
+        .contact {
+          display: none;
+        }
+
+        .header__nav {
+          position: fixed;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding-top: calc(var(--base) * 12);
+          background-color: var(--color-white);
+          inset: 0;
+          z-index: 3;
+          transform: translateX(100%);
+          box-shadow: var(--base-box-shadow);
+
+          a {
+            transition: color var(--base-transition);
+
+            &:hover {
+              color: var(--color-text-info);
+            }
+          }
+        }
+
+        .burger-btn {
+          display: block;
+          background: none;
+
+          &#closeBurgerButton {
+            order: -1;
+          }
+        }
+      }
+    }
+  }
+</style>
