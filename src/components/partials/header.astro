@@ -4,9 +4,13 @@ export interface Props {
   title: string;
 }
 const { title } = Astro.props;
+
+function convAuthor(text) {
+  return text.replace("-"," ").replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+}
 ---
 
-<title>{ title } - { Config.siteTitle }</title>
+<title>{ convAuthor(title) } - { Config.siteTitle }</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
